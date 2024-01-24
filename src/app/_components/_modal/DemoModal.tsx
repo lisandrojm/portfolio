@@ -11,6 +11,8 @@ import useLockedScroll from '@/_hooks/useLockedScroll';
 import useIsomorphicLayoutEffect from '@/_hooks/useIsomorphicLayoutEffect';
 import Modal from '@/_components/_modal/Modal';
 import Icon from '@/_components/_icons/Icons';
+import TranslateInOut from '@/_components/_gsap/TranslateInOut';
+import ScaleInOut from '@/_components/_gsap/ScaleInOut';
 
 interface DemoModalProps {
   title: string;
@@ -116,65 +118,73 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
             <button className="flex w-full justify-end pt-4 text-3xl text-white" onClick={() => setModal(false)} data-modal-close>
               <Icon kind="arrowLeft" />
             </button>
-            <div data-modal-content className="flex flex-col items-start justify-between gap-5 md:items-center">
-              <Link href={hrefDemo} aria-label="Open Project Modal" className="flex w-full justify-center" target="_blank">
-                <Image src={src} width={600} height={283} alt="Picture of the author" priority className="md:w-3/4" />
-              </Link>
-              <div className="flex flex-col md:w-3/4">
-                <div className="font-flex text-2xl font-bold uppercase md:text-3xl">
-                  <h2>{title}</h2>
-                </div>
-                <div className="text-base font-bold text-orange">
-                  <p>{content}</p>
+            <TranslateInOut overflowHidden delay={0.3} y={100}>
+              <div data-modal-content className="flex flex-col items-start justify-between gap-5 md:items-center">
+                <Link href={hrefDemo} aria-label="Open Project Modal" className="flex w-full justify-center" target="_blank">
+                  <Image src={src} width={600} height={283} alt="Picture of the author" priority className="md:w-3/4" />
+                </Link>
+                <div className="flex flex-col md:w-3/4">
+                  <TranslateInOut overflowHidden delay={0.4} y={100}>
+                    <div className="font-flex text-2xl font-bold uppercase md:text-3xl">
+                      <h2>{title}</h2>
+                    </div>
+                  </TranslateInOut>
+                  <TranslateInOut overflowHidden delay={0.5} y={100}>
+                    <div className="text-base font-bold text-orange">
+                      <p>{content}</p>
+                    </div>
+                  </TranslateInOut>
                 </div>
               </div>
-            </div>
-            <div className="flex flex-col items-start justify-between gap-4 border-t border-white px-3 pb-6 pt-4 md:flex-row md:items-center">
-              <div className="flex items-center justify-center">
-                <h6 className="xs--hide text-md text-orange">
-                  site stack<span className="px-2">|</span>
-                </h6>
-                {stack}
-              </div>
-              <div>
-                <div className="flex justify-between gap-3">
-                  <div className="me-5 flex items-center">
-                    <Link href={hrefDemo} aria-label="Proyect" target="_blank">
-                      <div className="flex items-center text-white">
-                        <div className="text-2xl ">
-                          <Icon kind="web" />
-                        </div>
-                        <div className=" flex items-center">
-                          <div className="text-md me-1 ms-1 font-serif italic">
-                            <p>demo</p>
+            </TranslateInOut>
+            <TranslateInOut overflowHidden delay={0.6} y={100}>
+              <div className="flex flex-col items-start justify-between gap-4 border-t border-white px-3 pb-6 pt-4 md:flex-row md:items-center">
+                <div className="flex items-center justify-center">
+                  <h6 className="xs--hide text-md text-orange">
+                    site stack<span className="px-2">|</span>
+                  </h6>
+                  {stack}
+                </div>
+                <div>
+                  <div className="flex justify-between gap-3">
+                    <div className="me-5 flex items-center">
+                      <Link href={hrefDemo} aria-label="Proyect" target="_blank">
+                        <div className="flex items-center text-white">
+                          <div className="text-2xl ">
+                            <Icon kind="web" />
                           </div>
-                          <span className="text-sm">
-                            <Icon kind="externalLink" />
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
-                  <div className="flex items-center">
-                    <Link href={hrefCode} aria-label="Proyect" target="_blank">
-                      <div className="flex items-center text-white">
-                        <div className="text-xl">
-                          <Icon kind="github" />
-                        </div>
-                        <div className=" flex items-center">
-                          <div className="text-md me-1 ms-1 font-serif italic text-white">
-                            <p>code</p>
+                          <div className=" flex items-center">
+                            <div className="text-md me-1 ms-1 font-serif italic">
+                              <p>demo</p>
+                            </div>
+                            <span className="text-sm">
+                              <Icon kind="externalLink" />
+                            </span>
                           </div>
-                          <span className="text-sm">
-                            <Icon kind="externalLink" />
-                          </span>
                         </div>
-                      </div>
-                    </Link>
+                      </Link>
+                    </div>
+                    <div className="flex items-center">
+                      <Link href={hrefCode} aria-label="Proyect" target="_blank">
+                        <div className="flex items-center text-white">
+                          <div className="text-xl">
+                            <Icon kind="github" />
+                          </div>
+                          <div className=" flex items-center">
+                            <div className="text-md me-1 ms-1 font-serif italic text-white">
+                              <p>code</p>
+                            </div>
+                            <span className="text-sm">
+                              <Icon kind="externalLink" />
+                            </span>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </TranslateInOut>
           </div>
         </XContainer>
       </div>

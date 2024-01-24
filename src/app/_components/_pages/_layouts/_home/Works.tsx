@@ -2,7 +2,6 @@
 
 'use client';
 
-import Link from 'next/link';
 import LinkIcon from '@/_components/_icons/LinkIcons';
 import Image from 'next/image';
 import StickyHeader from '@/_components/_shared/StickyHeader';
@@ -13,7 +12,6 @@ import YPContainer from '@/_components/_containers/YPContainer';
 import RotateInOut from '@/_components/_gsap/RotateInOut';
 import RotateInOut3D from '@/_components/_gsap/RotateInOut3D';
 import useDemoModal from '@/_components/_modal/DemoModal';
-import { Button, Props as ButtonProps } from '@/_components/_ui/Button';
 import { SetStateAction } from 'react';
 
 export default function Works() {
@@ -78,7 +76,7 @@ export default function Works() {
                 <div className="w-full">
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:text-lg">
                     <button onClick={() => setModal2(true)} aria-label="Open Project Modal">
-                      <div className="flex justify-start md:me-5 md:justify-end">
+                      <div className="flex justify-start md:justify-end lg:me-5">
                         <Image className="w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
                       </div>
                     </button>
@@ -134,7 +132,7 @@ export default function Works() {
                 <div className="w-full">
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:text-lg">
                     <button onClick={() => setModal4(true)} aria-label="Open Project Modal">
-                      <div className="flex justify-start md:me-5 md:justify-end">
+                      <div className="flex justify-start md:justify-end lg:me-5">
                         <Image className="w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
                       </div>
                     </button>
