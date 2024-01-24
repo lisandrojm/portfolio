@@ -9,9 +9,11 @@ import headerNavLinks from '@/_data/headerNavLinks';
 import { Button, Props as ButtonProps } from '@/_components/_ui/Button';
 import Icon from '@/_components/_icons/Icons';
 import XContainer from '@/_components/_containers/XContainer';
+import Reveal from '@/_components/_gsap/Reveal';
 
 export default function NavbarMobile() {
   const [navShow, setNavShow] = useState(false);
+  const [toggleNav, setToggleNav] = useState(false);
 
   const onToggleNav = () => {
     setNavShow((status) => {
@@ -20,10 +22,10 @@ export default function NavbarMobile() {
       } else {
         document.body.style.overflow = 'hidden';
       }
+      setToggleNav(!status); // Actualiza el estado toggleNav
       return !status;
     });
   };
-
   return (
     <>
       <button aria-label="Toggle Menu" onClick={onToggleNav} className="flex items-center justify-center pl-3 text-3xl lg:hidden">
