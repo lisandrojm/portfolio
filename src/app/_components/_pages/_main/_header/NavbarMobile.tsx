@@ -9,7 +9,6 @@ import headerNavLinks from '@/_data/headerNavLinks';
 import { Button, Props as ButtonProps } from '@/_components/_ui/Button';
 import Icon from '@/_components/_icons/Icons';
 import XContainer from '@/_components/_containers/XContainer';
-import Reveal from '@/_components/_gsap/Reveal';
 
 export default function NavbarMobile() {
   const [navShow, setNavShow] = useState(false);

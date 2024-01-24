@@ -32,14 +32,18 @@ const Reveal: React.FC<RevealProps> = ({ children, className }) => {
         x = 100;
         y = 0;
         duration = 1.25;
-      } else if (elem.classList.contains('gs_reveal_fromBottom')) {
+      } else if (elem.classList.contains('gs_reveal_fromBottomF')) {
         x = 0;
         y = 100;
-        duration = 1.75;
+        duration = 1.25;
+      } else if (elem.classList.contains('gs_reveal_fromBottomS')) {
+        x = 0;
+        y = 100;
+        duration = 1.25;
       } else if (elem.classList.contains('gs_reveal_fromUp')) {
         x = 0;
         y = -100;
-        duration = 1.75;
+        duration = 1.25;
       }
 
       elem.style.transform = `translate(${x}px, ${y}px)`;
