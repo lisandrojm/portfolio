@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import Link from 'next/link';
 import Icon, { IconKind } from '@/_components/_icons/Icons';
 
-// Importa el objeto 'components' desde tu archivo Icons.tsx
+// Import the 'components' object from your Icons.tsx file
 import components from '@/_components/_icons/Icons';
 
 interface LinkIconProps {
@@ -10,12 +10,13 @@ interface LinkIconProps {
   ariaLabel: string;
 }
 
-// Obtén las claves del objeto components y construye el tipo para iconLinks
+// Get the keys from the 'components' object and build the type for 'iconLinks'
 type IconLinks = Record<IconKind, string>;
 
 const iconLinks: IconLinks = {
-  // Usa todas las claves presentes en 'components'
+  // Use all keys present in 'components'
   ...Object.keys(components).reduce((acc, key) => ({ ...acc, [key]: '' }), {}),
+  certificate: '',
   academic: '',
   arrowUp: '',
   arrowUpCg: '',
@@ -50,12 +51,12 @@ const iconLinks: IconLinks = {
   vscode: '',
   windows: '',
   figma: '',
-  heart: '',
   illustrator: '',
   photoshop: '',
   premiere: '',
   aftereffects: '',
   dna: '',
+  heart: '',
   lightbulb: '',
   externalLink: '',
   internalLink: '',
@@ -70,9 +71,9 @@ const iconLinks: IconLinks = {
   works: '',
   about: '',
   contact: '',
-  certificate: ''
 };
 
+// Assign URLs to individual icon links
 iconLinks.html = 'https://developer.mozilla.org/en-US/docs/Web/HTML';
 iconLinks.css = 'https://developer.mozilla.org/en-US/docs/Web/CSS';
 iconLinks.js = 'https://developer.mozilla.org/en-US/docs/Web/JavaScript';
