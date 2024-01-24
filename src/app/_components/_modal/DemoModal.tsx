@@ -85,9 +85,6 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
           x: 1,
           duration: 0,
         })
-        .to('[data-modal]', {
-          duration: 0.35,
-        })
         .to('[data-modal-content]', {
           opacity: 1,
           duration: 0.35,

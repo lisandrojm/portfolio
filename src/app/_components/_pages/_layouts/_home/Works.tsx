@@ -51,8 +51,8 @@ export default function Works() {
                 <div className="w-full">
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:justify-end md:text-lg">
                     <button onClick={() => setModal1(true)} aria-label="Open Project Modal">
-                      <div className="flex justify-start">
-                        <Image src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
+                      <div className="flex justify-start ">
+                        <Image className="w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
                       </div>
                     </button>
                     <div className="mt-2 md:mb-0">
@@ -79,7 +79,7 @@ export default function Works() {
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:text-lg">
                     <button onClick={() => setModal2(true)} aria-label="Open Project Modal">
                       <div className="flex justify-start md:me-5 md:justify-end">
-                        <Image src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
+                        <Image className="w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
                       </div>
                     </button>
                     <div className="mt-2 md:mb-0">
@@ -108,7 +108,7 @@ export default function Works() {
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:justify-end md:text-lg">
                     <button onClick={() => setModal3(true)} aria-label="Open Project Modal">
                       <div className="flex justify-start">
-                        <Image src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
+                        <Image className="w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
                       </div>
                     </button>
                     <div className="mt-2 md:mb-0">
@@ -135,7 +135,7 @@ export default function Works() {
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:text-lg">
                     <button onClick={() => setModal4(true)} aria-label="Open Project Modal">
                       <div className="flex justify-start md:me-5 md:justify-end">
-                        <Image src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
+                        <Image className="w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
                       </div>
                     </button>
                     <div className="mt-2 md:mb-0">
