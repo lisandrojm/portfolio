@@ -78,16 +78,14 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
         .to(modalRef.current, {
           opacity: 1,
           pointerEvents: 'all',
-          duration: 0.5,
+          duration: 0.1,
         })
         .to('[data-modal]', {
           opacity: 1,
-          /*           scaleY: 0.01, */
           x: 1,
-          duration: 0.35,
+          duration: 0,
         })
         .to('[data-modal]', {
-          /*           scaleY: 1, */
           duration: 0.35,
         })
         .to('[data-modal-content]', {
