@@ -70,6 +70,7 @@ const iconLinks: IconLinks = {
   works: '',
   about: '',
   contact: '',
+  certificate: ''
 };
 
 iconLinks.html = 'https://developer.mozilla.org/en-US/docs/Web/HTML';
