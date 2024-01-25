@@ -30,7 +30,7 @@ export default function NavbarMobile() {
       <button aria-label="Toggle Menu" onClick={onToggleNav} className="flex items-center justify-center pl-3 text-3xl lg:hidden">
         <Icon kind="menuOpen" />
       </button>
-      <div className={`fixed inset-0 left-0 top-0 z-50 h-full w-full transform backdrop-blur-lg duration-300 ease-in-out ${navShow ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed inset-0 left-0 top-0 z-50 h-full w-full transform backdrop-blur-lg duration-200 ease-in-out ${navShow ? 'translate-x-0' : 'translate-x-full'}`}>
         <XContainer>
           <div className="flex items-center justify-between border-b border-white px-3 pb-4 pt-7">
             <div className="flex items-center text-xl">
