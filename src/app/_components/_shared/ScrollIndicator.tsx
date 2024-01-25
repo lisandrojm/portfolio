@@ -1,4 +1,5 @@
-// components/ScrollIndicator.tsx
+/* src/app/_components/_shared/ScrollIndicator.tsx */
+
 'use client';
 import { useEffect, useState } from 'react';
 
@@ -8,22 +9,16 @@ const ScrollIndicator = () => {
   useEffect(() => {
     const handler = () => {
       const documentElement = document.documentElement;
-      // get the scroll top position
       const scrolled = documentElement.scrollTop;
 
-      // calculate the max height of the document
       const maxHeight = documentElement.scrollHeight - documentElement.clientHeight;
 
-      // calculate the percentage
       const scrollPercent = (scrolled / maxHeight) * 100;
 
-      // update state
       setScroll(scrollPercent);
     };
-    // add event listener
     window.addEventListener('scroll', handler);
 
-    // remove event listener on unmount
     return () => window.removeEventListener('scroll', handler);
   }, []);
 
