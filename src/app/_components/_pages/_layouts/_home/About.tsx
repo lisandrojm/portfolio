@@ -7,6 +7,7 @@ import Icon from '@/_components/_icons/Icons';
 import XContainer from '@/_components/_containers/XContainer';
 import YMContainer from '@/_components/_containers/YMContainer';
 import YPContainer from '@/_components/_containers/YPContainer';
+import Reveal from '@/_components/_gsap/Reveal';
 
 export default function About() {
   return (
@@ -15,14 +16,16 @@ export default function About() {
         <StickyHeader customTextLeft="about" customIcon="about" />
         <XContainer>
           <YPContainer>
-            <div className="flex items-center justify-center pb-10 font-serif italic  md:pb-20 ">
-              <div className="flex items-center text-center text-2xl md:text-3xl">
-                <span className="me-2 text-3xl text-white">
-                  <Icon kind="dna" />
-                </span>
-                <h2 className="text-orange">Me ...</h2>
+            <Reveal className="gs_reveal_fromBottom">
+              <div className="flex items-center justify-center pb-10 font-serif italic  md:pb-20 ">
+                <div className="flex items-center text-center text-2xl md:text-3xl">
+                  <span className="me-2 text-3xl text-white">
+                    <Icon kind="dna" />
+                  </span>
+                  <h2 className="text-orange">Me ...</h2>
+                </div>
               </div>
-            </div>
+            </Reveal>
             <div className="bg-black_a font-serif italic">
               <div className="flex flex-col items-start justify-center md:flex-row">
                 <div className="md:w-1/2">

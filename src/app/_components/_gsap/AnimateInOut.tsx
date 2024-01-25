@@ -22,32 +22,18 @@ interface AnimateInOutProps {
     opacity?: number;
     x?: number;
     y?: number | string;
-    scale?: number; // Add the 'scale' property to the type definition
-    rotate?: number; // Add the 'scale' property to the type definition
+    scale?: number;
+    rotate?: number;
   };
   skipOutro?: boolean;
   watch?: boolean;
   start?: string;
   end?: string;
   scrub?: boolean;
-  markers?: any; // Replace 'any' with the correct type for markers
+  markers?: any;
 }
 
-function AnimateInOut({
-  children,
-  durationIn = 1, // Añade valores por defecto o ajusta según sea necesario
-  durationOut = 1,
-  delay = 0,
-  delayOut = 0,
-  from,
-  to,
-  skipOutro = false,
-  watch = false,
-  start = 'top bottom',
-  end = 'bottom top',
-  scrub = false,
-  markers,
-}: AnimateInOutProps) {
+function AnimateInOut({ children, durationIn = 2, durationOut = 2, delay = 0, delayOut = 0, from, to, skipOutro = false, watch = false, start = 'top bottom', end = 'bottom top', scrub = false, markers }: AnimateInOutProps) {
   const { timeline } = useTransitionContext();
   const element = useRef<HTMLDivElement>(null);
 

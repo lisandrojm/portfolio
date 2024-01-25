@@ -7,7 +7,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 interface RevealProps {
   children: React.ReactNode;
-  className: string;
+  className?: string;
 }
 
 const Reveal: React.FC<RevealProps> = ({ children, className }) => {
@@ -23,28 +23,24 @@ const Reveal: React.FC<RevealProps> = ({ children, className }) => {
         direction = direction || 1;
         let x = 0,
           y = direction * 100;
-        let duration = 1.25;
+        let duration = 1.5;
 
         if (elem.classList.contains('gs_reveal_fromLeft')) {
           x = -100;
           y = 0;
-          duration = 1.25;
+          duration = 1.5;
         } else if (elem.classList.contains('gs_reveal_fromRight')) {
           x = 100;
           y = 0;
-          duration = 1.25;
-        } else if (elem.classList.contains('gs_reveal_fromBottomF')) {
+          duration = 1.5;
+        } else if (elem.classList.contains('gs_reveal_fromBottom')) {
           x = 0;
           y = 100;
-          duration = 1.25;
-        } else if (elem.classList.contains('gs_reveal_fromBottomS')) {
-          x = 0;
-          y = 100;
-          duration = 1.25;
-        } else if (elem.classList.contains('gs_reveal_fromUp')) {
+          duration = 1.5;
+        } else if (elem.classList.contains('gs_reveal_fromTop')) {
           x = 0;
           y = -100;
-          duration = 1.25;
+          duration = 1.5;
         }
 
         elem.style.transform = `translate(${x}px, ${y}px)`;

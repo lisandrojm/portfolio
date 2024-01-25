@@ -17,7 +17,7 @@ export default function Skills() {
         <StickyHeader customTextLeft="skills" customIcon="skills" />
         <XContainer>
           <YPContainer>
-            <Reveal className="gs_reveal_fromDown">
+            <Reveal className="gs_reveal_fromBottom">
               <div className="flex flex-col items-center justify-center pb-10 font-serif italic text-orange md:pb-20">
                 <div className="flex items-center text-2xl  md:text-3xl">
                   <span className="me-2 text-2xl text-white">
