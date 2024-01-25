@@ -58,7 +58,7 @@ export default function About() {
                 {/* Accordion */}
                 <div className="mt-10 lg:mt-0">
                   <Accordion open={open === 1} icon={<AccordionIcon id={1} open={open} />} placeholder={''}>
-                    <AccordionHeader className="py-0 pb-3" onClick={() => handleOpen(1)} placeholder={''}>
+                    <AccordionHeader className="border-0 py-0" onClick={() => handleOpen(1)} placeholder={''}>
                       <div className="flex items-center">
                         <div className="me-2 text-2xl text-orange">
                           <Icon kind="certificate" />
