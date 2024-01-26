@@ -8,6 +8,7 @@ import Icon from '@/_components/_icons/Icons';
 import XContainer from '@/_components/_containers/XContainer';
 import YMContainer from '@/_components/_containers/YMContainer';
 import YPContainer from '@/_components/_containers/YPContainer';
+import TranslateInOut from '@/_components/_gsap/TranslateInOut';
 
 export default function Skills() {
   return (
@@ -17,17 +18,19 @@ export default function Skills() {
         <XContainer>
           <YPContainer>
             <div className="flex flex-col items-center justify-center pb-10 font-serif italic text-orange md:pb-20">
-              <div className="flex items-center text-2xl  md:text-3xl">
-                <span className="me-2 text-2xl text-white">
-                  <Icon kind="academic" />
-                </span>
-                <h2 className="text-orange">
-                  My knowledge <br />
-                </h2>
-              </div>
-              <div>
-                <p className="text-sm text-orange">(I&lsquo;m still learning...)</p>
-              </div>
+              <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
+                <div className="flex items-center text-2xl  md:text-3xl">
+                  <span className="me-2 text-2xl text-white">
+                    <Icon kind="academic" />
+                  </span>
+                  <h2 className="text-orange">
+                    My knowledge <br />
+                  </h2>
+                </div>
+                <div className="text-center">
+                  <p className="text-sm text-orange">(I&lsquo;m still learning...)</p>
+                </div>
+              </TranslateInOut>
             </div>
             <div className="flex justify-start md:justify-center">
               <div className="flex flex-col gap-12 text-2xl font-bold uppercase md:w-1/2 md:flex-row md:flex-wrap md:gap-20">

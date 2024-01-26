@@ -28,7 +28,7 @@ export default function Works() {
         <XContainer>
           <YPContainer>
             <div className="flex items-center justify-center pb-10 font-serif italic md:pb-20 ">
-              <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
+              <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
                 <div className="flex items-center ">
                   <div className="flex justify-center">
                     <div className="flex w-1/2 justify-center">

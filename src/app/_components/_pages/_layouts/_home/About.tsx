@@ -9,6 +9,7 @@ import YMContainer from '@/_components/_containers/YMContainer';
 import YPContainer from '@/_components/_containers/YPContainer';
 import { Accordion, AccordionHeader, AccordionBody } from '@material-tailwind/react';
 import { useState } from 'react';
+import TranslateInOut from '@/_components/_gsap/TranslateInOut';
 
 interface ProyectProps {}
 
@@ -31,12 +32,14 @@ export default function About() {
         <XContainer>
           <YPContainer>
             <div className="flex items-center justify-center pb-10 font-serif italic  md:pb-20 ">
-              <div className="flex items-center text-center text-2xl md:text-3xl">
-                <span className="me-2 text-3xl text-white">
-                  <Icon kind="dna" />
-                </span>
-                <h2 className="text-orange">Me ...</h2>
-              </div>
+              <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
+                <div className="flex items-center text-center text-2xl md:text-3xl">
+                  <span className="me-2 text-3xl text-white">
+                    <Icon kind="dna" />
+                  </span>
+                  <h2 className="text-orange">Me ...</h2>
+                </div>
+              </TranslateInOut>
             </div>
             <div className="bg-black_a font-serif italic">
               {/* About*/}
