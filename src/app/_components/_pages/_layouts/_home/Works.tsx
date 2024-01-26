@@ -48,7 +48,7 @@ export default function Works() {
             {/*Projects */}
             <div className="flex flex-col gap-14">
               {/*Project 1 */}
-              <RotateInOut3D durationIn={0.8 + Math.random()} y="100px" start="-100px bottom" watch>
+              <RotateInOut3D durationIn={0.5 + Math.random()} y="100px" start="-100px bottom" watch>
                 <div className="w-full">
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:justify-end md:text-lg">
                     <button onClick={() => setModal1(true)} aria-label="Open Project Modal">
@@ -75,7 +75,7 @@ export default function Works() {
                 </div>
               </RotateInOut3D>
               {/*Project 2 */}
-              <RotateInOut3D durationIn={0.8 + Math.random()} y="100px" start="-100px bottom" watch>
+              <RotateInOut3D durationIn={0.5 + Math.random()} y="100px" start="-100px bottom" watch>
                 <div className="w-full">
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:text-lg">
                     <button onClick={() => setModal2(true)} aria-label="Open Project Modal">
@@ -104,7 +104,7 @@ export default function Works() {
                 </div>
               </RotateInOut3D>
               {/*Project 3 */}
-              <RotateInOut3D durationIn={0.8 + Math.random()} y="100px" start="-100px bottom" watch>
+              <RotateInOut3D durationIn={0.5 + Math.random()} y="100px" start="-100px bottom" watch>
                 <div className="w-full">
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:justify-end md:text-lg">
                     <button onClick={() => setModal3(true)} aria-label="Open Project Modal">
@@ -131,7 +131,7 @@ export default function Works() {
                 </div>
               </RotateInOut3D>
               {/*Project 4 */}
-              <RotateInOut3D durationIn={0.8 + Math.random()} y="100px" start="-100px bottom" watch>
+              <RotateInOut3D durationIn={0.5 + Math.random()} y="100px" start="-100px bottom" watch>
                 <div className="w-full">
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:text-lg">
                     <button onClick={() => setModal4(true)} aria-label="Open Project Modal">

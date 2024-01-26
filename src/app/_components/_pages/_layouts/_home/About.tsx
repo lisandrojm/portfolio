@@ -46,92 +46,110 @@ export default function About() {
               <div className="flex flex-col items-start justify-center lg:flex-row">
                 <div className="lg:me-10 lg:w-1/2">
                   <div className="inline-flex flex-col items-end">
-                    <p className="leading-0 m-0 p-0 text-lg text-white md:text-2xl">Hello. I am Lisandro. </p>
-                    <p className="text-xs text-orange md:text-base">Lisandro Martínez</p>
+                    <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
+                      <p className="leading-0 m-0 p-0 text-lg text-white md:text-2xl">Hello. I am Lisandro. </p>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
+                      <p className="text-xs text-orange md:text-base">Lisandro Martínez</p>
+                    </TranslateInOut>
                   </div>
                   <div>
-                    <p className="text-lg text-white md:text-2xl">
-                      I use my passion and skills to create digital experiences.
-                      <br />
-                      National and international customers rely on me for implementation of their digital products. <br />
-                      As an independent, I work also with web agencies, companies, startups and individuals to create a blueprint for the digital business.
-                    </p>
+                    <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
+                      <p className="text-lg text-white md:text-2xl">
+                        I use my passion and skills to create digital experiences.
+                        <br />
+                        National and international customers rely on me for implementation of their digital products. <br />
+                        As an independent, I work also with web agencies, companies, startups and individuals to create a blueprint for the digital business.
+                      </p>
+                    </TranslateInOut>
                   </div>
                 </div>
                 {/* Accordion */}
                 <div className="mt-10 lg:mt-0">
                   <Accordion open={open === 1} icon={<AccordionIcon id={1} open={open} />} placeholder={''}>
                     <AccordionHeader className="border-0 py-0" onClick={() => handleOpen(1)} placeholder={''}>
-                      <div className="flex items-center">
-                        <div className="me-2 text-2xl text-orange">
-                          <Icon kind="certificate" />
+                      <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
+                        <div className="flex items-center">
+                          <div className="me-2 text-2xl text-orange">
+                            <Icon kind="certificate" />
+                          </div>
+                          <div>
+                            <h3 className="me-16 text-xl text-white">Certificates</h3>
+                          </div>
                         </div>
-                        <div>
-                          <h3 className="me-16 text-xl text-white">Certificates</h3>
-                        </div>
-                      </div>
+                      </TranslateInOut>
                     </AccordionHeader>
                     <AccordionBody>
                       <div className="mt-1 text-lg text-white">
                         <ul>
                           <li>
                             <Link href="https://www.coderhouse.com/certificados/63a7335bc5708d000e6df156?lang=en" className="flex text-white" aria-label="Development certificate" target="_blank">
-                              <div className="flex items-end text-orange">
-                                <div>
-                                  <p>Development</p>
+                              <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
+                                <div className="flex items-center text-orange">
+                                  <div>
+                                    <p>Development</p>
+                                  </div>
+                                  <span className="ms-2 text-sm text-white">
+                                    <Icon kind="externalLink" />
+                                  </span>
                                 </div>
-                                <span className="ms-1 text-sm text-white">
-                                  <Icon kind="externalLink" />
-                                </span>
-                              </div>
+                              </TranslateInOut>
                             </Link>
                           </li>
                           <li>
                             <Link href="https://www.coderhouse.com/certificados/641b0618e72c2b00027dca87?lang=en" className="flex text-white" aria-label="Javascript certificate" target="_blank">
-                              <div className="flex items-end text-orange">
-                                <div>
-                                  <p>Javascript</p>
+                              <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
+                                <div className="flex items-center text-orange">
+                                  <div>
+                                    <p>Javascript</p>
+                                  </div>
+                                  <span className="ms-2 text-sm text-white">
+                                    <Icon kind="externalLink" />
+                                  </span>
                                 </div>
-                                <span className="ms-1 text-sm text-white">
-                                  <Icon kind="externalLink" />
-                                </span>
-                              </div>
+                              </TranslateInOut>
                             </Link>
                           </li>
                           <li>
                             <Link href="https://www.coderhouse.com/certificados/645e44ad1f40130002fcd5d5?lang=en" className="flex text-white" aria-label="Reactjs certificate" target="_blank">
-                              <div className="flex items-end text-orange">
-                                <div>
-                                  <p>React</p>
+                              <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
+                                <div className="flex items-center text-orange">
+                                  <div>
+                                    <p>React</p>
+                                  </div>
+                                  <span className="ms-2 text-sm text-white">
+                                    <Icon kind="externalLink" />
+                                  </span>
                                 </div>
-                                <span className="ms-1 text-sm text-white">
-                                  <Icon kind="externalLink" />
-                                </span>
-                              </div>
+                              </TranslateInOut>
                             </Link>
                           </li>
                           <li>
                             <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d0ce8be7116?lang=en" className="flex text-white" aria-label="Backend certificate" target="_blank">
-                              <div className="flex items-end text-orange">
-                                <div>
-                                  <p>Backend</p>
+                              <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
+                                <div className="flex items-center text-orange">
+                                  <div>
+                                    <p>Backend</p>
+                                  </div>
+                                  <span className="ms-2 text-sm text-white">
+                                    <Icon kind="externalLink" />
+                                  </span>
                                 </div>
-                                <span className="ms-1 text-sm text-white">
-                                  <Icon kind="externalLink" />
-                                </span>
-                              </div>
+                              </TranslateInOut>
                             </Link>
                           </li>
                           <li>
                             <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="flex text-white" aria-label="Fullstack certificate" target="_blank">
-                              <div className="flex items-end text-orange">
-                                <div>
-                                  <p>FullStack</p>
+                              <TranslateInOut overflowHidden delay={0.6} y={100} start="-100% bottom" end="top top" watch>
+                                <div className="flex items-center text-orange">
+                                  <div>
+                                    <p>FullStack</p>
+                                  </div>
+                                  <span className="ms-2 text-sm text-white">
+                                    <Icon kind="externalLink" />
+                                  </span>
                                 </div>
-                                <span className="ms-1 text-sm text-white">
-                                  <Icon kind="externalLink" />
-                                </span>
-                              </div>
+                              </TranslateInOut>
                             </Link>
                           </li>
                         </ul>
