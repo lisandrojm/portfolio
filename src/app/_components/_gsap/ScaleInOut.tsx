@@ -1,3 +1,5 @@
+/* src/app/_components/_gsap/ScaleInOut.tsx */
+
 import React, { ReactNode } from 'react';
 import classNames from 'classnames';
 import AnimateInOut from '@/_components/_gsap/AnimateInOut';
@@ -25,7 +27,7 @@ interface ScaleInOutProps {
   markers?: boolean;
 }
 
-const ScaleInOut: React.FC<ScaleInOutProps> = ({ children, overflowHidden, fade = true, durationIn = 0.5, durationOut = 0.25, delay = 0, delayOut = 0, ease = 'power4.out', scale = 0, scaleTo = 1, x = 0, y = 0, xTo = 0, yTo = 0, skipOutro, watch, start = 'top bottom', end = 'bottom top', scrub = false, markers }) => {
+const ScaleInOut: React.FC<ScaleInOutProps> = ({ children, overflowHidden, fade = true, durationIn = 1.5, durationOut = 0.5, delay = 0, delayOut = 0, ease = 'power4.out', scale = 0, scaleTo = 1, x = 0, y = 0, xTo = 0, yTo = 0, skipOutro, watch, start = 'top bottom', end = 'bottom top', scrub = false, markers }) => {
   return (
     <div className={classNames({ 'overflow-hidden': overflowHidden })}>
       <AnimateInOut

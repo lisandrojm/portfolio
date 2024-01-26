@@ -51,7 +51,6 @@ function AnimateInOut({ children, durationIn = 2, durationOut = 2, delay = 0, de
       : {};
 
     const ctx = gsap.context(() => {
-      /* Intro animation */
       gsap.to(element.current, {
         ...to,
         delay,

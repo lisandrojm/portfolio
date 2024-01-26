@@ -50,7 +50,7 @@ export default function Hero() {
                 </p>
               </div>
             </TranslateInOut>
-            <ScaleInOut delay={0.7} durationIn={1} ease="elastic.out">
+            <ScaleInOut delay={0.7} ease="elastic.out">
               <div className="pb-2 pt-4">
                 <Link href="#contact" className="pb-2 pt-4" aria-label="Form">
                   <Button size="2xl" font="mono">

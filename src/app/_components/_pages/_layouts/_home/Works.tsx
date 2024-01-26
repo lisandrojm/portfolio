@@ -13,6 +13,7 @@ import RotateInOut from '@/_components/_gsap/RotateInOut';
 import RotateInOut3D from '@/_components/_gsap/RotateInOut3D';
 import useDemoModal from '@/_components/_modal/DemoModal';
 import { SetStateAction } from 'react';
+import TranslateInOut from '@/_components/_gsap/TranslateInOut';
 
 export default function Works() {
   const { DemoModal: DemoModal1, setModal: setModal1 } = useDemoModal();
@@ -27,20 +28,22 @@ export default function Works() {
         <XContainer>
           <YPContainer>
             <div className="flex items-center justify-center pb-10 font-serif italic md:pb-20 ">
-              <div className="flex items-center ">
-                <div className="flex justify-center">
-                  <div className="flex w-1/2 justify-center">
-                    <RotateInOut fade={false} durationIn={0.6} rotateTo={360} start="botom bottom" end="top top" watch scrub>
-                      <span className="text-4xl text-white md:text-5xl">
-                        <Icon kind="star" />
-                      </span>
-                    </RotateInOut>
+              <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
+                <div className="flex items-center ">
+                  <div className="flex justify-center">
+                    <div className="flex w-1/2 justify-center">
+                      <RotateInOut fade={false} durationIn={0.6} rotateTo={360} start="botom bottom" end="top top" watch scrub>
+                        <span className="text-4xl text-white md:text-5xl">
+                          <Icon kind="star" />
+                        </span>
+                      </RotateInOut>
+                    </div>
+                  </div>
+                  <div className="ms-3 text-2xl text-orange md:text-3xl">
+                    <h2>Selected Projects</h2>
                   </div>
                 </div>
-                <div className="ms-3 text-2xl text-orange md:text-3xl">
-                  <h2>Selected Projects</h2>
-                </div>
-              </div>
+              </TranslateInOut>
             </div>
             {/*Projects */}
             <div className="flex flex-col gap-14">

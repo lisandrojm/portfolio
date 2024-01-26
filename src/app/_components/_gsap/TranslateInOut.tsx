@@ -25,7 +25,7 @@ interface TranslateInOutProps {
   markers?: any; // Replace 'any' with the correct type for markers
 }
 
-const TranslateInOut: React.FC<TranslateInOutProps> = ({ children, overflowHidden, fade = true, durationIn = 0.5, durationOut = 0.25, delay = 0, delayOut = 0, ease = 'power4.out', x = 0, y = 0, xTo = 0, yTo = 0, skipOutro, watch, start = 'top bottom', end = 'bottom top', scrub = false, markers }) => {
+const TranslateInOut: React.FC<TranslateInOutProps> = ({ children, overflowHidden, fade = true, durationIn = 1, durationOut = 0.25, delay = 0, delayOut = 0, ease = 'power4.out', x = 0, y = 0, xTo = 0, yTo = 0, skipOutro, watch, start = 'top bottom', end = 'bottom top', scrub = false, markers }) => {
   return (
     <div className={classNames({ 'overflow-hidden': overflowHidden })}>
       <AnimateInOut

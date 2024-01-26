@@ -26,7 +26,7 @@ export const TransitionContextProvider: React.FC<{ children: React.ReactNode }> 
     const currentTimeline = timelineRef.current;
 
     return () => {
-      currentTimeline.kill(); // Ensure the timeline is properly cleaned up
+      currentTimeline.kill();
     };
   }, []);
 
