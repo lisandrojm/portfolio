@@ -54,14 +54,23 @@ export default function About() {
                     </TranslateInOut>
                   </div>
                   <div>
-                    <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
-                      <p className="text-lg text-white md:text-2xl">
-                        I use my passion and skills to create digital experiences.
+                    <div className="text-lg text-white md:text-2xl">
+                      <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
+                        <p>I use my passion and skills to create digital experiences.</p>
                         <br />
-                        National and international customers rely on me for implementation of their digital products. <br />
-                        As an independent, I work also with web agencies, companies, startups and individuals to create a blueprint for the digital business.
-                      </p>
-                    </TranslateInOut>
+                      </TranslateInOut>
+                      <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
+                        <p>National and international customers rely on me for implementation of their digital products.</p>
+                      </TranslateInOut>
+                      <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
+                        <p>
+                          As an independent, I work also with web agencies, companies, startups and individuals <br />
+                        </p>
+                      </TranslateInOut>
+                      <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
+                        <p>to create a blueprint for the digital business.</p>
+                      </TranslateInOut>
+                    </div>
                   </div>
                 </div>
                 {/* Accordion */}
