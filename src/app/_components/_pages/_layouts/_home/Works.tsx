@@ -58,11 +58,11 @@ export default function Works() {
                     </button>
                     <div className="mt-2 md:mb-0">
                       <button onClick={() => setModal1(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project Modal">
-                        <div className="flex items-end text-white">
+                        <div className="flex items-center text-white">
                           <div className="font-flex text-2xl font-bold uppercase md:text-3xl">
                             <h2>Project1</h2>
                           </div>
-                          <span className="text-sm">
+                          <span className="ms-1 text-sm">
                             <Icon kind="internalLink" />
                           </span>
                         </div>
@@ -86,7 +86,7 @@ export default function Works() {
                     <div className="mt-2 md:mb-0">
                       <button onClick={() => setModal2(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project Modal">
                         <div className="flex justify-start gap-3">
-                          <div className="flex items-end text-white">
+                          <div className="flex items-center text-white">
                             <div className="font-flex text-2xl font-bold uppercase leading-8 md:text-3xl">
                               <h2>Project2</h2>
                             </div>
@@ -114,11 +114,11 @@ export default function Works() {
                     </button>
                     <div className="mt-2 md:mb-0">
                       <button onClick={() => setModal3(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project Modal">
-                        <div className="flex items-end text-white">
+                        <div className="flex items-center text-white">
                           <div className="font-flex text-2xl font-bold uppercase md:text-3xl">
                             <h2>Project3</h2>
                           </div>
-                          <span className="text-sm">
+                          <span className="ms-1 text-sm">
                             <Icon kind="internalLink" />
                           </span>
                         </div>
@@ -142,7 +142,7 @@ export default function Works() {
                     <div className="mt-2 md:mb-0">
                       <button onClick={() => setModal4(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project Modal">
                         <div className="flex justify-start gap-3">
-                          <div className="flex items-end text-white">
+                          <div className="flex items-center text-white">
                             <div className="font-flex text-2xl font-bold uppercase leading-8 md:text-3xl">
                               <h2>Project4</h2>
                             </div>
