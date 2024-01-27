@@ -105,7 +105,7 @@ iconLinks.premiere = 'https://www.adobe.com/products/premiere.html';
 const LinkIcons: FC<LinkIconProps> = ({ kind, ariaLabel }) => {
   const href = iconLinks[kind] || '#'; // Default to '#' if the kind is not found
   return (
-    <Link href={href} passHref rel="noopener noreferrer" target="_blank" className="text-orange">
+    <Link href={href} passHref rel="noopener noreferrer" target="_blank" className="cursor-scale small text-orange">
       <Icon kind={kind} />
     </Link>
   );

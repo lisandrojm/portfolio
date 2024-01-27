@@ -120,8 +120,8 @@ body {
 
 .grow-small {
   transform: scale(2);
+  border: 1px solid;
 }
-
 /* Media queries */
 
 @media (min-width: 992px) {

@@ -23,15 +23,15 @@ export default function Footer() {
                 <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
               </li>
               <li>
-                <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
+                <LinkIcon kind="tailwind" ariaLabel="Tailwindcss" />
               </li>
-              <li>
-                <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
+              <li className="cursor-scale small">
+                <LinkIcon kind="vercel" ariaLabel="Vercel" />
               </li>
             </ul>
           </div>
           <div className="flex">
-            <Link href={'https://github.com/lisandrojm/portfolio'} className="flex items-center" aria-label="Github site profile" target="_blank">
+            <Link href={'https://github.com/lisandrojm/portfolio'} className="cursor-scale small flex items-center" aria-label="Github site profile" target="_blank">
               <div className="flex items-center text-white">
                 <div className="text-xl">
                   <Icon kind="github" />
@@ -40,7 +40,7 @@ export default function Footer() {
                   <div className="text-md me-1 ms-1 font-serif italic text-white">
                     <p>code</p>
                   </div>
-                  <span className="text-sm">
+                  <span className="cursor-scale small text-sm">
                     <Icon kind="externalLink" />
                   </span>
                 </div>
