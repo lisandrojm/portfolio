@@ -1,4 +1,4 @@
-// src/app/_components/_gsap/Cursor.tsx
+/* src/app/_components/_gsap/Cursor.tsx */
 
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
