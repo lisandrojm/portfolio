@@ -16,13 +16,13 @@ export default function Footer() {
               site stack<span className="px-2">|</span>
             </h6>
             <ul className="flex gap-3 text-2xl">
-              <li>
+              <li className="cursor-scale small">
                 <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
               </li>
-              <li>
+              <li className="cursor-scale small">
                 <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
               </li>
-              <li>
+              <li className="cursor-scale small">
                 <LinkIcon kind="tailwind" ariaLabel="Tailwindcss" />
               </li>
               <li className="cursor-scale small">
