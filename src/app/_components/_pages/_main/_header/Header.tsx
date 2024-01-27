@@ -23,7 +23,7 @@ export default function Header() {
           <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
             <Link href="/" aria-label={`Navigate to ${siteMetadata.headerTitle}`}>
               <div className="flex items-center justify-between">
-                <div className="flex items-center justify-center font-bold">
+                <div className="cursor-scale small flex items-center justify-center font-bold">
                   <div>
                     <h2 className="m-0 leading-5 text-white">FullStackDev</h2>
                     <h3>
@@ -36,14 +36,14 @@ export default function Header() {
           </TranslateInOut>
           <div className="flex items-center leading-5 ">
             <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
-              <div className="flex items-center leading-5 ">
+              <div className="flex items-center leading-5">
                 {headerNavLinks
                   .filter((link: NavLink) => link.href !== '/')
                   .map((link: NavLink, index: number) => (
                     <div key={link.title} className="hidden lg:inline">
                       <div className="flex">
                         {index > 0 && <span className="mx-3 text-white">|</span>}
-                        <Link href={link.href} className="hidden text-white lg:inline" aria-label={`Navigate to ${link.title}`}>
+                        <Link href={link.href} className="cursor-scale small hidden text-white lg:inline" aria-label={`Navigate to ${link.title}`}>
                           {link.title}
                         </Link>
                       </div>
@@ -54,10 +54,10 @@ export default function Header() {
             <div className="xs--hide flex items-center">
               <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
                 <div className="xs--hide flex items-center">
-                  <Link href={siteMetadata.github} className="ml-5 flex items-center text-3xl text-orange sm:ml-5" aria-label="Github site profile" target="_blank">
+                  <Link href={siteMetadata.github} className="cursor-scale small ml-5 flex items-center text-3xl text-orange sm:ml-5" aria-label="Github site profile" target="_blank">
                     <Icon kind="github" />
                   </Link>
-                  <Link href={siteMetadata.linkedin} className="ml-5 mr-4 flex items-center text-3xl text-orange sm:ml-5 sm:mr-5" aria-label="Linkedin site profile" target="_blank">
+                  <Link href={siteMetadata.linkedin} className="cursor-scale small ml-5 mr-4 flex items-center text-3xl text-orange sm:ml-5 sm:mr-5" aria-label="Linkedin site profile" target="_blank">
                     <Icon kind="linkedin" />
                   </Link>
                   <ThemeSwitcher />

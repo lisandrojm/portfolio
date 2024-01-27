@@ -26,7 +26,7 @@ const ScrollUp: React.FC = () => {
 
   return (
     <span className={`fixed bottom-10 right-0 z-40 flex cursor-pointer items-center justify-center border-solid pb-1 transition-all duration-300 ease-out ${showButton ? 'right-10' : 'translate-x-full'}`} onClick={scrollToTop}>
-      <button className="animate-bounce p-1 text-3xl text-white md:text-4xl">
+      <button className="cursor-scale small animate-bounce p-1 text-3xl text-white md:text-4xl">
         <Icon kind="arrowUpCg" />
       </button>
     </span>
