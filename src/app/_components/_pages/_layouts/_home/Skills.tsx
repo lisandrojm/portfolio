@@ -2,6 +2,7 @@
 
 'use client';
 
+import Link from 'next/link';
 import LinkIcon from '@/_components/_icons/LinkIcons';
 import StickyHeader from '@/_components/_shared/StickyHeader';
 import Icon from '@/_components/_icons/Icons';
@@ -19,19 +20,21 @@ export default function Skills() {
         <XContainer>
           <YPContainer>
             <div className="flex flex-col items-center justify-center pb-10 font-serif italic text-orange md:pb-20">
-              <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
-                <div className="flex items-center text-2xl  md:text-3xl">
-                  <span className="me-2 text-2xl text-white">
-                    <Icon kind="academic" />
-                  </span>
-                  <h2 className="text-orange">
-                    My knowledge <br />
-                  </h2>
-                </div>
-                <div className="text-center">
-                  <p className="text-sm text-orange">(I&lsquo;m still learning...)</p>
-                </div>
-              </TranslateInOut>
+              <Link href={'#skills'} className="cursor-scale small flex items-center text-center text-2xl md:text-3xl">
+                <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
+                  <div className="flex items-center text-2xl  md:text-3xl">
+                    <span className="me-2 text-2xl text-white">
+                      <Icon kind="academic" />
+                    </span>
+                    <h2 className="text-orange">
+                      My knowledge <br />
+                    </h2>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-sm text-orange">(I&lsquo;m still learning...)</p>
+                  </div>
+                </TranslateInOut>
+              </Link>
             </div>
             <div className="flex justify-start md:justify-center">
               <div className="flex flex-col gap-12 text-2xl font-bold uppercase md:w-1/2 md:flex-row md:flex-wrap md:gap-20">

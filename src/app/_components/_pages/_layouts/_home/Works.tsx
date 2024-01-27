@@ -2,6 +2,7 @@
 
 'use client';
 
+import Link from 'next/link';
 import LinkIcon from '@/_components/_icons/LinkIcons';
 import Image from 'next/image';
 import StickyHeader from '@/_components/_shared/StickyHeader';
@@ -28,22 +29,24 @@ export default function Works() {
         <XContainer>
           <YPContainer>
             <div className="flex items-center justify-center pb-10 font-serif italic md:pb-20 ">
-              <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
-                <div className="flex items-center ">
-                  <div className="flex justify-center">
-                    <div className="flex w-1/2 justify-center">
-                      <RotateInOut fade={false} durationIn={0.6} rotateTo={360} start="botom bottom" end="top top" watch scrub>
-                        <span className="text-4xl text-white md:text-5xl">
-                          <Icon kind="star" />
-                        </span>
-                      </RotateInOut>
+              <Link href={'#works'} className="cursor-scale small flex items-center text-center text-2xl md:text-3xl">
+                <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
+                  <div className="flex items-center ">
+                    <div className="flex justify-center">
+                      <div className="flex w-1/2 justify-center">
+                        <RotateInOut fade={false} durationIn={0.6} rotateTo={360} start="botom bottom" end="top top" watch scrub>
+                          <span className="text-4xl text-white md:text-5xl">
+                            <Icon kind="star" />
+                          </span>
+                        </RotateInOut>
+                      </div>
+                    </div>
+                    <div className="ms-3 text-2xl text-orange md:text-3xl">
+                      <h2>Selected Projects</h2>
                     </div>
                   </div>
-                  <div className="ms-3 text-2xl text-orange md:text-3xl">
-                    <h2>Selected Projects</h2>
-                  </div>
-                </div>
-              </TranslateInOut>
+                </TranslateInOut>
+              </Link>
             </div>
             {/*Projects */}
             <div className="flex flex-col gap-14">
@@ -53,12 +56,12 @@ export default function Works() {
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:justify-end md:text-lg">
                     <button onClick={() => setModal1(true)} aria-label="Open Project Modal">
                       <div className="flex justify-start ">
-                        <Image className="w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
+                        <Image className="cursor-scale w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
                       </div>
                     </button>
                     <div className="mt-2 md:mb-0">
                       <button onClick={() => setModal1(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project Modal">
-                        <div className="flex items-center text-white">
+                        <div className="cursor-scale small cursor-scale small flex items-center text-white">
                           <div className="font-flex text-2xl font-bold uppercase md:text-3xl">
                             <h2>Project1</h2>
                           </div>
@@ -66,7 +69,7 @@ export default function Works() {
                             <Icon kind="internalLink" />
                           </span>
                         </div>
-                        <div className="font-flextext-base font-bold text-orange">
+                        <div className="font-flextext-base cursor-scale small font-bold text-orange">
                           <p>Description1</p>
                         </div>
                       </button>
@@ -80,13 +83,13 @@ export default function Works() {
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:text-lg">
                     <button onClick={() => setModal2(true)} aria-label="Open Project Modal">
                       <div className="flex justify-start md:justify-end lg:me-5">
-                        <Image className="w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
+                        <Image className="cursor-scale w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
                       </div>
                     </button>
                     <div className="mt-2 md:mb-0">
                       <button onClick={() => setModal2(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project Modal">
                         <div className="flex justify-start gap-3">
-                          <div className="flex items-center text-white">
+                          <div className="cursor-scale small flex items-center text-white">
                             <div className="font-flex text-2xl font-bold uppercase leading-8 md:text-3xl">
                               <h2>Project2</h2>
                             </div>
@@ -95,7 +98,7 @@ export default function Works() {
                             </span>
                           </div>
                         </div>
-                        <div className="text-base font-bold text-orange">
+                        <div className="cursor-scale small text-base font-bold text-orange">
                           <p>Description2</p>
                         </div>
                       </button>
@@ -109,12 +112,12 @@ export default function Works() {
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:justify-end md:text-lg">
                     <button onClick={() => setModal3(true)} aria-label="Open Project Modal">
                       <div className="flex justify-start">
-                        <Image className="w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
+                        <Image className="cursor-scale w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
                       </div>
                     </button>
                     <div className="mt-2 md:mb-0">
                       <button onClick={() => setModal3(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project Modal">
-                        <div className="flex items-center text-white">
+                        <div className="cursor-scale small flex items-center text-white">
                           <div className="font-flex text-2xl font-bold uppercase md:text-3xl">
                             <h2>Project3</h2>
                           </div>
@@ -122,7 +125,7 @@ export default function Works() {
                             <Icon kind="internalLink" />
                           </span>
                         </div>
-                        <div className="font-flextext-base font-bold text-orange">
+                        <div className="font-flextext-base cursor-scale small font-bold text-orange">
                           <p>Description3</p>
                         </div>
                       </button>
@@ -136,13 +139,13 @@ export default function Works() {
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:text-lg">
                     <button onClick={() => setModal4(true)} aria-label="Open Project Modal">
                       <div className="flex justify-start md:justify-end lg:me-5">
-                        <Image className="w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
+                        <Image className="cursor-scale w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
                       </div>
                     </button>
                     <div className="mt-2 md:mb-0">
                       <button onClick={() => setModal4(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project Modal">
                         <div className="flex justify-start gap-3">
-                          <div className="flex items-center text-white">
+                          <div className="cursor-scale small flex items-center text-white">
                             <div className="font-flex text-2xl font-bold uppercase leading-8 md:text-3xl">
                               <h2>Project4</h2>
                             </div>
@@ -151,7 +154,7 @@ export default function Works() {
                             </span>
                           </div>
                         </div>
-                        <div className="text-base font-bold text-orange">
+                        <div className="cursor-scale small text-base font-bold text-orange">
                           <p>Description4</p>
                         </div>
                       </button>

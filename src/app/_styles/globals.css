@@ -113,13 +113,13 @@ body {
 
 .grow,
 .grow-small {
-  transform: scale(3);
+  transform: scale(2);
   backdrop-filter: invert(20%);
   border: 1px solid;
 }
 
 .grow-small {
-  transform: scale(2);
+  transform: scale(1.5);
   border: 1px solid;
 }
 /* Media queries */

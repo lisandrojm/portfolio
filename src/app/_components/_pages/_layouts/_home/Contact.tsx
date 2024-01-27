@@ -25,7 +25,7 @@ export default function Contact() {
                     <span className="me-2 text-3xl">
                       <Icon kind="lightbulb" />
                     </span>
-                    <h2 className="font-regular text-3xl uppercase italic text-orange md:text-4xl">
+                    <h2 className="font-regular cursor-scale small text-3xl uppercase italic text-orange md:text-4xl">
                       Are you minding
                       <br />a proyect?
                     </h2>
@@ -64,7 +64,7 @@ export default function Contact() {
                   </ScaleInOut>
                   <TranslateInOut overflowHidden delay={0.6} y={100} start="-100% bottom" end="top top" watch>
                     <Link href="mailto:lisandrojm@gmail.com">
-                      <p className="text-serif flex items-center text-sm italic text-white">
+                      <p className="text-serif cursor-scale small flex items-center text-sm italic text-white">
                         I
                         <span className="px-2 text-orange">
                           <Icon kind="heart" />

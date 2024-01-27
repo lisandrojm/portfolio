@@ -2,6 +2,7 @@
 'use client';
 
 import Link from 'next/link';
+import siteMetadata from '@/_data/siteMetadata';
 import StickyHeader from '@/_components/_shared/StickyHeader';
 import Icon from '@/_components/_icons/Icons';
 import XContainer from '@/_components/_containers/XContainer';
@@ -33,12 +34,12 @@ export default function About() {
           <YPContainer>
             <div className="flex items-center justify-center pb-10 font-serif italic  md:pb-20 ">
               <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
-                <div className="flex items-center text-center text-2xl md:text-3xl">
+                <Link href={'#about'} className="cursor-scale small flex items-center text-center text-2xl md:text-3xl ">
                   <span className="me-2 text-3xl text-white">
                     <Icon kind="dna" />
                   </span>
                   <h2 className="text-orange">Me ...</h2>
-                </div>
+                </Link>
               </TranslateInOut>
             </div>
             <div className="bg-black_a font-serif italic">
@@ -50,7 +51,9 @@ export default function About() {
                       <p className="leading-0 m-0 p-0 text-lg text-white md:text-2xl">Hello. I am Lisandro. </p>
                     </TranslateInOut>
                     <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
-                      <p className="text-xs text-orange md:text-base">Lisandro Martínez</p>
+                      <Link href={siteMetadata.linkedin} className="cursor-scale small flex items-center text-center text-2xl md:text-3xl ">
+                        <p className="text-xs text-orange md:text-base">Lisandro Martínez</p>
+                      </Link>
                     </TranslateInOut>
                   </div>
                   <div>
@@ -83,7 +86,7 @@ export default function About() {
                             <Icon kind="certificate" />
                           </div>
                           <div>
-                            <h3 className="me-16 text-xl text-white">Certificates</h3>
+                            <h3 className="cursor-scale small me-16 text-xl text-white">Certificates</h3>
                           </div>
                         </div>
                       </TranslateInOut>
@@ -92,7 +95,7 @@ export default function About() {
                       <div className="mt-1 text-lg text-white">
                         <ul>
                           <li>
-                            <Link href="https://www.coderhouse.com/certificados/63a7335bc5708d000e6df156?lang=en" className="flex text-white" aria-label="Development certificate" target="_blank">
+                            <Link href="https://www.coderhouse.com/certificados/63a7335bc5708d000e6df156?lang=en" className="cursor-scale small flex text-white" aria-label="Development certificate" target="_blank">
                               <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
                                 <div className="flex items-center text-orange">
                                   <div>
@@ -106,7 +109,7 @@ export default function About() {
                             </Link>
                           </li>
                           <li>
-                            <Link href="https://www.coderhouse.com/certificados/641b0618e72c2b00027dca87?lang=en" className="flex text-white" aria-label="Javascript certificate" target="_blank">
+                            <Link href="https://www.coderhouse.com/certificados/641b0618e72c2b00027dca87?lang=en" className="cursor-scale small flex text-white" aria-label="Javascript certificate" target="_blank">
                               <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
                                 <div className="flex items-center text-orange">
                                   <div>
@@ -120,7 +123,7 @@ export default function About() {
                             </Link>
                           </li>
                           <li>
-                            <Link href="https://www.coderhouse.com/certificados/645e44ad1f40130002fcd5d5?lang=en" className="flex text-white" aria-label="Reactjs certificate" target="_blank">
+                            <Link href="https://www.coderhouse.com/certificados/645e44ad1f40130002fcd5d5?lang=en" className="cursor-scale small flex text-white" aria-label="Reactjs certificate" target="_blank">
                               <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
                                 <div className="flex items-center text-orange">
                                   <div>
@@ -134,7 +137,7 @@ export default function About() {
                             </Link>
                           </li>
                           <li>
-                            <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d0ce8be7116?lang=en" className="flex text-white" aria-label="Backend certificate" target="_blank">
+                            <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d0ce8be7116?lang=en" className="cursor-scale small flex text-white" aria-label="Backend certificate" target="_blank">
                               <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
                                 <div className="flex items-center text-orange">
                                   <div>
@@ -148,7 +151,7 @@ export default function About() {
                             </Link>
                           </li>
                           <li>
-                            <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="flex text-white" aria-label="Fullstack certificate" target="_blank">
+                            <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="cursor-scale small flex text-white" aria-label="Fullstack certificate" target="_blank">
                               <TranslateInOut overflowHidden delay={0.6} y={100} start="-100% bottom" end="top top" watch>
                                 <div className="flex items-center text-orange">
                                   <div>
