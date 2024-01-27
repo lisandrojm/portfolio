@@ -1,5 +1,5 @@
-/* src/app/_components/_main/_header/Header.tsx */
 'use client';
+/* src/app/_components/_main/_header/Header.tsx */
 
 import XContainer from '@/_components/_containers/XContainer';
 import siteMetadata from '@/_data/siteMetadata';
