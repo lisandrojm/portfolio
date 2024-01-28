@@ -2,7 +2,6 @@
 
 'use client';
 
-import styles from '@/_styles/_components/Hero.module.css';
 import Link from 'next/link';
 import Icon from '@/_components/_icons/Icons';
 import { Button, Props as ButtonProps } from '@/_components/_ui/Button';
@@ -15,21 +14,24 @@ export default function Hero() {
     <section>
       <XContainer>
         <div className="relative flex h-[calc(100svh_-77px)] flex-col items-end justify-center text-end">
-          <div className={`${styles.hoverDate}`}>
+          <div className="group">
             <div className="absolute left-0 top-0 text-start">
-              <Link href={'#abailability'}>
+              <Link href="#abailability">
                 <DateDisplay />
               </Link>
-              <p className={`${styles.hoverText} text-xs text-white`} id="availability">
-                Its a fake availability
-                <br />
-                <Link href={'#contact'} className="cursor-scale small me-2 font-serif font-bold uppercase italic text-orange">
-                  Contact me
-                </Link>
-                to check my actual status
-              </p>
+              <div className="opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100">
+                <p className="hidden text-xs text-white group-hover:inline-block">
+                  Its a fake availability
+                  <br />
+                  <Link href="#contact" className="cursor-scale small me-2 font-serif font-bold uppercase italic text-orange">
+                    Contact me
+                  </Link>
+                  to check my actual status
+                </p>
+              </div>
             </div>
           </div>
+
           <div className="xs--title font-regular pe-2 font-bold uppercase italic">
             <ul className="flex flex-col items-end">
               <TranslateInOut overflowHidden delay={0.4} y={100}>
