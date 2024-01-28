@@ -7,7 +7,8 @@ import Icon from '@/_components/_icons/Icons';
 import { Button, Props as ButtonProps } from '@/_components/_ui/Button';
 import XContainer from '@/_components/_containers/XContainer';
 import TranslateInOut from '@/_components/_gsap/TranslateInOut';
-import ScaleInOut from '@/_components/_gsap/ScaleInOut';
+import DateDisplay from '@/_components/_shared/DateDisplay';
+
 export default function Hero() {
   return (
     <section>
@@ -60,6 +61,7 @@ export default function Hero() {
               </div>
             </TranslateInOut>
           </div>
+          <DateDisplay />
         </div>
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 transform">
           <Link href="#works">

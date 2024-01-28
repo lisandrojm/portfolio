@@ -16,6 +16,7 @@ import { HiAcademicCap } from 'react-icons/hi2';
 import { GiSevenPointedStar } from 'react-icons/gi';
 import { RiLightbulbFlashLine } from 'react-icons/ri';
 import { PiHeartStraightFill, PiCertificateFill } from 'react-icons/pi';
+import { IoMdCalendar } from 'react-icons/io';
 const components = {
   /* Academic */
   academic: HiAcademicCap,
@@ -27,6 +28,8 @@ const components = {
   arrowLeft: LiaLongArrowAltLeftSolid,
   arrowRight: LiaLongArrowAltRightSolid,
   arrowCircleRight: FaArrowAltCircleRight,
+  /* Calendar */
+  calendar: IoMdCalendar,
   /* Certificate */
   certificate: PiCertificateFill,
   /* Contact */
