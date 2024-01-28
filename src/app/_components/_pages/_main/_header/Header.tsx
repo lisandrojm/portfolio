@@ -27,7 +27,7 @@ export default function Header() {
                   <div>
                     <h2 className="m-0 leading-5 text-white">FullStackDev</h2>
                     <h3>
-                      <span className="text-sm text-orange">lisandrojmz</span>
+                      <span className="text-sm text-orange">lisandrojm </span>
                     </h3>
                   </div>
                 </div>
