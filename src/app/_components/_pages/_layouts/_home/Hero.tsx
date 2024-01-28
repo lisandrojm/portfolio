@@ -12,8 +12,7 @@ export default function Hero() {
   return (
     <section>
       <XContainer>
-        <h1 className="text-6xl text-white">Testing</h1>
-        {/*         <div className="flex h-[calc(100svh_-77px)] flex-col items-end justify-center text-end">
+        <div className="flex h-[calc(100svh_-77px)] flex-col items-end justify-center text-end">
           <div className="xs--title font-regular pe-2 font-bold uppercase italic">
             <ul className="flex flex-col items-end">
               <TranslateInOut overflowHidden delay={0.4} y={100}>
@@ -51,15 +50,15 @@ export default function Hero() {
                 </p>
               </div>
             </TranslateInOut>
-            <ScaleInOut delay={0.7} ease="elastic.out">
-              <div className="pb-2 pt-4">
-                <Link href="#contact" className="pb-2 pt-4" aria-label="Form">
-                  <Button size="2xl" font="mono">
-                    Contact Me
-                  </Button>
-                </Link>
-              </div>
-            </ScaleInOut>
+            {/*             <ScaleInOut delay={0.7} ease="elastic.out"> */}
+            <div className="pb-2 pt-4">
+              <Link href="#contact" className="pb-2 pt-4" aria-label="Form">
+                <Button size="2xl" font="mono">
+                  Contact Me
+                </Button>
+              </Link>
+            </div>
+            {/*             </ScaleInOut> */}
           </div>
         </div>
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 transform">
@@ -68,7 +67,7 @@ export default function Hero() {
               <Icon kind="arrowDownChevron" />
             </button>
           </Link>
-        </div> */}
+        </div>
       </XContainer>
     </section>
   );
