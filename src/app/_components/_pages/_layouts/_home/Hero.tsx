@@ -15,27 +15,25 @@ export default function Hero() {
       <XContainer>
         <div className="relative flex h-[calc(100svh_-77px)] flex-col items-end justify-center text-end">
           <div className="group">
-            <div className="absolute left-0 top-0 text-start">
+            <div className="absolute left-0 top-0 flex justify-center text-start md:flex-col">
               <Link href="#abailability">
                 <DateDisplay />
               </Link>
-              <div className="opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100">
-                <div>
-                  <div className="hidden text-xs text-white group-hover:inline-block">
-                    <div className="font-flex flex">
-                      <div className="me-2 text-base">
-                        <Icon kind="sunglassesEmoji" />
-                      </div>
-                      <p>Its a fake availability.</p>
+              <div className="ms-5 pt-6 opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 md:ms-0 md:pt-1">
+                <div className="hidden text-xs text-white group-hover:inline-block">
+                  <div className="font-flex flex">
+                    <div className="me-2 text-base">
+                      <Icon kind="sunglassesEmoji" />
                     </div>
-                    <div className="font-flex mt-1">
-                      <p>
-                        <Link href="#contact" className="cursor-scale small me-2 font-bold uppercase italic text-orange">
-                          Contact me
-                        </Link>
-                        to check my actual status
-                      </p>
-                    </div>
+                    <p>Its a fake availability.</p>
+                  </div>
+                  <div className="font-flex mt-1">
+                    <p>
+                      <Link href="#contact" className="cursor-scale small me-2 font-bold uppercase italic text-orange">
+                        Contact me
+                      </Link>
+                      to check my actual status
+                    </p>
                   </div>
                 </div>
               </div>
