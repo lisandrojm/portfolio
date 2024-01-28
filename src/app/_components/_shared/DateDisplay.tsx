@@ -24,7 +24,7 @@ export default function DateDisplay() {
             <p className="text-start text-xs leading-3 text-white">
               available
               <br />
-              to learn...
+              to work
             </p>
           </TranslateInOut>
         </div>
