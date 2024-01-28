@@ -19,7 +19,7 @@ export default function Hero() {
               <Link href="#abailability">
                 <DateDisplay />
               </Link>
-              <div className="ms-5 pt-6 opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 md:ms-0 md:pt-1">
+              <div className="ms-5 pt-5 opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 md:ms-0 md:pt-1">
                 <div className="hidden text-xs text-white group-hover:inline-block">
                   <div className="font-flex flex">
                     <div className="me-2 text-base">
