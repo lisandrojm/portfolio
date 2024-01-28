@@ -11,17 +11,19 @@ export default function DateDisplay() {
 
   return (
     <div className="flex items-start pb-5 pt-3 italic text-orange">
-      <div className="mt-1 text-xl">
+      <div className="mt-2 text-xl">
         <Icon kind="calendar" />
       </div>
-      <div className="me-3 font-serif text-7xl text-white">{currDay}</div>
-      <div className="flex flex-col items-start">
-        <h6 className="text-xl font-bold text-orange">{currMonth}</h6>
-        <p className="text-start text-xs text-white">
-          available
-          <br />
-          to learn...
-        </p>
+      <div className="flex items-center">
+        <div className="me-3 mt-1 font-serif text-6xl text-white">{currDay}</div>
+        <div className="flex flex-col items-start">
+          <h6 className="text-xl font-bold leading-5 text-orange">{currMonth}</h6>
+          <p className="text-start text-xs leading-3 text-white">
+            available
+            <br />
+            to learn...
+          </p>
+        </div>
       </div>
     </div>
   );
