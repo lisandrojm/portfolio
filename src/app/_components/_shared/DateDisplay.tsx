@@ -11,7 +11,7 @@ export default function DateDisplay() {
   const currYear = new Date().getFullYear();
 
   return (
-    <div className="flex items-start pb-5 pt-3 italic text-orange">
+    <div className="cursor-scale small flex items-start pt-3 italic text-orange">
       <div className="flex items-center">
         <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
           <div className="me-3 mt-1 font-serif text-6xl font-light text-white">{currDay}</div>
@@ -24,7 +24,7 @@ export default function DateDisplay() {
             <p className="text-start text-xs leading-3 text-white">
               available
               <br />
-              to work
+              for work
             </p>
           </TranslateInOut>
         </div>
