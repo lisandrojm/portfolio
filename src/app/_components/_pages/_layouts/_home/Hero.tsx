@@ -20,14 +20,24 @@ export default function Hero() {
                 <DateDisplay />
               </Link>
               <div className="opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100">
-                <p className="hidden text-xs text-white group-hover:inline-block">
-                  Its a fake availability
-                  <br />
-                  <Link href="#contact" className="cursor-scale small me-2 font-serif font-bold uppercase italic text-orange">
-                    Contact me
-                  </Link>
-                  to check my actual status
-                </p>
+                <div>
+                  <div className="hidden text-xs text-white group-hover:inline-block">
+                    <div className="font-flex flex">
+                      <div className="me-2 text-base">
+                        <Icon kind="sunglassesEmoji" />
+                      </div>
+                      <p>Its a fake availability.</p>
+                    </div>
+                    <div className="font-flex mt-1">
+                      <p>
+                        <Link href="#contact" className="cursor-scale small me-2 font-bold uppercase italic text-orange">
+                          Contact me
+                        </Link>
+                        to check my actual status
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

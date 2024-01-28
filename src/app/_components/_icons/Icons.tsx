@@ -17,6 +17,7 @@ import { GiSevenPointedStar } from 'react-icons/gi';
 import { RiLightbulbFlashLine } from 'react-icons/ri';
 import { PiHeartStraightFill, PiCertificateFill } from 'react-icons/pi';
 import { IoMdCalendar } from 'react-icons/io';
+import { BsEmojiSunglasses } from 'react-icons/bs';
 const components = {
   /* Academic */
   academic: HiAcademicCap,
@@ -67,6 +68,8 @@ const components = {
   aftereffects: SiAdobeaftereffects,
   /* Dna */
   dna: LiaDnaSolid,
+  /* Emoji */
+  sunglassesEmoji: BsEmojiSunglasses,
   /* Heart */
   heart: PiHeartStraightFill,
   /* Light */
