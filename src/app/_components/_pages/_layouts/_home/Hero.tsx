@@ -50,15 +50,15 @@ export default function Hero() {
                 </p>
               </div>
             </TranslateInOut>
-            {/*             <ScaleInOut delay={0.7} ease="elastic.out"> */}
-            <div className="pb-2 pt-4">
-              <Link href="#contact" className="pb-2 pt-4" aria-label="Form">
-                <Button size="2xl" font="mono">
-                  Contact Me
-                </Button>
-              </Link>
-            </div>
-            {/*             </ScaleInOut> */}
+            <TranslateInOut overflowHidden delay={0.7} y={100}>
+              <div className="pb-2 pt-4">
+                <Link href="#contact" className="pb-2 pt-4" aria-label="Form">
+                  <Button size="2xl" font="mono">
+                    Contact Me
+                  </Button>
+                </Link>
+              </div>
+            </TranslateInOut>
           </div>
         </div>
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 transform">
