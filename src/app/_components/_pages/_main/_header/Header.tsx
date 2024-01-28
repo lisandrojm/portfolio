@@ -17,7 +17,7 @@ interface NavLink {
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-30 w-full bg-black">
+    <header className="fixed top-0 z-30 w-full bg-black">
       <XContainer>
         <nav className="flex items-center justify-between border-b border-white px-3 pb-2 pt-6">
           <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
@@ -25,7 +25,7 @@ export default function Header() {
               <div className="flex items-center justify-between">
                 <div className="cursor-scale small flex items-center justify-center font-bold">
                   <div>
-                    <h2 className="m-0 leading-5 text-white">FullStackDev</h2>
+                    <h2 className="m-0 leading-5 text-white">FullStackDevX</h2>
                     <h3>
                       <span className="text-sm text-orange">lisandrojm </span>
                     </h3>
