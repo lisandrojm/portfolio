@@ -1,6 +1,7 @@
 /* src/app/_components/_shared/DateDisplay.tsx */
 
 import Icon from '@/_components/_icons/Icons';
+import TranslateInOut from '@/_components/_gsap/TranslateInOut';
 
 export default function DateDisplay() {
   const currDay = new Date().getDate();
@@ -11,18 +12,26 @@ export default function DateDisplay() {
 
   return (
     <div className="flex items-start pb-5 pt-3 italic text-orange">
-      <div className="mt-2 text-xl">
-        <Icon kind="calendar" />
-      </div>
+      <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
+        <div className="mt-2 text-lg">
+          <Icon kind="calendar" />
+        </div>
+      </TranslateInOut>
       <div className="flex items-center">
-        <div className="me-3 mt-1 font-serif text-6xl text-white">{currDay}</div>
+        <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
+          <div className="me-3 mt-1 font-serif text-6xl text-white">{currDay}</div>
+        </TranslateInOut>
         <div className="flex flex-col items-start">
-          <h6 className="text-xl font-bold leading-5 text-orange">{currMonth}</h6>
-          <p className="text-start text-xs leading-3 text-white">
-            available
-            <br />
-            to learn...
-          </p>
+          <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
+            <h6 className="text-xl font-bold leading-5 text-orange">{currMonth}</h6>
+          </TranslateInOut>
+          <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
+            <p className="text-start text-xs leading-3 text-white">
+              available
+              <br />
+              to learn...
+            </p>
+          </TranslateInOut>
         </div>
       </div>
     </div>
