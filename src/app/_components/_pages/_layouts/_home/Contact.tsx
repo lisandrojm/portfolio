@@ -57,12 +57,12 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="mt-6 flex items-center justify-between">
-                  <ScaleInOut delay={0.6} ease="elastic.out" watch>
+                  <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
                     <div className="text-start">
                       <Button type="submit">Send</Button>
                     </div>
-                  </ScaleInOut>
-                  <TranslateInOut overflowHidden delay={0.6} y={100} start="-100% bottom" end="top top" watch>
+                  </TranslateInOut>
+                  <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
                     <Link href="mailto:lisandrojm@gmail.com">
                       <p className="text-serif cursor-scale small flex items-center text-sm italic text-white">
                         I

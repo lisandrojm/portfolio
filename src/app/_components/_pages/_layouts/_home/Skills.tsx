@@ -10,7 +10,6 @@ import XContainer from '@/_components/_containers/XContainer';
 import YMContainer from '@/_components/_containers/YMContainer';
 import YPContainer from '@/_components/_containers/YPContainer';
 import TranslateInOut from '@/_components/_gsap/TranslateInOut';
-import ScaleInOut from '@/_components/_gsap/ScaleInOut';
 
 export default function Skills() {
   return (
@@ -45,36 +44,36 @@ export default function Skills() {
                     </div>
                   </TranslateInOut>
                   <div className="flex flex-wrap gap-3 text-3xl md:text-4xl">
-                    <ScaleInOut delay={0.1} ease="elastic.out" watch>
+                    <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="html" ariaLabel="Html Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.2} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="css" ariaLabel="Css Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.3} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="js" ariaLabel="JavaScript Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.4} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="ts" ariaLabel="TypeScript Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.5} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.6} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="ts" ariaLabel="TypeScript Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.6} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.7} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.7} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.8} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.8} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.9} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="bootstrap" ariaLabel="Bootstrap Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.9} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={1} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={1} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={1.1} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="docker" ariaLabel="Docker Icon" />
-                    </ScaleInOut>
+                    </TranslateInOut>
                   </div>
                 </div>
                 <div>
@@ -84,18 +83,18 @@ export default function Skills() {
                     </div>
                   </TranslateInOut>
                   <div className="flex flex-wrap gap-3 text-3xl text-orange md:text-4xl">
-                    <ScaleInOut delay={0.1} ease="elastic.out" watch>
+                    <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="nodejs" ariaLabel="Nodejs Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.2} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="express" ariaLabel="Express Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.3} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="nestjs" ariaLabel="Nestjs Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.4} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="mongodb" ariaLabel="Mongodb Icon" />
-                    </ScaleInOut>
+                    </TranslateInOut>
                   </div>
                 </div>
                 <div>
@@ -105,27 +104,27 @@ export default function Skills() {
                     </div>
                   </TranslateInOut>
                   <div className="flex flex-wrap gap-3 text-3xl text-orange md:text-4xl">
-                    <ScaleInOut delay={0.1} ease="elastic.out" watch>
+                    <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="apple" ariaLabel="Apple Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.2} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="linux" ariaLabel="Linux Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.3} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="windows" ariaLabel="Windows Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.4} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="vscode" ariaLabel="Visual Studio Code Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.5} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="neovim" ariaLabel="Neovim Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.6} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.6} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="git" ariaLabel="Git Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.7} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.7} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="github" ariaLabel="GitHub Icon" />
-                    </ScaleInOut>
+                    </TranslateInOut>
                   </div>
                 </div>
                 <div>
@@ -135,12 +134,12 @@ export default function Skills() {
                     </div>
                   </TranslateInOut>
                   <div className="flex flex-wrap gap-3 text-3xl text-orange md:text-4xl">
-                    <ScaleInOut delay={0.1} ease="elastic.out" watch>
+                    <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.2} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="railway" ariaLabel="Railway Icon" />
-                    </ScaleInOut>
+                    </TranslateInOut>
                   </div>
                 </div>
                 <div>
@@ -150,21 +149,21 @@ export default function Skills() {
                     </div>
                   </TranslateInOut>
                   <div className="flex flex-wrap gap-3 text-3xl text-orange md:text-4xl">
-                    <ScaleInOut delay={0.1} ease="elastic.out" watch>
+                    <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="figma" ariaLabel="Figma Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.2} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="illustrator" ariaLabel="Iullustrator Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.3} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="photoshop" ariaLabel="Photoshop Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.3} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="aftereffects" ariaLabel="After Effects Icon" />
-                    </ScaleInOut>
-                    <ScaleInOut delay={0.4} ease="elastic.out" watch>
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="premiere" ariaLabel="Premier Pro Icon" />
-                    </ScaleInOut>
+                    </TranslateInOut>
                   </div>
                 </div>
               </div>
