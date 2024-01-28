@@ -12,11 +12,6 @@ export default function DateDisplay() {
 
   return (
     <div className="flex items-start pb-5 pt-3 italic text-orange">
-      <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
-        <div className="mt-2 text-lg">
-          <Icon kind="calendar" />
-        </div>
-      </TranslateInOut>
       <div className="flex items-center">
         <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
           <div className="me-3 mt-1 font-serif text-6xl text-white">{currDay}</div>
