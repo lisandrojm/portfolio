@@ -71,6 +71,7 @@ const iconLinks: IconLinks = {
   works: '',
   about: '',
   contact: '',
+  calendar: '',
 };
 
 // Assign URLs to individual icon links
@@ -103,7 +104,7 @@ iconLinks.aftereffects = 'https://www.adobe.com/products/aftereffects.html';
 iconLinks.premiere = 'https://www.adobe.com/products/premiere.html';
 
 const LinkIcons: FC<LinkIconProps> = ({ kind, ariaLabel }) => {
-  const href = iconLinks[kind] || '#'; // Default to '#' if the kind is not found
+  const href = iconLinks[kind] || '#';
   return (
     <Link href={href} passHref rel="noopener noreferrer" target="_blank" className="cursor-scale small text-orange">
       <Icon kind={kind} />
