@@ -10,7 +10,7 @@ import Contact from '@/_components/_pages/_layouts/_home/Contact';
 export default function RootHome() {
   return (
     <LayoutWrapper>
-      <Hero />
+      {/*       <Hero /> */}
       <Works />
       <Skills />
       <About />
