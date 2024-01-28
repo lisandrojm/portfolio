@@ -14,17 +14,17 @@ export default function DateDisplay() {
     <div className="flex items-start pb-5 pt-3 italic text-orange">
       <div className="flex items-center">
         <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
-          <div className="me-3 mt-1 font-serif text-6xl text-white">{currDay}</div>
+          <div className="me-3 mt-1 font-serif text-6xl font-light text-white">{currDay}</div>
         </TranslateInOut>
         <div className="flex flex-col items-start">
           <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
-            <h6 className="text-xl font-bold leading-5 text-orange">{currMonth}</h6>
+            <h6 className="text-base font-bold leading-5 text-orange">{currMonth}</h6>
           </TranslateInOut>
           <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
             <p className="text-start text-xs leading-3 text-white">
               available
               <br />
-              to learn...
+              to work
             </p>
           </TranslateInOut>
         </div>
