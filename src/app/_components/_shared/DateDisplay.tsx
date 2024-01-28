@@ -18,13 +18,13 @@ export default function DateDisplay() {
         </TranslateInOut>
         <div className="flex flex-col items-start">
           <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
-            <h6 className="text-base font-bold leading-5 text-orange">{currMonth}</h6>
+            <h6 className="text-xl font-bold leading-5 text-orange">{currMonth}</h6>
           </TranslateInOut>
           <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
             <p className="text-start text-xs leading-3 text-white">
               available
               <br />
-              to work
+              to learn...
             </p>
           </TranslateInOut>
         </div>
