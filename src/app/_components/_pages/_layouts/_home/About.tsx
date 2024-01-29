@@ -42,14 +42,14 @@ export default function About() {
                     <div className="relative flex items-center justify-center overflow-hidden rounded-full">
                       <div className="absolute inset-0 z-10 rounded-full bg-orange mix-blend-multiply"></div>
                       <div className="z-1 relative">
-                        <Image src={'/_static/_img/profile.webp'} width={110} height={110} alt="Avatar" priority className="rounded-full" />
+                        <Image src={'/_static/_img/profile.webp'} width={90} height={90} alt="Avatar" priority className="h-30 w-30 rounded-full xl:h-40 xl:w-40" />
                       </div>
-                      <div className="absolute mb-6 flex items-center text-sm text-white">
-                        <p className="text-lg">{'<'}</p>
-                        <div className="ps-1">
+                      <div className="absolute mb-6 flex items-center text-sm text-white xl:mb-8">
+                        <p className="text-xs xl:text-2xl">{'<'}</p>
+                        <div className="ps-1 text-xs xl:text-xl">
                           <Icon kind="skills" />
                         </div>
-                        <p className="text-lg">{'>'}</p>
+                        <p className="text-xs xl:text-2xl">{'>'}</p>
                       </div>
                     </div>
                   </RotateInOut>
