@@ -65,13 +65,12 @@ export default function About() {
                       <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
                         <p>National and international customers rely on me for implementation of their digital products.</p>
                       </TranslateInOut>
+                      <br />
                       <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
                         <p>
                           As an independent, I work also with web agencies, companies, startups and individuals <br />
+                          to create a blueprint for the digital business.
                         </p>
-                      </TranslateInOut>
-                      <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
-                        <p>to create a blueprint for the digital business.</p>
                       </TranslateInOut>
                     </div>
                   </div>
