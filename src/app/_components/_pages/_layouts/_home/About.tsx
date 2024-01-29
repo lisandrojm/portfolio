@@ -13,6 +13,7 @@ import { Accordion, AccordionHeader, AccordionBody } from '@material-tailwind/re
 import { useState } from 'react';
 import RotateInOut from '@/_components/_gsap/RotateInOut';
 import TranslateInOut from '@/_components/_gsap/TranslateInOut';
+import ScaleInOut from '@/_components/_gsap/ScaleInOut';
 
 interface ProyectProps {}
 
@@ -35,7 +36,7 @@ export default function About() {
         <XContainer>
           <YPContainer>
             <div className="flex items-center justify-center pb-10 font-serif italic  md:pb-20 ">
-              <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
+              <ScaleInOut delay={0.6} ease="elastic.out" watch>
                 <Link href={'#about'} className="cursor-scale small">
                   <RotateInOut fade={false} durationIn={0.6} rotateTo={360} start="botom bottom" end="top top" watch scrub>
                     <div className="relative flex items-center justify-center overflow-hidden rounded-full">
@@ -53,7 +54,7 @@ export default function About() {
                     </div>
                   </RotateInOut>
                 </Link>
-              </TranslateInOut>
+              </ScaleInOut>
             </div>
             <div className="bg-black_a font-serif italic">
               {/* About*/}
