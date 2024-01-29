@@ -2,6 +2,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import siteMetadata from '@/_data/siteMetadata';
 import StickyHeader from '@/_components/_shared/StickyHeader';
 import Icon from '@/_components/_icons/Icons';
@@ -10,6 +11,7 @@ import YMContainer from '@/_components/_containers/YMContainer';
 import YPContainer from '@/_components/_containers/YPContainer';
 import { Accordion, AccordionHeader, AccordionBody } from '@material-tailwind/react';
 import { useState } from 'react';
+import RotateInOut from '@/_components/_gsap/RotateInOut';
 import TranslateInOut from '@/_components/_gsap/TranslateInOut';
 
 interface ProyectProps {}
@@ -29,16 +31,29 @@ export default function About() {
   return (
     <YMContainer>
       <section id="about" className="bg-black_a">
-        <StickyHeader customTextLeft="about" customIcon="about" />
+        <StickyHeader customTextLeft="about me" customIcon="about" />
         <XContainer>
           <YPContainer>
             <div className="flex items-center justify-center pb-10 font-serif italic  md:pb-20 ">
               <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
-                <Link href={'#about'} className="cursor-scale small flex items-center text-center text-2xl md:text-3xl ">
-                  <span className="me-2 text-3xl text-white">
-                    <Icon kind="dna" />
-                  </span>
-                  <h2 className="text-orange">Me ...</h2>
+                <Link href={'#about'} className="cursor-scale small">
+                  <RotateInOut fade={false} durationIn={0.6} rotateTo={360} start="botom bottom" end="top top" watch scrub>
+                    <div className="relative flex items-center justify-center overflow-hidden rounded-full">
+                      {/* Contenedor de color con mezcla multiply */}
+                      <div className="absolute inset-0 z-10 rounded-full bg-orange mix-blend-multiply"></div>
+                      <div className="z-1 relative">
+                        <Image src={'/_static/_img/profile.webp'} width={110} height={110} alt="Avatar" priority className="rounded-full" />
+                      </div>
+                      <div className="absolute mb-6 flex items-center text-sm text-white">
+                        <p className="text-xl">{'<'}</p>
+                        <div className="ps-1">
+                          <Icon kind="skills" />
+                        </div>
+                        <p className="text-xl">{'>'}</p>
+                      </div>
+                    </div>
+                  </RotateInOut>
+                  {/*                   <h2 className="text-orange">Me ...</h2> */}
                 </Link>
               </TranslateInOut>
             </div>

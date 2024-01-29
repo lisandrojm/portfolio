@@ -12,7 +12,6 @@ import useIsomorphicLayoutEffect from '@/_hooks/useIsomorphicLayoutEffect';
 import Modal from '@/_components/_modal/Modal';
 import Icon from '@/_components/_icons/Icons';
 import TranslateInOut from '@/_components/_gsap/TranslateInOut';
-import ScaleInOut from '@/_components/_gsap/ScaleInOut';
 
 interface DemoModalProps {
   title: string;
