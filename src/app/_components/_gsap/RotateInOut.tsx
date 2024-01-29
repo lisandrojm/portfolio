@@ -46,7 +46,7 @@ const RotateInOut: React.FC<RotateInOutProps> = ({ children, overflowHidden, fad
         to={{
           ease,
           opacity: 1,
-          rotate: rotateTo,
+          rotate: -rotateTo, // Invertir la rotación final
           x: xTo,
           y: yTo,
         }}
