@@ -39,7 +39,6 @@ export default function About() {
                 <Link href={'#about'} className="cursor-scale small">
                   <RotateInOut fade={false} durationIn={0.6} rotateTo={360} start="botom bottom" end="top top" watch scrub>
                     <div className="relative flex items-center justify-center overflow-hidden rounded-full">
-                      {/* Contenedor de color con mezcla multiply */}
                       <div className="absolute inset-0 z-10 rounded-full bg-orange mix-blend-multiply"></div>
                       <div className="z-1 relative">
                         <Image src={'/_static/_img/profile.webp'} width={110} height={110} alt="Avatar" priority className="rounded-full" />
@@ -53,7 +52,6 @@ export default function About() {
                       </div>
                     </div>
                   </RotateInOut>
-                  {/*                   <h2 className="text-orange">Me ...</h2> */}
                 </Link>
               </TranslateInOut>
             </div>
