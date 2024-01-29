@@ -36,7 +36,7 @@ export default function About() {
         <XContainer>
           <YPContainer>
             <div className="flex items-center justify-center pb-10 font-serif italic  md:pb-20 ">
-              <ScaleInOut delay={0.6} ease="elastic.out" watch>
+              <ScaleInOut delay={0.3} ease="elastic.out" watch>
                 <Link href={'#about'} className="cursor-scale small">
                   <RotateInOut fade={false} durationIn={0.6} rotateTo={360} start="botom bottom" end="top top" watch scrub>
                     <div className="relative flex items-center justify-center overflow-hidden rounded-full">
@@ -45,11 +45,11 @@ export default function About() {
                         <Image src={'/_static/_img/profile.webp'} width={110} height={110} alt="Avatar" priority className="rounded-full" />
                       </div>
                       <div className="absolute mb-6 flex items-center text-sm text-white">
-                        <p className="text-xl">{'<'}</p>
+                        <p className="text-lg">{'<'}</p>
                         <div className="ps-1">
                           <Icon kind="skills" />
                         </div>
-                        <p className="text-xl">{'>'}</p>
+                        <p className="text-lg">{'>'}</p>
                       </div>
                     </div>
                   </RotateInOut>
