@@ -25,7 +25,7 @@ export default function Header() {
               <div className="flex items-center justify-between">
                 <div className="cursor-scale small flex items-center justify-center font-bold">
                   <div>
-                    <h2 className="m-0 leading-5 text-white">FullStackDev</h2>
+                    <h2 className="m-0 leading-5 text-white">FrontEndDev</h2>
                     <h3>
                       <span className="text-sm text-orange">lisandrojm </span>
                     </h3>

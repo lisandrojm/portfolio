@@ -29,9 +29,6 @@ export default function Skills() {
                       My knowledge <br />
                     </h2>
                   </div>
-                  <div className="text-center">
-                    <p className="text-sm text-orange">(I&lsquo;m still learning...)</p>
-                  </div>
                 </TranslateInOut>
               </Link>
             </div>
@@ -56,9 +53,6 @@ export default function Skills() {
                     <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="ts" ariaLabel="TypeScript Icon" />
                     </TranslateInOut>
-                    <TranslateInOut overflowHidden delay={0.6} y={100} start="-100% bottom" end="top top" watch>
-                      <LinkIcon kind="ts" ariaLabel="TypeScript Icon" />
-                    </TranslateInOut>
                     <TranslateInOut overflowHidden delay={0.7} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
                     </TranslateInOut>
@@ -79,7 +73,9 @@ export default function Skills() {
                 <div>
                   <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
                     <div className="mb-2">
-                      <h2>Backend</h2>
+                      <h2>
+                        Backend <span className="text-xs lowercase text-orange">**</span>
+                      </h2>
                     </div>
                   </TranslateInOut>
                   <div className="flex flex-wrap gap-3 text-3xl text-orange md:text-4xl">
@@ -166,6 +162,11 @@ export default function Skills() {
                     </TranslateInOut>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div className="mt-8 flex justify-center">
+              <div className="md:w-1/2">
+                <p className="font-serif text-sm italic text-orange">** In learning process...</p>
               </div>
             </div>
           </YPContainer>

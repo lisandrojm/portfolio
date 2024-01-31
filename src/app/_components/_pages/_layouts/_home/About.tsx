@@ -31,13 +31,13 @@ export default function About() {
   const handleOpen = (value: number) => setOpen((prevOpen) => (prevOpen === value ? 0 : value));
   return (
     <YMContainer>
-      <section id="about" className="bg-black_a">
+      <section id="about me" className="bg-black_a">
         <StickyHeader customTextLeft="about me" customIcon="about" />
         <XContainer>
           <YPContainer>
             <div className="flex items-center justify-center pb-10 font-serif italic  md:pb-20 ">
               <ScaleInOut delay={0.3} ease="elastic.out" watch>
-                <Link href={'#about'} className="cursor-scale small">
+                <Link href={'#contact'} className="cursor-scale small">
                   <RotateInOut fade={false} durationIn={0.6} rotateTo={360} start="botom bottom" end="top top" watch scrub>
                     <div className="relative flex items-center justify-center overflow-hidden rounded-full">
                       <div className="absolute inset-0 z-10 rounded-full bg-orange mix-blend-multiply"></div>
