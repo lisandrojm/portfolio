@@ -72,10 +72,13 @@ export default function Skills() {
                 </div>
                 <div>
                   <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
-                    <div className="mb-2">
-                      <h2>
-                        Backend <span className="text-xs lowercase text-orange">**</span>
-                      </h2>
+                    <div className="mb-2 flex items-center">
+                      <div>
+                        <h2 className="flex items-center">Backend</h2>
+                      </div>
+                      <div className="ms-2">
+                        <p className="font-serif text-xs lowercase italic text-orange">*</p>
+                      </div>
                     </div>
                   </TranslateInOut>
                   <div className="flex flex-wrap gap-3 text-3xl text-orange md:text-4xl">
@@ -93,7 +96,7 @@ export default function Skills() {
                     </TranslateInOut>
                   </div>
                   <div className="mt-8">
-                    <p className="font-serif text-xs normal-case italic text-orange">** In learning process</p>
+                    <p className="font-serif text-xs normal-case italic text-orange">* In learning process...</p>
                   </div>
                 </div>
                 <div>
