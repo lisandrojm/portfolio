@@ -54,13 +54,13 @@ const Contact = () => {
     title: 'Success!',
     text: 'Email sent successfully!',
     customClass: {
-      popup: 'bg-black_a text-white border-solid border-2 border-white',
+      popup: 'bg-black text-white border-solid border-2 border-white',
       title: 'text-orange',
       content: 'text-white',
-      confirmButton: 'bg-black text-orange font-bold px-3 py-1 border-solid border-2 border-orange',
-      icon: 'bg-black_a text-white', // Add this line to set the icon color
+      confirmButton: 'bg-black text-orange font-bold px-3 py-1 border-solid border-2 border-orange hover:bg-black_a',
+      icon: 'bg-black_a text-white',
     },
-    buttonsStyling: false, // Set to false to use custom styles
+    buttonsStyling: false,
   };
   const errorAlertOptions: SweetAlertOptions & {
     customClass: {
@@ -68,19 +68,20 @@ const Contact = () => {
       title: string;
       content: string;
       confirmButton: string;
-      icon: string; // Add the icon property to set its color
+      icon: string;
     };
   } = {
     icon: 'error',
     title: 'Error!',
     text: 'Failed to send email. Please try again later.',
     customClass: {
-      popup: 'bg-black_a text-white border-solid border-2 border-white',
+      popup: 'bg-black text-white border-solid border-2 border-white',
       title: 'text-red',
       content: 'text-white',
-      confirmButton: 'bg-orange text-black font-bold px-3 py-1 border-solid border-2 border-orange',
-      icon: 'bg-black_a text-white', // Add this line to set the icon color
+      confirmButton: 'bg-black text-orange font-bold px-3 py-1 border-solid border-2 border-orange hover:bg-black_a',
+      icon: 'bg-black_a text-white',
     },
+    buttonsStyling: false,
   };
 
   const handleSuccess = () => {
@@ -115,19 +116,19 @@ const Contact = () => {
               </TranslateInOut>
               <form id="contactForm" action="#" method="POST" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 gap-y-4">
-                  <div className="bg-black_a sm:col-span-3">
+                  <div className="cursor-scale small bg-black_a sm:col-span-3">
                     <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
                       <FloatingLabelInput id="name" label="Name" type="text" name="from_name" autoComplete="name" onChange={handleChange} />
                     </TranslateInOut>
                   </div>
-                  <div className="bg-black_a sm:col-span-2">
+                  <div className="cursor-scale small bg-black_a sm:col-span-2">
                     <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
                       <FloatingLabelInput id="email" label="Email" type="email" name="from_email" autoComplete="email" required onChange={handleChange} />
                     </TranslateInOut>
                   </div>
-                  <div className="bg-black_a sm:col-span-2">
+                  <div className="cursor-scale small bg-black_a sm:col-span-2">
                     <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
-                      <FloatingLabelTextarea id="message" label="Message" name="message" autoComplete="message" rows={4} defaultValue={''} onChange={handleChange} />
+                      <FloatingLabelTextarea id="message" label="Message" name="message" autoComplete="message" rows={4} defaultValue={''} onChange={handleChange} required />
                     </TranslateInOut>
                   </div>
                 </div>
