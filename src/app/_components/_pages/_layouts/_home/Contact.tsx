@@ -10,7 +10,7 @@ import StickyHeader from '@/_components/_shared/StickyHeader';
 import XContainer from '@/_components/_containers/XContainer';
 import YMContainer from '@/_components/_containers/YMContainer';
 import TranslateInOut from '@/_components/_gsap/TranslateInOut';
-import Swal from 'sweetalert2';
+import Swal, { SweetAlertOptions } from 'sweetalert2';
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -40,21 +40,56 @@ const Contact = () => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
+  const successAlertOptions: SweetAlertOptions & {
+    customClass: {
+      popup: string;
+      title: string;
+      content: string;
+      confirmButton: string;
+      icon: string; // Add the icon property to set its color
+    };
+    buttonsStyling: boolean;
+  } = {
+    icon: 'success',
+    title: 'Success!',
+    text: 'Email sent successfully!',
+    customClass: {
+      popup: 'bg-black_a text-white border-solid border-2 border-white',
+      title: 'text-orange',
+      content: 'text-white',
+      confirmButton: 'bg-black text-orange font-bold px-3 py-1 border-solid border-2 border-orange',
+      icon: 'bg-black_a text-white', // Add this line to set the icon color
+    },
+    buttonsStyling: false, // Set to false to use custom styles
+  };
+  const errorAlertOptions: SweetAlertOptions & {
+    customClass: {
+      popup: string;
+      title: string;
+      content: string;
+      confirmButton: string;
+      icon: string; // Add the icon property to set its color
+    };
+  } = {
+    icon: 'error',
+    title: 'Error!',
+    text: 'Failed to send email. Please try again later.',
+    customClass: {
+      popup: 'bg-black_a text-white border-solid border-2 border-white',
+      title: 'text-red',
+      content: 'text-white',
+      confirmButton: 'bg-orange text-black font-bold px-3 py-1 border-solid border-2 border-orange',
+      icon: 'bg-black_a text-white', // Add this line to set the icon color
+    },
+  };
+
   const handleSuccess = () => {
-    Swal.fire({
-      icon: 'success',
-      title: 'Success!',
-      text: 'Email sent successfully!',
-    });
+    Swal.fire(successAlertOptions);
     setSuccessMessage('Email sent successfully!');
   };
 
   const handleError = () => {
-    Swal.fire({
-      icon: 'error',
-      title: 'Error!',
-      text: 'Failed to send email. Please try again later.',
-    });
+    Swal.fire(errorAlertOptions);
     setErrorMessage('Failed to send email. Please try again later.');
   };
 
