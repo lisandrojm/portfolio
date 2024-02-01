@@ -4,6 +4,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Icon from '@/_components/_icons/Icons';
+import NavbarMobile from '@/_components/_pages/_main/_header/NavbarMobile';
 
 const ScrollUp: React.FC = () => {
   const [showButton, setShowButton] = useState<boolean>(false);
