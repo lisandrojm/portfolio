@@ -94,12 +94,12 @@ export default function About() {
                   <Accordion open={open === 1} icon={<AccordionIcon id={1} open={open} />} placeholder={''}>
                     <AccordionHeader className="border-0 py-0" onClick={() => handleOpen(1)} placeholder={''}>
                       <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
-                        <div className="flex items-center">
+                        <div className="cursor-scale small flex items-center">
                           <div className="me-2 text-2xl text-orange">
                             <Icon kind="certificate" />
                           </div>
                           <div>
-                            <h3 className="cursor-scale small me-16 text-xl text-white">Certificates</h3>
+                            <h3 className="me-16 text-xl text-white">Certificates</h3>
                           </div>
                         </div>
                       </TranslateInOut>

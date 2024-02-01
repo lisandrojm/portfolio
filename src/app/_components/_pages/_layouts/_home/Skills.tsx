@@ -92,6 +92,9 @@ export default function Skills() {
                       <LinkIcon kind="mongodb" ariaLabel="Mongodb Icon" />
                     </TranslateInOut>
                   </div>
+                  <div className="mt-8">
+                    <p className="font-serif text-xs normal-case italic text-orange">** In learning process</p>
+                  </div>
                 </div>
                 <div>
                   <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
@@ -162,11 +165,6 @@ export default function Skills() {
                     </TranslateInOut>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="mt-8 flex justify-center">
-              <div className="md:w-1/2">
-                <p className="font-serif text-sm italic text-orange">** In learning process...</p>
               </div>
             </div>
           </YPContainer>
