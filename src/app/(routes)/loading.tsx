@@ -1,30 +1,6 @@
 /* src/app/(routes)/loading.tsx */
 
-'use client';
-
-import React, { useEffect, useState } from 'react';
-
-interface RootLoadingProps {
-  onLoadingComplete: () => void;
-}
-
-const RootLoading: React.FC<RootLoadingProps> = ({ onLoadingComplete }) => {
-  useEffect(() => {
-    const loadStart = window.performance.timing.responseStart;
-    const loadEnd = window.performance.timing.loadEventEnd;
-
-    const loadTime = loadEnd - loadStart;
-
-    const timeout = setTimeout(
-      () => {
-        onLoadingComplete();
-      },
-      Math.max(3000, loadTime)
-    );
-
-    return () => clearTimeout(timeout);
-  }, [onLoadingComplete]);
-
+export default function RootLoading() {
   return (
     <div className="flex h-svh flex-col items-center justify-center">
       <h1>
@@ -33,6 +9,4 @@ const RootLoading: React.FC<RootLoadingProps> = ({ onLoadingComplete }) => {
       </h1>
     </div>
   );
-};
-
-export default RootLoading;
+}
