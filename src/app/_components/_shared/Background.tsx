@@ -17,6 +17,11 @@ export default function Background() {
             <Icon kind="tailwind" />
           </div>
         </li>
+        <li className={`${styles.drift} ${styles.drift6} ${styles.delay2} ${styles.floating_li}`}>
+          <div className={`${styles.float} ${styles.float2} text-2xl text-orange opacity-25`}>
+            <Icon kind="materialui" />
+          </div>
+        </li>
         <li className={`${styles.drift} ${styles.drift3} ${styles.floating_li}`}>
           <div className={`${styles.float} ${styles.float3} text-4xl text-orange opacity-25`}>
             <Icon kind="html" />

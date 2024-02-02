@@ -73,6 +73,7 @@ const iconLinks: IconLinks = {
   contact: '',
   calendar: '',
   sunglassesEmoji: '',
+  materialui: '',
 };
 
 // Assign URLs to individual icon links
