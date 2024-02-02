@@ -95,9 +95,11 @@ export default function Skills() {
                       <LinkIcon kind="mongodb" ariaLabel="Mongodb Icon" />
                     </TranslateInOut>
                   </div>
-                  <div className="mt-8">
-                    <p className="font-serif text-xs normal-case italic text-orange">* In learning process...</p>
-                  </div>
+                  <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
+                    <div className="mt-8">
+                      <p className="font-serif text-xs normal-case italic text-orange">* In learning process...</p>
+                    </div>
+                  </TranslateInOut>
                 </div>
                 <div>
                   <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>

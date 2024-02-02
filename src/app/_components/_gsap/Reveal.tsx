@@ -110,7 +110,7 @@ const Reveal: React.FC<RevealProps> = ({ children, overflowHidden, fade = true, 
       delayOut={delayOut}
       from={{
         opacity: fade ? 0 : 1,
-        transform: `translate(${x}px, ${y}px)`, // Agregar la propiedad de translación
+        transform: `translate(${x}px, ${y}px)`,
       }}
       to={{
         ease,
