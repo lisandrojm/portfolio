@@ -105,6 +105,8 @@ iconLinks.illustrator = 'https://www.adobe.com/products/illustrator.html';
 iconLinks.photoshop = 'https://www.adobe.com/products/photoshop.html';
 iconLinks.aftereffects = 'https://www.adobe.com/products/aftereffects.html';
 iconLinks.premiere = 'https://www.adobe.com/products/premiere.html';
+iconLinks.handlebars = 'https://handlebarsjs.com/';
+iconLinks.materialui = 'https://mui.com/';
 
 const LinkIcons: FC<LinkIconProps> = ({ kind, ariaLabel }) => {
   const href = iconLinks[kind] || '#';
