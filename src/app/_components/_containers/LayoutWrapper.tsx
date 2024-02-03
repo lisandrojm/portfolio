@@ -1,4 +1,5 @@
 /* src/app/_components/_containers/LayoutWrapper.tsx */
+'use client';
 
 import { ReactNode } from 'react';
 import TransitionLayout from '@/_components/_shared/TransitionLayout';
@@ -9,6 +10,7 @@ import Footer from '@/_components/_pages/_main/_footer/Footer';
 import ScrollUp from '@/_components/_shared/ScrollUp';
 import ScrollIndicator from '@/_components/_shared/ScrollIndicator';
 import { TransitionContextProvider } from '@/_context/TransitionContextProvider';
+import Cursor from '@/_components/_gsap/Cursor';
 
 interface Props {
   children: ReactNode;
@@ -18,6 +20,7 @@ const LayoutWrapper = ({ children }: Props) => {
   return (
     <Provider>
       <TransitionContextProvider>
+        <Cursor />
         <Background />
         <TransitionLayout>
           <div className="flex h-svh flex-col justify-between">

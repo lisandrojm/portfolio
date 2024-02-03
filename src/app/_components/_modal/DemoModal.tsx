@@ -12,6 +12,7 @@ import useIsomorphicLayoutEffect from '@/_hooks/useIsomorphicLayoutEffect';
 import Modal from '@/_components/_modal/Modal';
 import Icon from '@/_components/_icons/Icons';
 import TranslateInOut from '@/_components/_gsap/TranslateInOut';
+import Cursor from '@/_components/_gsap/Cursor';
 
 interface DemoModalProps {
   title: string;
@@ -113,8 +114,9 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
     <Modal showModal={showDemoModal} setModal={setModal} ref={modalRef}>
       <div className={`flex h-full w-full justify-center transition-opacity ${isVisible ? 'opacity-100' : 'opacity-0'}`} data-modal onClick={handleClick}>
         <XContainer>
+          <Cursor />
           <div className="flex h-svh flex-col justify-between">
-            <button className="flex w-full justify-end pt-4 text-3xl text-white" onClick={() => setModal(false)} data-modal-close>
+            <button className="cursor-scale small flex w-full justify-end pt-4 text-3xl text-white" onClick={() => setModal(false)} data-modal-close>
               <Icon kind="arrowLeft" />
             </button>
             <TranslateInOut overflowHidden delay={0.3} y={100}>
@@ -148,12 +150,12 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
                   <div className="flex justify-between gap-3">
                     <div className="me-5 flex items-center">
                       <Link href={hrefDemo} aria-label="Proyect" target="_blank">
-                        <div className="flex items-center text-white">
+                        <div className="cursor-scale small flex items-center text-white">
                           <div className="text-2xl ">
                             <Icon kind="web" />
                           </div>
                           <div className=" flex items-center">
-                            <div className="text-md me-1 ms-1 font-serif italic">
+                            <div className="text-md cursor-scale small me-1 ms-1 font-serif italic">
                               <p>demo</p>
                             </div>
                             <span className="text-sm">
@@ -165,7 +167,7 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
                     </div>
                     <div className="flex items-center">
                       <Link href={hrefCode} aria-label="Proyect" target="_blank">
-                        <div className="flex items-center text-white">
+                        <div className="cursor-scale small flex items-center text-white">
                           <div className="text-xl">
                             <Icon kind="github" />
                           </div>
