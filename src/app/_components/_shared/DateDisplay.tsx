@@ -18,7 +18,7 @@ export default function DateDisplay() {
         <div className="flex flex-col items-start">
           <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
             <div>
-              <h6 className="text-xl font-bold leading-5 text-orange">
+              <h6 className="text-nowrap text-xl font-bold leading-5 text-orange">
                 {currMonth} {currYear}
               </h6>
             </div>

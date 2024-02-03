@@ -47,7 +47,7 @@ export default function Hero() {
                   <div className="flex items-end">
                     <li className="xs--margin cursor-scale flex items-end text-7xl text-orange sm:text-[130px]">
                       Works
-                      <div className="xs--hide mb-2 text-lg md:text-3xl">
+                      <div className="xs--hide mb-2 text-lg sm:text-2xl">
                         <Icon kind="internalLink" />
                       </div>
                     </li>
@@ -59,7 +59,7 @@ export default function Hero() {
                   <div className="flex items-end">
                     <li className="xs--margin cursor-scale flex items-end text-7xl text-orange sm:text-[130px]">
                       Skills
-                      <div className="xs--hide mb-2 text-lg md:text-3xl">
+                      <div className="xs--hide mb-2 text-lg sm:text-2xl">
                         <Icon kind="internalLink" />
                       </div>
                     </li>
@@ -90,7 +90,7 @@ export default function Hero() {
         </div>
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 transform">
           <Link href="#works">
-            <button className="cursor-scale small animate-bounce p-1 text-3xl text-white md:text-4xl">
+            <button className="animate-bounce p-1 text-3xl text-white md:text-4xl">
               <Icon kind="arrowDownChevron" />
             </button>
           </Link>

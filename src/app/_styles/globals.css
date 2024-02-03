@@ -167,9 +167,8 @@ body {
 @media (max-width: 340px) {
   .xs--hide {
     display: none;
-    margin: 0;
   }
   .xs--margin {
-    margin: 0;
+    margin-right: 7px;
   }
 }
