@@ -74,6 +74,7 @@ const iconLinks: IconLinks = {
   calendar: '',
   sunglassesEmoji: '',
   materialui: '',
+  handlebars: '',
 };
 
 // Assign URLs to individual icon links
