@@ -1,7 +1,6 @@
 /* src/app/_components/_modal/Modal.tsx */
 
 import { forwardRef, useCallback, useEffect, Ref } from 'react';
-import styles from '@/_styles/_components/Modal.module.css';
 
 interface ModalProps {
   children: React.ReactNode;
