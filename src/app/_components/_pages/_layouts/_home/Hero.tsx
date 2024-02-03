@@ -90,7 +90,7 @@ export default function Hero() {
         </div>
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 transform">
           <Link href="#works">
-            <button className="animate-bounce p-1 text-3xl text-white md:text-4xl">
+            <button className="cursor-scale small animate-bounce p-1 text-3xl text-white md:text-4xl">
               <Icon kind="arrowDownChevron" />
             </button>
           </Link>
