@@ -1,6 +1,5 @@
 /* src/app/_components/_shared/DateDisplay.tsx */
 
-import Icon from '@/_components/_icons/Icons';
 import TranslateInOut from '@/_components/_gsap/TranslateInOut';
 
 export default function DateDisplay() {
