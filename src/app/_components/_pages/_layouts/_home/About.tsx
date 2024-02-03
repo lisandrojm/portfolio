@@ -39,7 +39,7 @@ export default function About() {
               <ScaleInOut delay={0.3} ease="elastic.out" watch>
                 <Link href={'#contact'} className="cursor-scale small">
                   <RotateInOut fade={false} durationIn={0.6} rotateTo={360} start="botom bottom" end="top top" watch scrub>
-                    <div className="relative flex items-center justify-center overflow-hidden rounded-full">
+                    <div className="scale-hover relative flex items-center justify-center overflow-hidden rounded-full">
                       <div className="absolute inset-0 z-10 rounded-full bg-orange mix-blend-multiply"></div>
                       <div className="z-1 relative">
                         <Image src={'/_static/_img/profile.webp'} width={90} height={90} alt="Avatar" priority className="h-30 w-30 rounded-full xl:h-40 xl:w-40" />
