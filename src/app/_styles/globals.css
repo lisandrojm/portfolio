@@ -88,6 +88,14 @@ a:hover,
   --accent-7: var(--accent-3);
   --accent-8: var(--accent-5);
 }
+.scale-hover {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.scale-hover:hover {
+  transform: scale(0.99);
+}
 
 body {
   color: var(--accent-1);
