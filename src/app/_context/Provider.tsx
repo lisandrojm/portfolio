@@ -1,7 +1,5 @@
 /* src/app/_context/Provider.tsx */
 
-'use client';
-
 import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
 import { ThemeProvider } from 'next-themes';
 import { useState, useEffect, ReactNode } from 'react';
@@ -15,6 +13,7 @@ const Provider: React.FC<Props> = ({ children }: Props) => {
 
   useEffect(() => {
     setMounted(true);
+    console.log('Hello developers');
   }, []);
 
   if (!mounted) {

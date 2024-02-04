@@ -1,5 +1,4 @@
-/* src/app/(routes)/page.tsx */
-
+// src/app/(routes)/page.tsx
 import LayoutWrapper from '@/_components/_containers/LayoutWrapper';
 import Hero from '@/_components/_pages/_layouts/_home/Hero';
 import Works from '@/_components/_pages/_layouts/_home/Works';
