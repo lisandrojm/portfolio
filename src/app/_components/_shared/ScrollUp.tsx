@@ -4,13 +4,14 @@
 
 import React, { useEffect, useState } from 'react';
 import Icon from '@/_components/_icons/Icons';
-import NavbarMobile from '@/_components/_pages/_main/_header/NavbarMobile';
+import ThemeSwitcher from '@/_components/_shared/ThemeSwitcher';
 
 const ScrollUp: React.FC = () => {
   const [showButton, setShowButton] = useState<boolean>(false);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = (event: Event) => {
+      event.stopPropagation();
       setShowButton(window.scrollY >= 700);
     };
 
@@ -26,10 +27,13 @@ const ScrollUp: React.FC = () => {
   };
 
   return (
-    <span className={`fixed bottom-10 right-0 z-40 flex cursor-pointer items-center justify-center border-solid pb-1 transition-all duration-300 ease-out ${showButton ? 'right-10' : 'translate-x-full'}`} onClick={scrollToTop}>
+    <span className={`fixed bottom-10 right-0 z-40 flex cursor-pointer items-center justify-center border-solid pb-1 transition-all duration-300 ease-out ${showButton ? 'right-10' : 'translate-x-full'} flex flex-col`} onClick={scrollToTop}>
       <button className="cursor-scale small animate-bounce p-1 text-3xl text-white md:text-4xl">
         <Icon kind="arrowUpCg" />
       </button>
+      <div className="border-t border-solid border-white pt-3" onClick={(e) => e.stopPropagation()}>
+        <ThemeSwitcher />
+      </div>
     </span>
   );
 };
