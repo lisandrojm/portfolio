@@ -18,6 +18,8 @@ interface Props {
 }
 
 const LayoutWrapper = ({ children }: Props) => {
+  console.log('👋 Hello Developer!');
+
   return (
     <Provider>
       <TransitionContextProvider>
