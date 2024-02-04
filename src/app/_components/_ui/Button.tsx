@@ -1,5 +1,7 @@
 /* src/app/_components/_ui/Button.tsx */
 
+import styles from '@/_styles/_components/Button.module.css';
+
 export interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   size?: 'sm' | 'md' | 'lg' | 'xl' | '2xl';
@@ -35,7 +37,7 @@ export function Button({ children, size = 'md', font = 'flex', ...props }: Props
     }
   };
 
-  const buttonClass = `border border-orange text-center font-semibold text-orange backdrop-blur uppercase italic focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange cursor-scale small ${getSizeClass()} ${getFontClass()}`;
+  const buttonClass = `border border-orange text-center font-semibold text-orange backdrop-blur uppercase italic focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange cursor-scale small ${styles.btn} ${styles.btnOrange} ${getSizeClass()} ${getFontClass()}`;
 
   return (
     <button className={buttonClass} {...props}>

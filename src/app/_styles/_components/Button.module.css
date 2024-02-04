@@ -1,0 +1,74 @@
+/* src/app/_styles/_components/Button.module.css */
+
+/* Button Hover */
+
+.btn {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition: all 250ms ease;
+}
+.btn:hover {
+  color: var(--accent-3);
+}
+.btn:hover:after {
+  -webkit-animation-name: bgin;
+  animation-name: bgin;
+  transform: skew(-45deg) translate(-50%);
+}
+.btn:after {
+  content: '';
+  z-index: -1;
+  width: 150%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-animation-name: bgout;
+  animation-name: bgout;
+  -webkit-animation-duration: 400ms;
+  animation-duration: 400ms;
+  transform: skew(-45deg) translate(-150%);
+}
+.btnOrange {
+  border: 2px solid var(--accent-8);
+  color: var(--accent-8);
+}
+.btnOrange:after {
+  background-color: var(--accent-8);
+}
+
+@-webkit-keyframes bgin {
+  from {
+    transform: skew(-45deg) translate(-150%);
+  }
+  to {
+    transform: skew(-45deg) translate(-50%);
+  }
+}
+
+@keyframes bgin {
+  from {
+    transform: skew(-45deg) translate(-150%);
+  }
+  to {
+    transform: skew(-45deg) translate(-50%);
+  }
+}
+@-webkit-keyframes bgout {
+  from {
+    transform: skew(-45deg) translate(-50%);
+  }
+  to {
+    transform: skew(-45deg) translate(50%);
+  }
+}
+@keyframes bgout {
+  from {
+    transform: skew(-45deg) translate(-50%);
+  }
+  to {
+    transform: skew(-45deg) translate(50%);
+  }
+}

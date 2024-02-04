@@ -5,7 +5,9 @@
 * Tailwind imports
 * Root elements
 * Global variables
+* Hover
 * Fonts
+* Gsap Cursor
 * Media queries
 */
 
@@ -77,17 +79,29 @@
     --accent-10: #ba3a93;
   }
 }
+
 /* Global variables */
 
+body {
+  color: var(--accent-1);
+  background: var(--accent-2);
+}
+
+/* Hover */
+
+/* Hover / Button & a */
 button:hover,
 a:hover,
 [role='button']:hover {
   --accent-1: var(--accent-5);
   --accent-2: var(--accent-8);
+  --accent-3: var(--accent-2a);
   --accent-6: var(--accent-4);
-  --accent-7: var(--accent-3);
   --accent-8: var(--accent-5);
 }
+
+/* Hover / Scale */
+
 .scale-hover {
   transform: scale(1);
   transition: transform 0.3s ease-in-out;
@@ -97,40 +111,7 @@ a:hover,
   transform: scale(0.99);
 }
 
-body {
-  color: var(--accent-1);
-  background: var(--accent-2);
-}
-
-/* Fonts */
-.font-regular {
-  font-family: var(--font-regular), sans-serif;
-}
-.font-mono {
-  font-family: var(--font-mono), sans-serif;
-}
-.font-flex {
-  font-family: var(--font-flex), sans-serif;
-}
-.font-serif {
-  font-family: var(--font-serif), serif;
-}
-
-/* Gsap Cursor */
-
-.grow,
-.grow-small {
-  transform: scale(2);
-  backdrop-filter: invert(20%);
-  border: 1px solid;
-}
-
-.grow-small {
-  transform: scale(1.5);
-  border: 1px solid;
-}
-
-/* Underline hover */
+/* Hover / Underline */
 
 .underline-hover {
   position: relative;
@@ -170,6 +151,35 @@ body {
   width: 100%;
   background: 0 0;
   transition: all 0s ease;
+}
+
+/* Fonts */
+
+.font-regular {
+  font-family: var(--font-regular), sans-serif;
+}
+.font-mono {
+  font-family: var(--font-mono), sans-serif;
+}
+.font-flex {
+  font-family: var(--font-flex), sans-serif;
+}
+.font-serif {
+  font-family: var(--font-serif), serif;
+}
+
+/* Gsap Cursor */
+
+.grow,
+.grow-small {
+  transform: scale(2);
+  backdrop-filter: invert(20%);
+  border: 1px solid;
+}
+
+.grow-small {
+  transform: scale(1.5);
+  border: 1px solid;
 }
 
 /* Media queries */
