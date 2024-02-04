@@ -27,8 +27,8 @@ const ScrollUp: React.FC = () => {
   };
 
   return (
-    <span className={`fixed bottom-10 right-0 z-40 flex cursor-pointer items-center justify-center border-solid pb-1 transition-all duration-300 ease-out ${showButton ? 'right-10' : 'translate-x-full'} flex flex-col`} onClick={scrollToTop}>
-      <button className="cursor-scale small animate-bounce p-1 text-3xl text-white md:text-4xl">
+    <span className={`fixed bottom-[61px] right-0 z-40 flex cursor-pointer items-center justify-center border-solid py-2 pb-1 transition-all duration-300 ease-out ${showButton ? 'right-[30px]' : 'translate-x-full'} flex flex-col`} onClick={scrollToTop}>
+      <button className="cursor-scale small animate-bounce p-1 text-3xl text-white md:text-3xl">
         <Icon kind="arrowUpCg" />
       </button>
       <div className="border-t border-solid border-white pt-3" onClick={(e) => e.stopPropagation()}>
