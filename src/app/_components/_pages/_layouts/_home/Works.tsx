@@ -31,11 +31,11 @@ export default function Works() {
             <div className="flex items-center justify-center pb-10 font-serif italic md:pb-20 ">
               <Link href={'#works'} className="cursor-scale small flex items-center text-center text-2xl md:text-3xl">
                 <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
-                  <div className="flex items-center ">
+                  <div className="underline-hover flex items-center">
                     <div className="flex justify-center">
                       <div className="flex w-1/2 justify-center">
                         <RotateInOut fade={false} durationIn={0.6} rotateTo={360} start="botom bottom" end="top top" watch scrub>
-                          <span className="text-4xl text-white md:text-5xl">
+                          <span className="mb-2 text-4xl text-white md:text-4xl">
                             <Icon kind="star" />
                           </span>
                         </RotateInOut>

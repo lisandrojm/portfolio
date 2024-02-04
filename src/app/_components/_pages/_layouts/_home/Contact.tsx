@@ -145,7 +145,7 @@ const Contact = () => {
                         <span className="px-2 text-orange">
                           <Icon kind="heart" />
                         </span>
-                        the challenges...
+                        challenges...
                       </p>
                     </Link>
                   </TranslateInOut>

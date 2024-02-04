@@ -23,12 +23,10 @@ export default function Header() {
           <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
             <Link href="/" aria-label={`Navigate to ${siteMetadata.headerTitle}`} className="hover">
               <div className="flex items-center justify-between">
-                <div className="cursor-scale small flex items-center justify-center font-bold">
+                <div className="cursor-scale small underline-hover flex items-center justify-center font-bold">
                   <div>
                     <h2 className="m-0 leading-5 text-white">FrontEndDev</h2>
-                    <h3>
-                      <span className="text-sm text-orange">lisandrojm </span>
-                    </h3>
+                    <h3 className="text-sm text-orange">lisandrojm</h3>
                   </div>
                 </div>
               </div>
@@ -43,7 +41,7 @@ export default function Header() {
                     <div key={link.title} className="hidden lg:inline">
                       <div className="flex">
                         {index > 0 && <span className="mx-3 text-white">|</span>}
-                        <Link href={link.href} className="cursor-scale small hidden text-white lg:inline" aria-label={`Navigate to ${link.title}`}>
+                        <Link href={link.href} className="cursor-scale small underline-hover hidden text-white lg:inline" aria-label={`Navigate to ${link.title}`}>
                           {link.title}
                         </Link>
                       </div>

@@ -29,7 +29,7 @@ export default function Hero() {
                   </div>
                   <div className="font-flex mt-1">
                     <p>
-                      <Link href="#contact" className="cursor-scale small me-2 font-bold uppercase italic text-orange">
+                      <Link href="#contact" className="cursor-scale small underline-hover me-2 font-bold uppercase italic text-orange">
                         Contact me
                       </Link>
                       to check my actual status
@@ -45,7 +45,7 @@ export default function Hero() {
               <TranslateInOut overflowHidden delay={0.4} y={100}>
                 <Link href="#works">
                   <div className="flex items-end">
-                    <li className="xs--margin cursor-scale flex items-end text-7xl text-orange sm:text-[130px]">
+                    <li className="xs--margin cursor-scale underline-hover flex items-end text-7xl text-orange sm:text-[130px]">
                       Works
                       <div className="xs--hide mb-2 text-lg md:text-3xl">
                         <Icon kind="internalLink" />
@@ -57,7 +57,7 @@ export default function Hero() {
               <TranslateInOut overflowHidden delay={0.5} y={100}>
                 <Link href="#skills">
                   <div className="flex items-end">
-                    <li className="xs--margin cursor-scale flex items-end text-7xl text-orange sm:text-[130px]">
+                    <li className="xs--margin cursor-scale underline-hover flex items-end text-7xl text-orange sm:text-[130px]">
                       Skills
                       <div className="xs--hide mb-2 text-lg md:text-3xl">
                         <Icon kind="internalLink" />
@@ -90,7 +90,7 @@ export default function Hero() {
         </div>
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 transform">
           <Link href="#works">
-            <button className="animate-bounce p-1 text-3xl text-white md:text-4xl">
+            <button className="cursor-scale small animate-bounce p-1 text-3xl text-white md:text-4xl">
               <Icon kind="arrowDownChevron" />
             </button>
           </Link>
