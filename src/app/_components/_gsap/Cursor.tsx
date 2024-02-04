@@ -16,10 +16,13 @@ const Cursor = () => {
         duration: 0.016,
         repeat: -1,
         onRepeat: () => {
-          gsap.set(cursorRef.current, {
-            left: mouseX,
-            top: mouseY,
-          });
+          // Verificar que cursorRef.current no sea nulo
+          if (cursorRef.current) {
+            gsap.set(cursorRef.current, {
+              left: mouseX,
+              top: mouseY,
+            });
+          }
         },
       }
     );
@@ -37,16 +40,22 @@ const Cursor = () => {
   }, []);
 
   const handleLinkHover = (isSmall: boolean) => {
-    cursorRef.current?.classList.add('grow');
+    // Verificar que cursorRef.current no sea nulo
+    if (cursorRef.current) {
+      cursorRef.current.classList.add('grow');
 
-    if (isSmall) {
-      cursorRef.current?.classList.remove('grow');
-      cursorRef.current?.classList.add('grow-small');
+      if (isSmall) {
+        cursorRef.current.classList.remove('grow');
+        cursorRef.current.classList.add('grow-small');
+      }
     }
   };
 
   const handleLinkLeave = () => {
-    cursorRef.current?.classList.remove('grow', 'grow-small');
+    // Verificar que cursorRef.current no sea nulo
+    if (cursorRef.current) {
+      cursorRef.current.classList.remove('grow', 'grow-small');
+    }
   };
 
   useEffect(() => {

@@ -1,7 +1,5 @@
 /* src/app/_components/_modal/DemoModal.tsx */
 
-'use client';
-
 import Image from 'next/image';
 import XContainer from '@/_components/_containers/XContainer';
 import Link from 'next/link';
@@ -112,23 +110,27 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
   };
   return (
     <Modal showModal={showDemoModal} setModal={setModal} ref={modalRef}>
+      <Cursor />
       <div className={`flex h-full w-full justify-center transition-opacity ${isVisible ? 'opacity-100' : 'opacity-0'}`} data-modal onClick={handleClick}>
         <XContainer>
-          <Cursor />
           <div className="flex h-svh flex-col justify-between">
-            <button className="cursor-scale small flex w-full justify-end pt-4 text-3xl text-white" onClick={() => setModal(false)} data-modal-close>
-              <Icon kind="arrowLeft" />
-            </button>
+            <TranslateInOut overflowHidden delay={0.2} y={100}>
+              <button className="cursor-scale small flex w-full justify-end pt-4 text-3xl text-white" onClick={() => setModal(false)} data-modal-close>
+                <Icon kind="arrowLeft" />
+              </button>
+            </TranslateInOut>
             <TranslateInOut overflowHidden delay={0.3} y={100}>
               <div data-modal-content className="flex flex-col items-start justify-between gap-5 md:items-center">
                 <Link href={hrefDemo} aria-label="Open Project Modal" className="flex w-full justify-center" target="_blank">
-                  <Image src={src} width={600} height={283} alt="Picture of the author" priority className="md:w-3/4" />
+                  <Image src={src} width={600} height={283} alt="Picture of the author" priority className="cursor-scale small scale-hover md:w-3/4" />
                 </Link>
                 <div className="flex flex-col md:w-3/4">
                   <TranslateInOut overflowHidden delay={0.4} y={100}>
-                    <div className="font-flex text-2xl font-bold uppercase md:text-3xl">
-                      <h2>{title}</h2>
-                    </div>
+                    <Link href={hrefCode} aria-label="Proyect" target="_blank">
+                      <div className="font-flex cursor-scale small text-2xl font-bold uppercase text-white md:text-3xl">
+                        <h2>{title}</h2>
+                      </div>
+                    </Link>
                   </TranslateInOut>
                   <TranslateInOut overflowHidden delay={0.5} y={100}>
                     <div className="text-base font-bold text-orange">
