@@ -15,8 +15,6 @@ import RotateInOut from '@/_components/_gsap/RotateInOut';
 import TranslateInOut from '@/_components/_gsap/TranslateInOut';
 import ScaleInOut from '@/_components/_gsap/ScaleInOut';
 
-interface ProyectProps {}
-
 function AccordionIcon({ id, open }: { id: number; open: number }) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className={`${id === open ? 'rotate-180' : ''} h-5 w-5 transition-transform`}>
@@ -90,98 +88,100 @@ export default function About() {
                   </div>
                 </div>
                 {/* Accordion */}
-                <div className="mt-10 lg:mt-0">
-                  <Accordion open={open === 1} icon={<AccordionIcon id={1} open={open} />} placeholder={''}>
-                    <AccordionHeader className="border-0 py-0" onClick={() => handleOpen(1)} placeholder={''}>
-                      <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
-                        <div className="cursor-scale small flex items-center">
-                          <div className="me-2 text-2xl text-orange">
-                            <Icon kind="certificate" />
+                <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
+                  <div className="mt-10 border-t border-solid border-orange pt-2 lg:mt-0">
+                    <Accordion open={open === 1} icon={<AccordionIcon id={1} open={open} />} placeholder={''}>
+                      <AccordionHeader className="border-0 py-0" onClick={() => handleOpen(1)} placeholder={''}>
+                        <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
+                          <div className="cursor-scale small flex items-center ">
+                            <div className="me-2 text-2xl text-orange">
+                              <Icon kind="certificate" />
+                            </div>
+                            <div>
+                              <h3 className="underline-hover me-16 text-xl text-white">Certificates</h3>
+                            </div>
                           </div>
-                          <div>
-                            <h3 className="underline-hover me-16 text-xl text-white">Certificates</h3>
-                          </div>
+                        </TranslateInOut>
+                      </AccordionHeader>
+                      <AccordionBody>
+                        <div className="mt-1 text-lg text-white">
+                          <ul>
+                            <li>
+                              <Link href="https://www.coderhouse.com/certificados/63a7335bc5708d000e6df156?lang=en" className="cursor-scale small flex text-white" aria-label="Development certificate" target="_blank">
+                                <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
+                                  <div className="flex items-center text-orange">
+                                    <div>
+                                      <p className="underline-hover">Development</p>
+                                    </div>
+                                    <span className="ms-2 text-sm text-white">
+                                      <Icon kind="externalLink" />
+                                    </span>
+                                  </div>
+                                </TranslateInOut>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="https://www.coderhouse.com/certificados/641b0618e72c2b00027dca87?lang=en" className="cursor-scale small flex text-white" aria-label="Javascript certificate" target="_blank">
+                                <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
+                                  <div className="flex items-center text-orange">
+                                    <div>
+                                      <p className="underline-hover">Javascript</p>
+                                    </div>
+                                    <span className="ms-2 text-sm text-white">
+                                      <Icon kind="externalLink" />
+                                    </span>
+                                  </div>
+                                </TranslateInOut>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="https://www.coderhouse.com/certificados/645e44ad1f40130002fcd5d5?lang=en" className="cursor-scale small flex text-white" aria-label="Reactjs certificate" target="_blank">
+                                <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
+                                  <div className="flex items-center text-orange">
+                                    <div>
+                                      <p className="underline-hover">React</p>
+                                    </div>
+                                    <span className="ms-2 text-sm text-white">
+                                      <Icon kind="externalLink" />
+                                    </span>
+                                  </div>
+                                </TranslateInOut>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d0ce8be7116?lang=en" className="cursor-scale small flex text-white" aria-label="Backend certificate" target="_blank">
+                                <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
+                                  <div className="flex items-center text-orange">
+                                    <div>
+                                      <p className="underline-hover">Backend</p>
+                                    </div>
+                                    <span className="ms-2 text-sm text-white">
+                                      <Icon kind="externalLink" />
+                                    </span>
+                                  </div>
+                                </TranslateInOut>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="cursor-scale small flex text-white" aria-label="Fullstack certificate" target="_blank">
+                                <TranslateInOut overflowHidden delay={0.6} y={100} start="-100% bottom" end="top top" watch>
+                                  <div className="flex items-center text-orange">
+                                    <div>
+                                      <p className="underline-hover">FullStack</p>
+                                    </div>
+                                    <span className="ms-2 text-sm text-white">
+                                      <Icon kind="externalLink" />
+                                    </span>
+                                  </div>
+                                </TranslateInOut>
+                              </Link>
+                            </li>
+                          </ul>
                         </div>
-                      </TranslateInOut>
-                    </AccordionHeader>
-                    <AccordionBody>
-                      <div className="mt-1 text-lg text-white">
-                        <ul>
-                          <li>
-                            <Link href="https://www.coderhouse.com/certificados/63a7335bc5708d000e6df156?lang=en" className="cursor-scale small flex text-white" aria-label="Development certificate" target="_blank">
-                              <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
-                                <div className="flex items-center text-orange">
-                                  <div>
-                                    <p className="underline-hover">Development</p>
-                                  </div>
-                                  <span className="ms-2 text-sm text-white">
-                                    <Icon kind="externalLink" />
-                                  </span>
-                                </div>
-                              </TranslateInOut>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.coderhouse.com/certificados/641b0618e72c2b00027dca87?lang=en" className="cursor-scale small flex text-white" aria-label="Javascript certificate" target="_blank">
-                              <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
-                                <div className="flex items-center text-orange">
-                                  <div>
-                                    <p className="underline-hover">Javascript</p>
-                                  </div>
-                                  <span className="ms-2 text-sm text-white">
-                                    <Icon kind="externalLink" />
-                                  </span>
-                                </div>
-                              </TranslateInOut>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.coderhouse.com/certificados/645e44ad1f40130002fcd5d5?lang=en" className="cursor-scale small flex text-white" aria-label="Reactjs certificate" target="_blank">
-                              <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
-                                <div className="flex items-center text-orange">
-                                  <div>
-                                    <p className="underline-hover">React</p>
-                                  </div>
-                                  <span className="ms-2 text-sm text-white">
-                                    <Icon kind="externalLink" />
-                                  </span>
-                                </div>
-                              </TranslateInOut>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d0ce8be7116?lang=en" className="cursor-scale small flex text-white" aria-label="Backend certificate" target="_blank">
-                              <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
-                                <div className="flex items-center text-orange">
-                                  <div>
-                                    <p className="underline-hover">Backend</p>
-                                  </div>
-                                  <span className="ms-2 text-sm text-white">
-                                    <Icon kind="externalLink" />
-                                  </span>
-                                </div>
-                              </TranslateInOut>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="cursor-scale small flex text-white" aria-label="Fullstack certificate" target="_blank">
-                              <TranslateInOut overflowHidden delay={0.6} y={100} start="-100% bottom" end="top top" watch>
-                                <div className="flex items-center text-orange">
-                                  <div>
-                                    <p className="underline-hover">FullStack</p>
-                                  </div>
-                                  <span className="ms-2 text-sm text-white">
-                                    <Icon kind="externalLink" />
-                                  </span>
-                                </div>
-                              </TranslateInOut>
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </AccordionBody>
-                  </Accordion>
-                </div>
+                      </AccordionBody>
+                    </Accordion>
+                  </div>
+                </TranslateInOut>
               </div>
             </div>
           </YPContainer>

@@ -6,7 +6,7 @@ import { IoCloseCircleOutline, IoChevronDownSharp } from 'react-icons/io5';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { SiTailwindcss, SiExpress, SiNestjs, SiMongodb, SiNeovim, SiVisualstudiocode, SiRailway, SiAdobepremierepro, SiAdobephotoshop, SiAdobeillustrator, SiAdobeaftereffects, SiGithubpages, SiMui, SiHandlebarsdotjs } from 'react-icons/si';
 import { CgInternal, CgArrowUp, CgFigma } from 'react-icons/cg';
-import { LiaLongArrowAltUpSolid, LiaLongArrowAltDownSolid, LiaLongArrowAltRightSolid, LiaLongArrowAltLeftSolid, LiaExternalLinkAltSolid, LiaDnaSolid } from 'react-icons/lia';
+import { LiaLongArrowAltUpSolid, LiaLongArrowAltDownSolid, LiaLongArrowAltRightSolid, LiaLongArrowAltLeftSolid, LiaExternalLinkAltSolid, LiaDnaSolid, LiaPlusCircleSolid } from 'react-icons/lia';
 import { GoProjectSymlink } from 'react-icons/go';
 import { ImPower } from 'react-icons/im';
 import { MdContactSupport, MdWeb } from 'react-icons/md';
@@ -57,6 +57,7 @@ const components = {
   nodejs: FaNodeJs,
   railway: SiRailway,
   react: FaReact,
+  plus: LiaPlusCircleSolid,
   tailwind: SiTailwindcss,
   ts: BiLogoTypescript,
   vercel: TbBrandVercel,

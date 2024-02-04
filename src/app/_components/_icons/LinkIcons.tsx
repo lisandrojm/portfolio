@@ -44,6 +44,7 @@ const iconLinks: IconLinks = {
   nextjs: '',
   ninja: '',
   nodejs: '',
+  plus: '',
   railway: '',
   react: '',
   tailwind: '',

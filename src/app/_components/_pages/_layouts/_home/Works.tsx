@@ -15,12 +15,27 @@ import RotateInOut3D from '@/_components/_gsap/RotateInOut3D';
 import useDemoModal from '@/_components/_modal/DemoModal';
 import { SetStateAction } from 'react';
 import TranslateInOut from '@/_components/_gsap/TranslateInOut';
+import { Accordion, AccordionHeader, AccordionBody } from '@material-tailwind/react';
+import { useState } from 'react';
 
+function AccordionIcon({ id, open }: { id: number; open: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className={`${id === open ? 'rotate-180' : ''} h-5 w-5 transition-transform`}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    </svg>
+  );
+}
 export default function Works() {
   const { DemoModal: DemoModal1, setModal: setModal1 } = useDemoModal();
   const { DemoModal: DemoModal2, setModal: setModal2 } = useDemoModal();
   const { DemoModal: DemoModal3, setModal: setModal3 } = useDemoModal();
   const { DemoModal: DemoModal4, setModal: setModal4 } = useDemoModal();
+
+  const [open, setOpen] = useState<number>(0);
+
+  const handleOpen = (panelId: number) => {
+    setOpen((prevOpen) => (prevOpen === panelId ? 0 : panelId)); // Cambiado null a 0
+  };
 
   return (
     <YMContainer>
@@ -277,6 +292,59 @@ export default function Works() {
               }}
             />
             {/* Modal */}
+            {/* Accordion */}
+            <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
+              <div className="mt-20 border-t border-solid border-orange pt-2 lg:me-10 lg:w-1/3">
+                <Accordion open={open === 1} icon={<AccordionIcon id={1} open={open} />} placeholder={''} className="font-flex pt-1 uppercase">
+                  <AccordionHeader className="border-0 py-0" onClick={() => handleOpen(1)} placeholder={''}>
+                    <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
+                      <div className="cursor-scale small flex items-center">
+                        <div className="me-2 text-2xl text-orange">
+                          <Icon kind="plus" />
+                        </div>
+                        <div>
+                          <h3 className="underline-hover me-10 text-nowrap text-2xl uppercase text-white">Other projects</h3>
+                        </div>
+                      </div>
+                    </TranslateInOut>
+                  </AccordionHeader>
+                  <AccordionBody>
+                    <div className="mt-1 text-lg font-bold text-white">
+                      <ul>
+                        <li>
+                          <Link href="#" className="cursor-scale small flex text-white" aria-label="Proyect 5" target="_blank">
+                            <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
+                              <div className="flex items-center text-orange">
+                                <div>
+                                  <p className="underline-hover">Proyect5</p>
+                                </div>
+                                <span className="ms-2 text-sm text-white">
+                                  <Icon kind="externalLink" />
+                                </span>
+                              </div>
+                            </TranslateInOut>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="#" className="cursor-scale small flex text-white" aria-label="Project 6" target="_blank">
+                            <TranslateInOut overflowHidden delay={0.6} y={100} start="-100% bottom" end="top top" watch>
+                              <div className="flex items-center text-orange">
+                                <div>
+                                  <p className="underline-hover">Proyect6</p>
+                                </div>
+                                <span className="ms-2 text-sm text-white">
+                                  <Icon kind="externalLink" />
+                                </span>
+                              </div>
+                            </TranslateInOut>
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </AccordionBody>
+                </Accordion>
+              </div>
+            </TranslateInOut>
           </YPContainer>
         </XContainer>
       </section>
