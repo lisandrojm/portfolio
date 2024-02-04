@@ -31,7 +31,7 @@ const ScrollUp: React.FC = () => {
       <button className="cursor-scale small animate-bounce p-1 text-3xl text-white md:text-3xl">
         <Icon kind="arrowUpCg" />
       </button>
-      <div className="border-t border-solid border-white pt-3" onClick={(e) => e.stopPropagation()}>
+      <div className="border-t border-solid border-orange pt-3" onClick={(e) => e.stopPropagation()}>
         <ThemeSwitcher />
       </div>
     </span>
