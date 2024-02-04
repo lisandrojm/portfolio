@@ -18,7 +18,7 @@ interface Props {
 }
 
 const LayoutWrapper = ({ children }: Props) => {
-  console.log('👋 Hello Developer!');
+  console.log('👋 Hello Developers!');
 
   return (
     <Provider>
