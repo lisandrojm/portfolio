@@ -5,7 +5,6 @@
 import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
 import { ThemeProvider } from 'next-themes';
 import { useState, useEffect, ReactNode } from 'react';
-/* import Cursor from '@/_components/_gsap/Cursor'; */
 
 type Props = {
   children: ReactNode;
@@ -26,7 +25,6 @@ const Provider: React.FC<Props> = ({ children }: Props) => {
     <ThemeProvider enableSystem={false} attribute="data-theme" defaultTheme="dark">
       <ProgressBar height="4px" color="#ff9e63" options={{ showSpinner: false }} />
       {children}
-      {/*       <Cursor /> */}
     </ThemeProvider>
   );
 };

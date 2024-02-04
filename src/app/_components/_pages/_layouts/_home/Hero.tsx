@@ -1,7 +1,7 @@
 /* src/app/_components/_pages/_layouts/_home/Hero.tsx */
 
 'use client';
-
+import { useState } from 'react';
 import Link from 'next/link';
 import Icon from '@/_components/_icons/Icons';
 import { Button, Props as ButtonProps } from '@/_components/_ui/Button';
@@ -10,33 +10,40 @@ import TranslateInOut from '@/_components/_gsap/TranslateInOut';
 import DateDisplay from '@/_components/_shared/DateDisplay';
 
 export default function Hero() {
+  const [isContentVisible, setIsContentVisible] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsContentVisible(!isContentVisible);
+  };
   return (
     <section>
       <XContainer>
         <div className="relative flex h-[calc(100svh_-77px)] flex-col items-end justify-center text-end">
           <div className="group">
             <div className="absolute left-0 top-0 flex justify-center text-start md:flex-col">
-              <Link href="#abailability">
+              <button onClick={handleButtonClick}>
                 <DateDisplay />
-              </Link>
-              <div className="ms-5 pt-5 opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 md:ms-0 md:pt-1">
-                <div className="hidden text-xs text-white group-hover:inline-block">
-                  <div className="font-flex flex">
-                    <div className="me-2 text-base">
-                      <Icon kind="sunglassesEmoji" />
+              </button>
+              {isContentVisible && (
+                <div className="ms-5 pt-5 opacity-100 transition-opacity duration-500 ease-out md:ms-0 md:pt-1">
+                  <div className="text-xs text-white">
+                    <div className="font-flex flex">
+                      <div className="me-2 text-base">
+                        <Icon kind="sunglassesEmoji" />
+                      </div>
+                      <p>Its a fake availability.</p>
                     </div>
-                    <p>Its a fake availability.</p>
-                  </div>
-                  <div className="font-flex mt-1">
-                    <p>
-                      <Link href="#contact" className="cursor-scale small underline-hover me-2 font-bold uppercase italic text-orange">
-                        Contact me
-                      </Link>
-                      to check my actual status
-                    </p>
+                    <div className="font-flex mt-1">
+                      <p>
+                        <Link href="#contact" className="cursor-scale small underline-hover me-2 font-bold uppercase italic text-orange">
+                          Contact me
+                        </Link>
+                        to check my actual status
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
 

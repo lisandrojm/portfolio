@@ -24,7 +24,7 @@ const LayoutWrapper = ({ children }: Props) => {
         <Cursor />
         <Background />
         <TransitionLayout>
-          <div className="flex h-svh flex-col justify-between">
+          <div id="top" className="flex h-svh flex-col justify-between">
             <ScrollIndicator />
             <Header />
             <main>{children}</main>

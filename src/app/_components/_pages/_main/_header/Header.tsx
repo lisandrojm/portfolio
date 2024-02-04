@@ -4,10 +4,10 @@
 import XContainer from '@/_components/_containers/XContainer';
 import siteMetadata from '@/_data/siteMetadata';
 import Link from 'next/link';
+import LinkIcon from '@/_components/_icons/LinkIcons';
 import NavbarMobile from '@/_components/_pages/_main/_header/NavbarMobile';
 import headerNavLinks from '@/_data/headerNavLinks';
 import ThemeSwitcher from '@/_components/_shared/ThemeSwitcher';
-import Icon from '@/_components/_icons/Icons';
 import TranslateInOut from '@/_components/_gsap/TranslateInOut';
 
 interface NavLink {
@@ -21,7 +21,7 @@ export default function Header() {
       <XContainer>
         <nav className="flex items-center justify-between border-b border-white px-3 pb-2 pt-6">
           <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
-            <Link href="/" aria-label={`Navigate to ${siteMetadata.headerTitle}`} className="hover">
+            <Link href="#top" aria-label={`Navigate to ${siteMetadata.headerTitle}`} className="hover">
               <div className="flex items-center justify-between">
                 <div className="cursor-scale small underline-hover flex items-center justify-center font-bold">
                   <div>
@@ -52,12 +52,12 @@ export default function Header() {
             <div className="xs--hide flex items-center">
               <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
                 <div className="xs--hide flex items-center">
-                  <Link href={siteMetadata.github} className="cursor-scale small ml-5 flex items-center text-3xl text-orange sm:ml-5" aria-label="Github site profile" target="_blank">
-                    <Icon kind="github" />
-                  </Link>
-                  <Link href={siteMetadata.linkedin} className="cursor-scale small ml-5 mr-4 flex items-center text-3xl text-orange sm:ml-5 sm:mr-5" aria-label="Linkedin site profile" target="_blank">
-                    <Icon kind="linkedin" />
-                  </Link>
+                  <div className="cursor-scale small ml-5 flex items-center text-3xl text-orange sm:ml-5">
+                    <LinkIcon kind="github" ariaLabel="Github site profile" />
+                  </div>
+                  <div className="cursor-scale small ml-5 mr-4 flex items-center text-3xl text-orange sm:ml-5 sm:mr-5">
+                    <LinkIcon kind="linkedin" ariaLabel="Linkedin site profile" />
+                  </div>
                   <ThemeSwitcher />
                 </div>
               </TranslateInOut>

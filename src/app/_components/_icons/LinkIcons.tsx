@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
 import Icon, { IconKind } from '@/_components/_icons/Icons';
+import siteMetadata from '@/_data/siteMetadata';
 
 // Import the 'components' object from your Icons.tsx file
 import components from '@/_components/_icons/Icons';
@@ -107,12 +108,16 @@ iconLinks.aftereffects = 'https://www.adobe.com/products/aftereffects.html';
 iconLinks.premiere = 'https://www.adobe.com/products/premiere.html';
 iconLinks.handlebars = 'https://handlebarsjs.com/';
 iconLinks.materialui = 'https://mui.com/';
+iconLinks.github = `${siteMetadata.github}`;
+iconLinks.linkedin = `${siteMetadata.linkedin}`;
 
 const LinkIcons: FC<LinkIconProps> = ({ kind, ariaLabel }) => {
   const href = iconLinks[kind] || '#';
   return (
     <Link href={href} passHref rel="noopener noreferrer" target="_blank" className="cursor-scale small text-orange">
-      <Icon kind={kind} />
+      <div className="transform transition-transform duration-300 ease-in-out hover:scale-95">
+        <Icon kind={kind} />
+      </div>
     </Link>
   );
 };

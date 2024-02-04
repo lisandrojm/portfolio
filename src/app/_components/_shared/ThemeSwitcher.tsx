@@ -15,5 +15,5 @@ export default function ThemeSwitcher() {
     setTheme(nextTheme);
   };
 
-  return <DarkModeSwitch className="cursor-scale small" checked={currentTheme === 'dark'} onChange={toggleTheme} size={26} moonColor="white" sunColor="black"></DarkModeSwitch>;
+  return <DarkModeSwitch className="cursor-scale small text-white" checked={currentTheme === 'dark'} onChange={toggleTheme} size={26} moonColor="white" sunColor="black"></DarkModeSwitch>;
 }
