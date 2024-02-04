@@ -107,7 +107,7 @@ const Contact = () => {
                     <span className="me-2 text-3xl">
                       <Icon kind="lightbulb" />
                     </span>
-                    <h2 className="font-regular cursor-scale small text-3xl uppercase italic text-orange md:text-4xl">
+                    <h2 className="font-regular cursor-scale small underline-hover text-3xl uppercase italic text-orange md:text-4xl">
                       Are you minding
                       <br />a project?
                     </h2>
@@ -116,7 +116,7 @@ const Contact = () => {
               </TranslateInOut>
               <form id="contactForm" action="#" method="POST" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 gap-y-4">
-                  <div className="cursor-scale small bg-black_a sm:col-span-3">
+                  <div className="cursor-scale smallbg-black_a sm:col-span-3">
                     <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
                       <FloatingLabelInput id="name" label="Name" type="text" name="from_name" autoComplete="name" onChange={handleChange} />
                     </TranslateInOut>
@@ -140,7 +140,7 @@ const Contact = () => {
                   </TranslateInOut>
                   <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
                     <Link href="mailto:lisandrojm@gmail.com">
-                      <p className="text-serif cursor-scale small flex items-center text-sm italic text-white">
+                      <p className="text-serif cursor-scale small underline-hover flex items-center text-sm italic text-white">
                         I
                         <span className="px-2 text-orange">
                           <Icon kind="heart" />

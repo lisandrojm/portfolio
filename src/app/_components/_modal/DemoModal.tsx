@@ -115,8 +115,10 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
         <XContainer>
           <div className="flex h-svh flex-col justify-between">
             <TranslateInOut overflowHidden delay={0.2} y={100}>
-              <button className="cursor-scale small flex w-full justify-end pt-4 text-3xl text-white" onClick={() => setModal(false)} data-modal-close>
-                <Icon kind="arrowLeft" />
+              <button className="small flex w-full justify-end pt-4 text-3xl text-white" onClick={() => setModal(false)} data-modal-close>
+                <div className="cursor-scale">
+                  <Icon kind="arrowLeft" />
+                </div>
               </button>
             </TranslateInOut>
             <TranslateInOut overflowHidden delay={0.3} y={100}>
@@ -127,8 +129,8 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
                 <div className="flex flex-col md:w-3/4">
                   <TranslateInOut overflowHidden delay={0.4} y={100}>
                     <Link href={hrefCode} aria-label="Proyect" target="_blank">
-                      <div className="font-flex cursor-scale small text-2xl font-bold uppercase text-white md:text-3xl">
-                        <h2>{title}</h2>
+                      <div className="font-flex cursor-scale small inline text-2xl font-bold uppercase text-white md:text-3xl">
+                        <h2 className="underline-hover inline">{title}</h2>
                       </div>
                     </Link>
                   </TranslateInOut>
@@ -158,7 +160,7 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
                           </div>
                           <div className=" flex items-center">
                             <div className="text-md cursor-scale small me-1 ms-1 font-serif italic">
-                              <p>demo</p>
+                              <p className="underline-hover">demo</p>
                             </div>
                             <span className="text-sm">
                               <Icon kind="externalLink" />
@@ -175,7 +177,7 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
                           </div>
                           <div className=" flex items-center">
                             <div className="text-md me-1 ms-1 font-serif italic text-white">
-                              <p>code</p>
+                              <p className="underline-hover">code</p>
                             </div>
                             <span className="text-sm">
                               <Icon kind="externalLink" />

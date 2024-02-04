@@ -31,7 +31,7 @@ export default function Works() {
             <div className="flex items-center justify-center pb-10 font-serif italic md:pb-20 ">
               <Link href={'#works'} className="cursor-scale small flex items-center text-center text-2xl md:text-3xl">
                 <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
-                  <div className="underline-hover flex items-center">
+                  <div className="flex items-center">
                     <div className="flex justify-center">
                       <div className="flex w-1/2 justify-center">
                         <RotateInOut fade={false} durationIn={0.6} rotateTo={360} start="botom bottom" end="top top" watch scrub>
@@ -41,7 +41,7 @@ export default function Works() {
                         </RotateInOut>
                       </div>
                     </div>
-                    <div className="ms-3 text-2xl text-orange md:text-3xl">
+                    <div className="underline-hover md:text-3xlj md:text-3xlj ms-3 text-2xl text-orange">
                       <h2>Selected Projects</h2>
                     </div>
                   </div>
@@ -62,17 +62,17 @@ export default function Works() {
                     <div className="mt-2 md:mb-0">
                       <button onClick={() => setModal1(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project Modal">
                         <div className="cursor-scale small cursor-scale small flex items-center text-white">
-                          <div className="font-flex text-2xl font-bold uppercase md:text-3xl">
+                          <div className="font-flex underline-hover text-2xl font-bold uppercase md:text-3xl">
                             <h2>Project1</h2>
                           </div>
                           <span className="ms-1 text-sm">
                             <Icon kind="internalLink" />
                           </span>
                         </div>
-                        <div className="font-flextext-base cursor-scale small font-bold text-orange">
-                          <p>Description1</p>
-                        </div>
                       </button>
+                      <div className="font-flextext-base cursor-scale small font-bold text-orange">
+                        <p>Description1</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ export default function Works() {
                       <button onClick={() => setModal2(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project Modal">
                         <div className="flex justify-start gap-3">
                           <div className="cursor-scale small flex items-center text-white">
-                            <div className="font-flex text-2xl font-bold uppercase leading-8 md:text-3xl">
+                            <div className="font-flex underline-hover text-2xl font-bold uppercase leading-8 md:text-3xl">
                               <h2>Project2</h2>
                             </div>
                             <span className="ms-1 text-sm">
@@ -98,10 +98,10 @@ export default function Works() {
                             </span>
                           </div>
                         </div>
-                        <div className="cursor-scale small text-base font-bold text-orange">
-                          <p>Description2</p>
-                        </div>
                       </button>
+                      <div className="cursor-scale small text-base font-bold text-orange">
+                        <p>Description2</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -118,17 +118,17 @@ export default function Works() {
                     <div className="mt-2 md:mb-0">
                       <button onClick={() => setModal3(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project Modal">
                         <div className="cursor-scale small flex items-center text-white">
-                          <div className="font-flex text-2xl font-bold uppercase md:text-3xl">
+                          <div className="font-flex underline-hover text-2xl font-bold uppercase md:text-3xl">
                             <h2>Project3</h2>
                           </div>
                           <span className="ms-1 text-sm">
                             <Icon kind="internalLink" />
                           </span>
                         </div>
-                        <div className="font-flextext-base cursor-scale small font-bold text-orange">
-                          <p>Description3</p>
-                        </div>
                       </button>
+                      <div className="font-flextext-base cursor-scale small font-bold text-orange">
+                        <p>Description3</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -146,7 +146,7 @@ export default function Works() {
                       <button onClick={() => setModal4(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project Modal">
                         <div className="flex justify-start gap-3">
                           <div className="cursor-scale small flex items-center text-white">
-                            <div className="font-flex text-2xl font-bold uppercase leading-8 md:text-3xl">
+                            <div className="font-flex underline-hover text-2xl font-bold uppercase leading-8 md:text-3xl">
                               <h2>Project4</h2>
                             </div>
                             <span className="ms-1 text-sm">
@@ -154,10 +154,10 @@ export default function Works() {
                             </span>
                           </div>
                         </div>
-                        <div className="cursor-scale small text-base font-bold text-orange">
-                          <p>Description4</p>
-                        </div>
                       </button>
+                      <div className="cursor-scale small text-base font-bold text-orange">
+                        <p>Description4</p>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -66,7 +66,7 @@ export default function About() {
                     </TranslateInOut>
                     <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
                       <Link href={siteMetadata.linkedin} className="cursor-scale small flex items-center text-center text-2xl md:text-3xl ">
-                        <p className="text-xs text-orange md:text-base">Lisandro Martínez</p>
+                        <p className="underline-hover text-xs text-orange md:text-base">Lisandro Martínez</p>
                       </Link>
                     </TranslateInOut>
                   </div>
@@ -99,7 +99,7 @@ export default function About() {
                             <Icon kind="certificate" />
                           </div>
                           <div>
-                            <h3 className="me-16 text-xl text-white">Certificates</h3>
+                            <h3 className="underline-hover me-16 text-xl text-white">Certificates</h3>
                           </div>
                         </div>
                       </TranslateInOut>
@@ -112,7 +112,7 @@ export default function About() {
                               <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
                                 <div className="flex items-center text-orange">
                                   <div>
-                                    <p>Development</p>
+                                    <p className="underline-hover">Development</p>
                                   </div>
                                   <span className="ms-2 text-sm text-white">
                                     <Icon kind="externalLink" />
@@ -126,7 +126,7 @@ export default function About() {
                               <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
                                 <div className="flex items-center text-orange">
                                   <div>
-                                    <p>Javascript</p>
+                                    <p className="underline-hover">Javascript</p>
                                   </div>
                                   <span className="ms-2 text-sm text-white">
                                     <Icon kind="externalLink" />
@@ -140,7 +140,7 @@ export default function About() {
                               <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
                                 <div className="flex items-center text-orange">
                                   <div>
-                                    <p>React</p>
+                                    <p className="underline-hover">React</p>
                                   </div>
                                   <span className="ms-2 text-sm text-white">
                                     <Icon kind="externalLink" />
@@ -154,7 +154,7 @@ export default function About() {
                               <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
                                 <div className="flex items-center text-orange">
                                   <div>
-                                    <p>Backend</p>
+                                    <p className="underline-hover">Backend</p>
                                   </div>
                                   <span className="ms-2 text-sm text-white">
                                     <Icon kind="externalLink" />
@@ -168,7 +168,7 @@ export default function About() {
                               <TranslateInOut overflowHidden delay={0.6} y={100} start="-100% bottom" end="top top" watch>
                                 <div className="flex items-center text-orange">
                                   <div>
-                                    <p>FullStack</p>
+                                    <p className="underline-hover">FullStack</p>
                                   </div>
                                   <span className="ms-2 text-sm text-white">
                                     <Icon kind="externalLink" />

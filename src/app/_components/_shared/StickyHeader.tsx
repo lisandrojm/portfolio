@@ -19,9 +19,9 @@ const StickyHeader: React.FC<StickyFooterProps> = ({ customTextLeft, customIcon 
         <div className="border-b border-white">
           <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
             <Link href={`#${customTextLeft}`} className="cursor-scale small  ms-2 inline-flex items-center pb-2 pt-4">
-              <div className="underline-hover flex items-center">
+              <div className="flex items-center">
                 <div className="md:text-1xl me-2 font-serif text-xl italic text-orange">{customIcon && <Icon kind={customIcon as keyof typeof components} />}</div>
-                <div>{customTextLeft && <p className="font-serif text-2xl font-bold uppercase italic text-white md:text-3xl">{customTextLeft}</p>}</div>
+                <div>{customTextLeft && <p className="underline-hover font-serif text-2xl font-bold uppercase italic text-white md:text-3xl">{customTextLeft}</p>}</div>
               </div>
             </Link>
           </TranslateInOut>
