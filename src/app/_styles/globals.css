@@ -20,7 +20,7 @@
 @layer base {
   :root {
     --accent-1: #000000;
-    --accent-1a: #00000073;
+    --accent-1a: #00000080;
     --accent-2: #ffffff;
     --accent-2a: #ffffffad;
     --accent-3: #f7768e;
@@ -38,7 +38,7 @@
       --accent-1: #ffffff;
       --accent-1a: #ffffffad;
       --accent-2: #000000;
-      --accent-2a: #00000073;
+      --accent-2a: #00000080;
       --accent-3: #15151e;
       --accent-4: #08c294;
       --accent-5: #79a1f7;
@@ -53,7 +53,7 @@
     --accent-1: #ffffff;
     --accent-1a: #ffffffad;
     --accent-2: #000000;
-    --accent-2a: #00000073;
+    --accent-2a: #00000080;
     --accent-3: #15151e;
     --accent-4: #08c294;
     --accent-5: #79a1f7;
@@ -66,7 +66,7 @@
 
   [data-theme='light'] {
     --accent-1: #000000;
-    --accent-1a: #00000073;
+    --accent-1a: #00000080;
     --accent-2: #ffffff;
     --accent-2a: #ffffffad;
     --accent-3: #f7768e;
