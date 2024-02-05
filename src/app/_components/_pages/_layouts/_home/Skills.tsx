@@ -2,6 +2,7 @@
 
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import LinkIcon from '@/_components/_icons/LinkIcons';
 import StickyHeader from '@/_components/_shared/StickyHeader';
@@ -12,6 +13,11 @@ import YPContainer from '@/_components/_containers/YPContainer';
 import TranslateInOut from '@/_components/_gsap/TranslateInOut';
 
 export default function Skills() {
+  const [isContentVisible, setIsContentVisible] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsContentVisible(!isContentVisible);
+  };
   return (
     <YMContainer>
       <section id="skills" className="bg-black_a">
@@ -76,12 +82,17 @@ export default function Skills() {
                 <div>
                   <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
                     <div className="mb-2 flex items-center">
-                      <div>
-                        <h2 className="flex items-center">Backend</h2>
-                      </div>
+                      <button onClick={handleButtonClick}>
+                        <h2 className="cursor-scale small underline-hover flex items-center uppercase text-white">Backend</h2>
+                      </button>
                       <div className="ms-2">
                         <p className="font-serif text-xs lowercase italic text-orange">*</p>
                       </div>
+                      {isContentVisible && (
+                        <div className="ms-2">
+                          <p className="font-serif text-xs normal-case italic text-orange opacity-100 transition-opacity duration-300 ease-in-out">In learning process...</p>
+                        </div>
+                      )}
                     </div>
                   </TranslateInOut>
                   <div className="flex flex-wrap gap-3 text-3xl text-orange md:text-4xl">
@@ -101,11 +112,6 @@ export default function Skills() {
                       <LinkIcon kind="handlebars" ariaLabel="Handlebars Icon" />
                     </TranslateInOut>
                   </div>
-                  <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
-                    <div className="mt-8">
-                      <p className="font-serif text-xs normal-case italic text-orange">* In learning process...</p>
-                    </div>
-                  </TranslateInOut>
                 </div>
                 <div>
                   <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
