@@ -30,6 +30,8 @@ export default function Works() {
   const { DemoModal: DemoModal2, setModal: setModal2 } = useDemoModal();
   const { DemoModal: DemoModal3, setModal: setModal3 } = useDemoModal();
   const { DemoModal: DemoModal4, setModal: setModal4 } = useDemoModal();
+  const { DemoModal: DemoModal5, setModal: setModal5 } = useDemoModal();
+  const { DemoModal: DemoModal6, setModal: setModal6 } = useDemoModal();
 
   const [open, setOpen] = useState<number>(0);
 
@@ -44,7 +46,7 @@ export default function Works() {
         <XContainer>
           <YPContainer>
             <div className="flex items-center justify-center pb-10 font-serif italic md:pb-20 ">
-              <Link href={'#works'} className="cursor-scale small flex items-center text-center text-2xl md:text-3xl">
+              <Link href={'#works'} className="cursor-scale small flex items-center text-center">
                 <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
                   <div className="flex items-center">
                     <div className="flex justify-center">
@@ -56,7 +58,7 @@ export default function Works() {
                         </RotateInOut>
                       </div>
                     </div>
-                    <div className="underline-hover md:text-3xlj md:text-3xlj ms-3 text-2xl text-orange">
+                    <div className="underline-hover ms-3 pe-1 text-2xl font-bold text-orange md:text-3xl">
                       <h2>Selected Projects</h2>
                     </div>
                   </div>
@@ -75,7 +77,7 @@ export default function Works() {
                       </div>
                     </button>
                     <div className="mt-2 md:mb-0">
-                      <button onClick={() => setModal1(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project Modal">
+                      <button onClick={() => setModal1(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 1 Modal">
                         <div className="cursor-scale small cursor-scale small flex items-center text-white">
                           <div className="font-flex underline-hover text-2xl font-bold uppercase md:text-3xl">
                             <h2>Project1</h2>
@@ -102,7 +104,7 @@ export default function Works() {
                       </div>
                     </button>
                     <div className="mt-2 md:mb-0">
-                      <button onClick={() => setModal2(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project Modal">
+                      <button onClick={() => setModal2(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 2 Modal">
                         <div className="flex justify-start gap-3">
                           <div className="cursor-scale small flex items-center text-white">
                             <div className="font-flex underline-hover text-2xl font-bold uppercase leading-8 md:text-3xl">
@@ -131,7 +133,7 @@ export default function Works() {
                       </div>
                     </button>
                     <div className="mt-2 md:mb-0">
-                      <button onClick={() => setModal3(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project Modal">
+                      <button onClick={() => setModal3(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 3 Modal">
                         <div className="cursor-scale small flex items-center text-white">
                           <div className="font-flex underline-hover text-2xl font-bold uppercase md:text-3xl">
                             <h2>Project3</h2>
@@ -158,7 +160,7 @@ export default function Works() {
                       </div>
                     </button>
                     <div className="mt-2 md:mb-0">
-                      <button onClick={() => setModal4(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project Modal">
+                      <button onClick={() => setModal4(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 4 Modal">
                         <div className="flex justify-start gap-3">
                           <div className="cursor-scale small flex items-center text-white">
                             <div className="font-flex underline-hover text-2xl font-bold uppercase leading-8 md:text-3xl">
@@ -178,6 +180,61 @@ export default function Works() {
                 </div>
               </RotateInOut3D>
             </div>
+            {/* Accordion "Other projects*/}
+            <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
+              <div className="mt-20 border-t border-solid border-orange pt-2 lg:me-10 lg:w-1/3">
+                <Accordion open={open === 1} icon={<AccordionIcon id={1} open={open} />} placeholder={''} className="pt-1 font-serif">
+                  <AccordionHeader className="border-0 py-0" onClick={() => handleOpen(1)} placeholder={''}>
+                    <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
+                      <div className="cursor-scale small flex items-center">
+                        <div className="me-2 text-3xl text-white">
+                          <Icon kind="plus" />
+                        </div>
+                        <div>
+                          <h3 className="underline-hover me-10 text-nowrap text-2xl italic text-orange md:text-3xl">Other projects</h3>
+                        </div>
+                      </div>
+                    </TranslateInOut>
+                  </AccordionHeader>
+                  <AccordionBody>
+                    <div className="font-flex mt-1 text-2xl text-white">
+                      <ul>
+                        {/*Project 5 */}
+                        <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
+                          <li className="mb-1">
+                            <button onClick={() => setModal5(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 5 Modal">
+                              <div className="cursor-scale small flex items-center text-white">
+                                <div className="font-flex underline-hover text-xl font-bold uppercase md:text-2xl">
+                                  <h2>Project5</h2>
+                                </div>
+                                <span className="ms-1 text-sm text-orange">
+                                  <Icon kind="internalLink" />
+                                </span>
+                              </div>
+                            </button>
+                          </li>
+                        </TranslateInOut>
+                        {/*Project 6 */}
+                        <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
+                          <li className="mb-1">
+                            <button onClick={() => setModal6(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 6 Modal">
+                              <div className="cursor-scale small flex items-center text-white">
+                                <div className="font-flex underline-hover text-xl font-bold uppercase md:text-2xl">
+                                  <h2>Project6</h2>
+                                </div>
+                                <span className="ms-1 text-sm text-orange">
+                                  <Icon kind="internalLink" />
+                                </span>
+                              </div>
+                            </button>
+                          </li>
+                        </TranslateInOut>
+                      </ul>
+                    </div>
+                  </AccordionBody>
+                </Accordion>
+              </div>
+            </TranslateInOut>
             {/* Modal */}
             {/* Project-1 Modal */}
             <DemoModal1
@@ -291,60 +348,116 @@ export default function Works() {
                 throw new Error('Function not implemented.');
               }}
             />
-            {/* Modal */}
-            {/* Accordion */}
-            <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
-              <div className="mt-20 border-t border-solid border-orange pt-2 lg:me-10 lg:w-1/3">
-                <Accordion open={open === 1} icon={<AccordionIcon id={1} open={open} />} placeholder={''} className="font-flex pt-1 uppercase">
-                  <AccordionHeader className="border-0 py-0" onClick={() => handleOpen(1)} placeholder={''}>
-                    <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
-                      <div className="cursor-scale small flex items-center">
-                        <div className="me-2 text-2xl text-orange">
-                          <Icon kind="plus" />
-                        </div>
-                        <div>
-                          <h3 className="underline-hover me-10 text-nowrap text-2xl uppercase text-white">Other projects</h3>
-                        </div>
-                      </div>
-                    </TranslateInOut>
-                  </AccordionHeader>
-                  <AccordionBody>
-                    <div className="mt-1 text-lg font-bold text-white">
-                      <ul>
-                        <li>
-                          <Link href="#" className="cursor-scale small flex text-white" aria-label="Proyect 5" target="_blank">
-                            <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
-                              <div className="flex items-center text-orange">
-                                <div>
-                                  <p className="underline-hover">Proyect5</p>
-                                </div>
-                                <span className="ms-2 text-sm text-white">
-                                  <Icon kind="externalLink" />
-                                </span>
-                              </div>
-                            </TranslateInOut>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="#" className="cursor-scale small flex text-white" aria-label="Project 6" target="_blank">
-                            <TranslateInOut overflowHidden delay={0.6} y={100} start="-100% bottom" end="top top" watch>
-                              <div className="flex items-center text-orange">
-                                <div>
-                                  <p className="underline-hover">Proyect6</p>
-                                </div>
-                                <span className="ms-2 text-sm text-white">
-                                  <Icon kind="externalLink" />
-                                </span>
-                              </div>
-                            </TranslateInOut>
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </AccordionBody>
-                </Accordion>
-              </div>
-            </TranslateInOut>
+            {/* Project5- Modal */}
+            <DemoModal5
+              title="Proyect5"
+              content="Description5"
+              stack={
+                <ul className="flex gap-3 text-2xl">
+                  <li>
+                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
+                  </li>
+                </ul>
+              }
+              hrefDemo="https://github.com/lisandrojm"
+              hrefCode="https://github.com/lisandrojm/portfolio"
+              src="/_static/_img/proyect-img.webp"
+              showDemoModal={false}
+              setModal={function (value: SetStateAction<boolean>): void {
+                throw new Error('Function not implemented.');
+              }}
+            />
+            {/* Project6- Modal */}
+            <DemoModal6
+              title="Proyect6"
+              content="Description5"
+              stack={
+                <ul className="flex gap-3 text-2xl">
+                  <li>
+                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
+                  </li>
+                </ul>
+              }
+              hrefDemo="https://github.com/lisandrojm"
+              hrefCode="https://github.com/lisandrojm/portfolio"
+              src="/_static/_img/proyect-img.webp"
+              showDemoModal={false}
+              setModal={function (value: SetStateAction<boolean>): void {
+                throw new Error('Function not implemented.');
+              }}
+            />
+            <DemoModal5
+              title="Proyect5"
+              content="Description5"
+              stack={
+                <ul className="flex gap-3 text-2xl">
+                  <li>
+                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
+                  </li>
+                </ul>
+              }
+              hrefDemo="https://github.com/lisandrojm"
+              hrefCode="https://github.com/lisandrojm/portfolio"
+              src="/_static/_img/proyect-img.webp"
+              showDemoModal={false}
+              setModal={function (value: SetStateAction<boolean>): void {
+                throw new Error('Function not implemented.');
+              }}
+            />
+            <DemoModal5
+              title="Proyect5"
+              content="Description5"
+              stack={
+                <ul className="flex gap-3 text-2xl">
+                  <li>
+                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
+                  </li>
+                </ul>
+              }
+              hrefDemo="https://github.com/lisandrojm"
+              hrefCode="https://github.com/lisandrojm/portfolio"
+              src="/_static/_img/proyect-img.webp"
+              showDemoModal={false}
+              setModal={function (value: SetStateAction<boolean>): void {
+                throw new Error('Function not implemented.');
+              }}
+            />
           </YPContainer>
         </XContainer>
       </section>

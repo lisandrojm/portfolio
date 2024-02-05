@@ -25,7 +25,7 @@ export default function Skills() {
                     <span className="me-2 text-2xl text-white">
                       <Icon kind="academic" />
                     </span>
-                    <h2 className="underline-hover text-orange">
+                    <h2 className="underline-hover pe-1 font-bold text-orange">
                       My knowledge <br />
                     </h2>
                   </div>
