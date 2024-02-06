@@ -44,7 +44,8 @@ const RootLoading: React.FC<RootLoadingProps> = ({ onLoadingComplete }) => {
         <TransitionLayout>
           <div className="flex h-svh flex-col items-center justify-center">
             <h1>
-              <span className="gs_reveal_fromBottom text-md font-mono text-xl text-orange">lisandrojm </span>
+              <span className="gs_reveal_fromBottom text-md font-mono text-xl text-orange">lisandrojm</span>
+              <span className="gs_reveal_fromBottom text-md px-2 font-mono text-xl text-white">|</span>
               <span className="font-serif text-2xl">Portfolio</span>
             </h1>
           </div>
