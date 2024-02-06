@@ -45,11 +45,11 @@ export default function About() {
                         <Image src={'/_static/_img/profile-side.svg'} width={90} height={90} alt="Avatar" priority className="h-30 w-30 rounded-full xl:h-40 xl:w-40" />
                       </div>
                       <div className="absolute mb-6 flex items-center text-sm text-white xl:mb-8">
-                        <p className="text-xs text-orange xl:text-2xl">{'<'}</p>
-                        <div className="ps-1 text-xs text-orange xl:text-xl">
+                        <p className="text-base text-orange xl:text-3xl">{'<'}</p>
+                        <div className="ps-1 text-base text-orange xl:text-3xl">
                           <Icon kind="skills" />
                         </div>
-                        <p className="text-xs text-orange xl:text-2xl">{'>'}</p>
+                        <p className="text-base text-orange xl:text-3xl">{'>'}</p>
                       </div>
                     </div>
                   </RotateInOut>
