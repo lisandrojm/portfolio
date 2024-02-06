@@ -2,6 +2,7 @@
 
 'use client';
 
+import React, { useState } from 'react';
 import { ReactNode } from 'react';
 import TransitionLayout from '@/_components/_shared/TransitionLayout';
 import Provider from '@/_context/Provider';
@@ -12,6 +13,7 @@ import ScrollUp from '@/_components/_shared/ScrollUp';
 import ScrollIndicator from '@/_components/_shared/ScrollIndicator';
 import { TransitionContextProvider } from '@/_context/TransitionContextProvider';
 import Cursor from '@/_components/_gsap/Cursor';
+import RootLoading from '@/(routes)/loading';
 
 interface Props {
   children: ReactNode;
@@ -19,8 +21,15 @@ interface Props {
 
 const LayoutWrapper = ({ children }: Props) => {
   console.log('👋 Hello Developers!');
+  const [loading, setLoading] = useState(true);
 
-  return (
+  const handleLoadingComplete = () => {
+    setLoading(false);
+  };
+
+  return loading ? (
+    <RootLoading onLoadingComplete={handleLoadingComplete} />
+  ) : (
     <Provider>
       <TransitionContextProvider>
         <Background />
