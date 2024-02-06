@@ -74,9 +74,6 @@ export default function Skills() {
                     <TranslateInOut overflowHidden delay={1.1} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="materialui" ariaLabel="Material Ui" />
                     </TranslateInOut>
-                    <TranslateInOut overflowHidden delay={1.2} y={100} start="-100% bottom" end="top top" watch>
-                      <LinkIcon kind="docker" ariaLabel="Docker Icon" />
-                    </TranslateInOut>
                   </div>
                 </div>
                 <div>
@@ -140,6 +137,9 @@ export default function Skills() {
                     </TranslateInOut>
                     <TranslateInOut overflowHidden delay={0.7} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="github" ariaLabel="GitHub Icon" />
+                    </TranslateInOut>
+                    <TranslateInOut overflowHidden delay={0.8} y={100} start="-100% bottom" end="top top" watch>
+                      <LinkIcon kind="docker" ariaLabel="Docker Icon" />
                     </TranslateInOut>
                   </div>
                 </div>

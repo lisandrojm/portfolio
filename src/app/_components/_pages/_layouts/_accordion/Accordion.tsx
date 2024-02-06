@@ -2,6 +2,7 @@
 
 'use client';
 
+import Link from 'next/link';
 import XContainer from '@/_components/_containers/XContainer';
 import YMSingleSectionContainer from '@/_components/_containers/YMSingleSectionContainer';
 import React, { useState } from 'react';
@@ -28,6 +29,11 @@ export default function Proyect() {
         <XContainer>
           <div className="flex flex-col items-center">
             <div className="w-full lg:w-1/2">
+              <div className="uppercase">
+                <Link href={'./'} className="underline-hover text-2xl text-white">
+                  Home
+                </Link>
+              </div>
               <Accordion open={open === 1} icon={<Icon id={1} open={open} />} placeholder={''}>
                 <AccordionHeader onClick={() => handleOpen(1)} placeholder={''}>
                   What is Material Tailwind?

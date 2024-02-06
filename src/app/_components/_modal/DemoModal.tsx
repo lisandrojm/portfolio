@@ -116,7 +116,7 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
           <div className="flex h-svh flex-col justify-between">
             <TranslateInOut overflowHidden delay={0.2} y={100}>
               <button className="small flex w-full justify-end pt-4 text-3xl text-white" onClick={() => setModal(false)} data-modal-close>
-                <div className="cursor-scale">
+                <div className="cursor-scale small">
                   <Icon kind="arrowLeft" />
                 </div>
               </button>
@@ -124,7 +124,7 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
             <TranslateInOut overflowHidden delay={0.3} y={100}>
               <div data-modal-content className="flex flex-col items-start justify-between gap-5 md:items-center">
                 <Link href={hrefDemo} aria-label="Open Project Modal" className="flex w-full justify-center" target="_blank">
-                  <Image src={src} width={600} height={283} alt="Picture of the author" priority className="cursor-scale small scale-hover md:w-3/4" />
+                  <Image src={src} width={600} height={283} alt="Picture of the author" priority className="cursor-scale scale-hover md:w-3/4" />
                 </Link>
                 <div className="flex flex-col md:w-3/4">
                   <TranslateInOut overflowHidden delay={0.4} y={100}>

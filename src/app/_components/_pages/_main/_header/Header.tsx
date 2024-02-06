@@ -21,7 +21,7 @@ export default function Header() {
       <XContainer>
         <nav className="flex items-center justify-between border-b border-white px-3 pb-2 pt-6">
           <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
-            <Link href="#top" aria-label={`Navigate to ${siteMetadata.headerTitle}`} className="hover">
+            <Link href="./" aria-label={`Navigate to ${siteMetadata.headerTitle}`} className="hover">
               <div className="flex items-center justify-between">
                 <div className="cursor-scale small underline-hover flex items-center justify-center font-bold">
                   <div>

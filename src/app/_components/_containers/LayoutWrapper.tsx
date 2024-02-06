@@ -23,11 +23,11 @@ const LayoutWrapper = ({ children }: Props) => {
   return (
     <Provider>
       <TransitionContextProvider>
-        <Cursor />
         <Background />
         <TransitionLayout>
           <div id="top" className="flex h-svh flex-col justify-between">
             <ScrollIndicator />
+            <Cursor />
             <Header />
             <main>{children}</main>
             <Footer />
