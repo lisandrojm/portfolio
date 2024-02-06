@@ -42,7 +42,7 @@ export default function About() {
                     <div className="scale-hover relative flex items-center justify-center overflow-hidden rounded-full">
                       <div className="absolute inset-0 z-10 rounded-full bg-orange mix-blend-multiply"></div>
                       <div className="z-1 relative">
-                        <Image src={'/_static/_img/profile.webp'} width={90} height={90} alt="Avatar" priority className="h-30 w-30 rounded-full xl:h-40 xl:w-40" />
+                        <Image src={'/_static/_img/profile-side.svg'} width={90} height={90} alt="Avatar" priority className="h-30 w-30 rounded-full xl:h-40 xl:w-40" />
                       </div>
                       <div className="absolute mb-6 flex items-center text-sm text-white xl:mb-8">
                         <p className="text-xs xl:text-2xl">{'<'}</p>
