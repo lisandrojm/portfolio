@@ -46,7 +46,6 @@ export default function Hero() {
               )}
             </div>
           </div>
-
           <div className="xs--title font-regular pe-2 font-bold uppercase italic">
             <ul className="flex flex-col items-end">
               <TranslateInOut overflowHidden delay={0.4} y={100}>
@@ -54,7 +53,7 @@ export default function Hero() {
                   <div className="flex items-end">
                     <li className="xs--margin cursor-scale flex items-end text-7xl text-orange sm:text-[130px]">
                       <span className="underline-hover">Works</span>
-                      <div className="xs--hide mb-2 text-lg md:text-3xl">
+                      <div className="xs--hide mb-2 text-base md:text-2xl">
                         <Icon kind="internalLink" />
                       </div>
                     </li>
@@ -66,7 +65,7 @@ export default function Hero() {
                   <div className="flex items-end">
                     <li className="xs--margin cursor-scale flex items-end text-7xl text-orange sm:text-[130px]">
                       <span className="underline-hover">Skills</span>
-                      <div className="xs--hide mb-2 text-lg md:text-3xl">
+                      <div className="xs--hide mb-2 text-base md:text-2xl">
                         <Icon kind="internalLink" />
                       </div>
                     </li>
