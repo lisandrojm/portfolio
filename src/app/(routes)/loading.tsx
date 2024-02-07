@@ -52,11 +52,7 @@ const RootLoading: React.FC<RootLoadingProps> = ({ onLoadingComplete }) => {
             <h1 className="flex items-center">
               <FadeOut durationOut={1} delayOut={0.1} onComplete={onLoadingComplete}>
                 <span className="gs_reveal_fromBottom text-md font-mono text-xl text-orange">lisandrojm</span>
-              </FadeOut>
-              <FadeOut durationOut={1} delayOut={0.2} onComplete={onLoadingComplete}>
                 <span className="gs_reveal_fromBottom text-md px-2 font-mono text-xl text-white">|</span>
-              </FadeOut>
-              <FadeOut durationOut={1} delayOut={0.2} onComplete={onLoadingComplete}>
                 <span className="font-serif text-2xl">Portfolio</span>
               </FadeOut>
             </h1>
