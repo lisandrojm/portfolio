@@ -1,3 +1,5 @@
+/* src/app/_components/_gsap/FadeInOut.tsx */
+
 import React, { ReactNode } from 'react';
 import classNames from 'classnames';
 import AnimateInOut from './AnimateInOut';
