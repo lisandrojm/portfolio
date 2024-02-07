@@ -53,14 +53,14 @@ const Contact = () => {
   } = {
     icon: 'success',
     title: 'Success!',
-    text: 'Thank you for your interest in my work! Your message has been received successfully. I will get back to you as soon as possible. Thanks again!!',
+    text: 'Thank you for your interest in my work! Your message has been received successfully. I will get back to you as soon as possible.',
     customClass: {
       popup: 'bg-black text-white border-solid border-2 border-white',
       title: 'text-orange',
       content: 'text-white',
       confirmButton: 'bg-black text-orange font-bold px-3 py-1 border-solid border-2 border-orange hover:bg-black_a',
       icon: 'bg-black_a text-white',
-      text: 'text-base',
+      text: 'text-sm text-white font-flex',
     },
     buttonsStyling: false,
   };
