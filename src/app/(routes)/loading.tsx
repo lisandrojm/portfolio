@@ -49,14 +49,20 @@ const RootLoading: React.FC<RootLoadingProps> = ({ onLoadingComplete }) => {
       <TransitionContextProvider>
         <TransitionLayout>
           <div className="flex h-svh flex-col items-center justify-center">
-            <h1 className="flex">
+            <h1 className="flex items-center">
               <FadeOut durationOut={1} delayOut={0.1} onComplete={onLoadingComplete}>
-                <span className="gs_reveal_fromBottom text-md font-mono text-xl text-orange">lisandrojm</span>
+                <span className="relative me-3 flex h-3 w-3 items-center justify-center">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75"></span>
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-white"></span>
+                </span>
               </FadeOut>
               <FadeOut durationOut={1} delayOut={0.2} onComplete={onLoadingComplete}>
-                <span className="gs_reveal_fromBottom text-md px-2 font-mono text-xl text-white">|</span>
+                <span className="gs_reveal_fromBottom text-md font-mono text-xl text-orange">lisandrojm</span>
               </FadeOut>
               <FadeOut durationOut={1} delayOut={0.3} onComplete={onLoadingComplete}>
+                <span className="gs_reveal_fromBottom text-md px-2 font-mono text-xl text-white">|</span>
+              </FadeOut>
+              <FadeOut durationOut={1} delayOut={0.4} onComplete={onLoadingComplete}>
                 <span className="font-serif text-2xl">Portfolio</span>
               </FadeOut>
             </h1>
