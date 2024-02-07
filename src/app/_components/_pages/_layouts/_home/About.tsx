@@ -44,7 +44,7 @@ export default function About() {
                       <div className="z-1 relative">
                         <Image src={'/_static/_img/profile-side.svg'} width={90} height={90} alt="Avatar" priority className="h-30 w-30 rounded-full xl:h-40 xl:w-40" />
                       </div>
-                      <div className="absolute mb-6 flex items-center text-sm text-white xl:mb-8">
+                      <div className="absolute mb-5 ms-2 flex items-center text-sm text-white xl:mb-9 xl:ms-3">
                         <p className="text-base text-orange xl:text-3xl">{'<'}</p>
                         <div className="ps-1 text-base text-orange xl:text-3xl">
                           <Icon kind="skills" />
