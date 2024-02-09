@@ -24,24 +24,18 @@ interface RootLoadingProps {
 
 const RootLoading: React.FC<RootLoadingProps> = ({ onLoadingComplete }) => {
   useEffect(() => {
-    const navigationEntries = window.performance.getEntriesByType('navigation');
-    if (navigationEntries.length > 0) {
-      const navigationEntry = navigationEntries[0] as PerformanceNavigationTiming;
+    // Esperar a que la página se cargue completamente
+    window.onload = () => {
+      // Después de que la página se haya cargado completamente, esperar 1 segundo adicional antes de ocultar el componente de carga
+      setTimeout(() => {
+        onLoadingComplete();
+      }, 4000);
+    };
 
-      const loadStart = navigationEntry.responseEnd;
-      const loadEnd = navigationEntry.loadEventEnd;
-
-      const loadTime = loadEnd - loadStart;
-
-      const timeout = setTimeout(
-        () => {
-          onLoadingComplete();
-        },
-        Math.max(4000, loadTime)
-      );
-
-      return () => clearTimeout(timeout);
-    }
+    return () => {
+      // Limpiar el evento onload cuando el componente se desmonte para evitar problemas de memoria
+      window.onload = null;
+    };
   }, [onLoadingComplete]);
 
   return (
@@ -51,7 +45,7 @@ const RootLoading: React.FC<RootLoadingProps> = ({ onLoadingComplete }) => {
           <div className="flex h-svh flex-col items-center justify-center">
             <h1 className="flex items-center">
               <FadeOut durationOut={1} delayOut={0.1} onComplete={onLoadingComplete}>
-                <span className="gs_reveal_fromBottom text-md font-mono text-xl text-orange">lisandrojmz</span>
+                <span className="gs_reveal_fromBottom text-md font-mono text-xl text-orange">lisandrojm</span>
                 <span className="gs_reveal_fromBottom text-md px-2 font-mono text-xl text-white">|</span>
                 <span className="font-serif text-2xl">Portfolio</span>
               </FadeOut>
