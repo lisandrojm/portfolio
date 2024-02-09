@@ -75,14 +75,14 @@ export default function Works() {
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:justify-end md:text-lg">
                     <button onClick={() => setModal1(true)} aria-label="Open Project Modal">
                       <div className="flex justify-start ">
-                        <Image className="cursor-scale scale-hover w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
+                        <Image className="cursor-scale scale-hover grayscale-hover w-full" src="/_static/_img/proyect1-img.webp" width={600} height={283} alt="Picture of the author" priority />
                       </div>
                     </button>
                     <div className="mt-2 md:mb-0">
                       <button onClick={() => setModal1(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 1 Modal">
                         <div className="cursor-scale small cursor-scale small flex items-center text-white">
                           <div className="font-flex underline-hover text-2xl font-bold uppercase md:text-3xl">
-                            <h2>Project1</h2>
+                            <h2>Freelo Ecom</h2>
                           </div>
                           <span className="ms-1 text-sm">
                             <Icon kind="internalLink" />
@@ -90,7 +90,7 @@ export default function Works() {
                         </div>
                       </button>
                       <div className="font-flextext-base cursor-scale small font-bold text-orange">
-                        <p>Description1</p>
+                        <p>Front-End Ecommerce</p>
                       </div>
                     </div>
                   </div>
@@ -102,7 +102,7 @@ export default function Works() {
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:text-lg">
                     <button onClick={() => setModal2(true)} aria-label="Open Project Modal">
                       <div className="flex justify-start md:justify-end lg:me-5">
-                        <Image className="cursor-scale scale-hover w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
+                        <Image className="cursor-scale scale-hover w-full" src="/_static/_img/proyect-img.webp" width={600} height={283} alt="Picture of the author" priority />
                       </div>
                     </button>
                     <div className="mt-2 md:mb-0">
@@ -131,7 +131,7 @@ export default function Works() {
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:justify-end md:text-lg">
                     <button onClick={() => setModal3(true)} aria-label="Open Project Modal">
                       <div className="flex justify-start">
-                        <Image className="cursor-scale scale-hover w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
+                        <Image className="cursor-scale scale-hover w-full" src="/_static/_img/proyect-img.webp" width={600} height={283} alt="Picture of the author" priority />
                       </div>
                     </button>
                     <div className="mt-2 md:mb-0">
@@ -158,7 +158,7 @@ export default function Works() {
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:text-lg">
                     <button onClick={() => setModal4(true)} aria-label="Open Project Modal">
                       <div className="flex justify-start md:justify-end lg:me-5">
-                        <Image className="cursor-scale scale-hover w-full" src="/_static/_img/proyect-img.webp" width={482} height={227} alt="Picture of the author" priority />
+                        <Image className="cursor-scale scale-hover w-full" src="/_static/_img/proyect-img.webp" width={600} height={283} alt="Picture of the author" priority />
                       </div>
                     </button>
                     <div className="mt-2 md:mb-0">
@@ -240,27 +240,34 @@ export default function Works() {
             {/* Modal */}
             {/* Project-1 Modal */}
             <DemoModal1
-              title="Proyect1"
-              content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa veniam, voluptatum labore qui hic illo in."
+              title="Freelo Ecom"
+              content={
+                <>
+                  Project created during the ReactJS course of the Full Stack career at{' '}
+                  <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="underline-hover text-orange" target="_blank" rel="noopener noreferrer">
+                    Coderhouse
+                  </Link>
+                </>
+              }
               stack={
                 <ul className="flex gap-3 text-2xl">
                   <li>
                     <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
                   </li>
                   <li>
-                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
+                    <LinkIcon kind="bootstrap" ariaLabel="Tailwindcss Icon" />
                   </li>
                   <li>
-                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
+                    <LinkIcon kind="js" ariaLabel="Tailwindcss Icon" />
                   </li>
                   <li>
                     <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
                   </li>
                 </ul>
               }
-              hrefDemo="https://github.com/lisandrojm"
-              hrefCode="https://github.com/lisandrojm/portfolio"
-              src="/_static/_img/proyect-img.webp"
+              hrefDemo="https://pf-martinez.vercel.app/"
+              hrefCode="https://github.com/lisandrojm/proyecto-final-coderhouse-react"
+              src="/_static/_img/proyect1-img.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');

@@ -124,7 +124,7 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
             <TranslateInOut overflowHidden delay={0.3} y={100}>
               <div data-modal-content className="flex flex-col items-start justify-between gap-5 md:items-center">
                 <Link href={hrefDemo} aria-label="Open Project Modal" className="flex w-full justify-center" target="_blank">
-                  <Image src={src} width={600} height={283} alt="Picture of the author" priority className="cursor-scale scale-hover md:w-3/4" />
+                  <Image src={src} width={1200} height={566} alt="Picture of the author" priority className="cursor-scale grayscale-hover md:w-3/4" />
                 </Link>
                 <div className="flex flex-col md:w-3/4">
                   <TranslateInOut overflowHidden delay={0.4} y={100}>
