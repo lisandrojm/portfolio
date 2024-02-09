@@ -37,7 +37,7 @@ const RootLoading: React.FC<RootLoadingProps> = ({ onLoadingComplete }) => {
         () => {
           onLoadingComplete();
         },
-        Math.max(1000, loadTime)
+        Math.max(4000, loadTime)
       );
 
       return () => clearTimeout(timeout);
