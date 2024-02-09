@@ -33,7 +33,7 @@ const RootLoading: React.FC<RootLoadingProps> = ({ onLoadingComplete }) => {
 
       const loadTime = loadEnd - loadStart;
 
-      const minimumLoadTime = 4000; // 4 segundos
+      const minimumLoadTime = 9000; // 4 segundos
 
       const timeout = setTimeout(
         () => {
