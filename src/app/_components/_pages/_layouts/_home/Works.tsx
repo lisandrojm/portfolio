@@ -158,7 +158,7 @@ export default function Works() {
                   <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:text-lg">
                     <button onClick={() => setModal4(true)} aria-label="Open Project Modal">
                       <div className="flex justify-start md:justify-end lg:me-5">
-                        <Image className="cursor-scale scale-hover w-full" src="/_static/_img/proyect-img.webp" width={600} height={283} alt="Picture of the author" priority />
+                        <Image className="cursor-scale scale-hover grayscale-hover w-full" src="/_static/_img/proyect4-img.webp" width={600} height={283} alt="Picture of the author" priority />
                       </div>
                     </button>
                     <div className="mt-2 md:mb-0">
@@ -166,7 +166,7 @@ export default function Works() {
                         <div className="flex justify-start gap-3">
                           <div className="cursor-scale small flex items-center text-white">
                             <div className="font-flex underline-hover text-2xl font-bold uppercase leading-8 md:text-3xl">
-                              <h2>Project4</h2>
+                              <h2>Freelander Front</h2>
                             </div>
                             <span className="ms-1 text-sm">
                               <Icon kind="externalLink" />
@@ -175,7 +175,7 @@ export default function Works() {
                         </div>
                       </button>
                       <div className="cursor-scale small text-base font-bold text-orange">
-                        <p>Description4</p>
+                        <p>Front-End</p>
                       </div>
                     </div>
                   </div>
@@ -345,27 +345,34 @@ export default function Works() {
             />
             {/* Project4- Modal */}
             <DemoModal4
-              title="Proyect4"
-              content="Description4"
+              title="Freelander Front"
+              content={
+                <>
+                  Project created during the Developer course of the Full Stack career at{' '}
+                  <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="underline-hover text-orange" target="_blank" rel="noopener noreferrer">
+                    Coderhouse
+                  </Link>
+                </>
+              }
               stack={
                 <ul className="flex gap-3 text-2xl">
                   <li>
-                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
+                    <LinkIcon kind="html" ariaLabel="Html Icon" />
                   </li>
                   <li>
-                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
+                    <LinkIcon kind="css" ariaLabel="Css Icon" />
                   </li>
                   <li>
-                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
+                    <LinkIcon kind="js" ariaLabel="Javascript Icon" />
                   </li>
                   <li>
-                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
+                    <LinkIcon kind="bootstrap" ariaLabel="Bootstrap Icon" />
                   </li>
                 </ul>
               }
-              hrefDemo="https://github.com/lisandrojm"
-              hrefCode="https://github.com/lisandrojm/portfolio"
-              src="/_static/_img/proyect-img.webp"
+              hrefDemo="https://proyecto-final-coderhouse-desarrollo-web.vercel.app/"
+              hrefCode="https://github.com/lisandrojm/proyecto-final-coderhouse-desarrollo-web"
+              src="/_static/_img/proyect4-img.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
@@ -393,7 +400,7 @@ export default function Works() {
               }
               hrefDemo="https://github.com/lisandrojm"
               hrefCode="https://github.com/lisandrojm/portfolio"
-              src="/_static/_img/proyect-img.webp"
+              src="/_static/_img/proyect4-img.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
