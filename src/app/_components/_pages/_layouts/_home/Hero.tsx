@@ -78,8 +78,8 @@ export default function Hero() {
             <TranslateInOut overflowHidden delay={0.6} y={100}>
               <div className="pe-1 pt-2 font-serif italic">
                 <p className=" text-xl">
-                  His, my name is Lisandro. <br /> I am a Front End developer <br />
-                  based in Argentina.
+                  Hi, my name is Lisandro. <br /> I am a Front End developer <br />
+                  based in Argentina.Testing
                 </p>
               </div>
             </TranslateInOut>
