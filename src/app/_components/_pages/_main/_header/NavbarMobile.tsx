@@ -32,12 +32,12 @@ export default function NavbarMobile() {
       </button>
       <div className={`fixed inset-0 left-0 top-0 z-50 h-full w-full transform backdrop-blur-lg duration-300 ease-in-out ${navShow ? 'translate-x-0' : 'translate-x-full'}`}>
         <XContainer>
-          <div className="flex items-center justify-between border-b border-white px-3 pb-4 pt-7">
+          <div className="flex items-center justify-between border-b border-white px-3 pb-3 pt-7">
             <div className="flex items-center text-xl">
               <span className="me-2 text-white">
                 <Icon kind="ninja" />
               </span>
-              <Link onClick={onToggleNav} className="text-1xl m-0 font-serif italic leading-5 text-orange" href="/" aria-label={`Navigate to ${siteMetadata.headerTitle}`}>
+              <Link onClick={onToggleNav} className="text-1xl m-0 font-serif italic text-orange" href="/" aria-label={`Navigate to ${siteMetadata.headerTitle}`}>
                 All Killer, No Filler.
               </Link>
             </div>
