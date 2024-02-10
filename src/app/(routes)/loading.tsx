@@ -12,7 +12,9 @@
 } */
 'use client';
 
-import React, { useEffect } from 'react';
+/* src/app/(routes)/loading.tsx */
+
+import React, { useEffect, useState } from 'react';
 import Provider from '@/_context/Provider';
 import { TransitionContextProvider } from '@/_context/TransitionContextProvider';
 import TransitionLayout from '@/_components/_shared/TransitionLayout';
@@ -23,35 +25,15 @@ interface RootLoadingProps {
 }
 
 const RootLoading: React.FC<RootLoadingProps> = ({ onLoadingComplete }) => {
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    console.log('useEffect is triggered');
+    const timer = setTimeout(() => {
+      setLoading(false);
+      onLoadingComplete();
+    }, 3000);
 
-    const navigationEntries = window.performance.getEntriesByType('navigation');
-    console.log('Navigation entries:', navigationEntries);
-
-    if (navigationEntries.length > 0) {
-      const navigationEntry = navigationEntries[0] as PerformanceNavigationTiming;
-      console.log('Navigation entry:', navigationEntry);
-
-      const loadStart = navigationEntry.responseEnd;
-      const loadEnd = navigationEntry.loadEventEnd;
-
-      const loadTime = loadEnd - loadStart;
-      console.log('Load time:', loadTime);
-
-      const timeout = setTimeout(
-        () => {
-          console.log('onLoadingComplete is triggered');
-          onLoadingComplete();
-        },
-        Math.max(8000, loadTime)
-      );
-
-      return () => {
-        console.log('Clearing timeout');
-        clearTimeout(timeout);
-      };
-    }
+    return () => clearTimeout(timer);
   }, [onLoadingComplete]);
 
   return (

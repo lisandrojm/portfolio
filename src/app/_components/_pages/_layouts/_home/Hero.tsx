@@ -79,7 +79,7 @@ export default function Hero() {
               <div className="pe-1 pt-2 font-serif italic">
                 <p className=" text-xl">
                   Hi, my name is Lisandro. <br /> I am a Front End developer <br />
-                  based in Argentina.Testin 8seg
+                  based in Argentina.
                 </p>
               </div>
             </TranslateInOut>
