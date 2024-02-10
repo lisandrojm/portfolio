@@ -44,7 +44,7 @@ const RootLoading: React.FC<RootLoadingProps> = ({ onLoadingComplete }) => {
           console.log('onLoadingComplete is triggered');
           onLoadingComplete();
         },
-        Math.max(4000, loadTime)
+        Math.max(8000, loadTime)
       );
 
       return () => {
