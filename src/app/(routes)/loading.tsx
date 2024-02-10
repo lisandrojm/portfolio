@@ -1,20 +1,8 @@
 /* src/app/(routes)/loading.tsx */
 
-/* export default function RootLoading() {
-  return (
-    <div className="flex h-svh flex-col items-center justify-center">
-      <h1>
-        <span className="text-md font-mono text-xl text-orange">lisandrojm </span>
-        <span className="font-serif text-2xl">Portfolio</span>
-      </h1>
-    </div>
-  );
-} */
 'use client';
 
-/* src/app/(routes)/loading.tsx */
-
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Provider from '@/_context/Provider';
 import { TransitionContextProvider } from '@/_context/TransitionContextProvider';
 import TransitionLayout from '@/_components/_shared/TransitionLayout';
@@ -25,15 +13,25 @@ interface RootLoadingProps {
 }
 
 const RootLoading: React.FC<RootLoadingProps> = ({ onLoadingComplete }) => {
-  const [loading, setLoading] = useState(true);
-
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-      onLoadingComplete();
-    }, 3000);
+    const navigationEntries = window.performance.getEntriesByType('navigation');
+    if (navigationEntries.length > 0) {
+      const navigationEntry = navigationEntries[0] as PerformanceNavigationTiming;
 
-    return () => clearTimeout(timer);
+      const loadStart = navigationEntry.responseEnd;
+      const loadEnd = navigationEntry.loadEventEnd;
+
+      const loadTime = loadEnd - loadStart;
+
+      const timeout = setTimeout(
+        () => {
+          onLoadingComplete();
+        },
+        Math.max(1000, loadTime)
+      );
+
+      return () => clearTimeout(timeout);
+    }
   }, [onLoadingComplete]);
 
   return (
