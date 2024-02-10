@@ -146,7 +146,7 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
               <div className="flex flex-col items-start justify-between gap-4 border-t border-white px-3 pb-6 pt-4 md:flex-row md:items-center">
                 <div className="flex items-center justify-center">
                   <h6 className="xs--hide text-md text-orange">
-                    site stack<span className="px-2">|</span>
+                    stack<span className="px-2">|</span>
                   </h6>
                   {stack}
                 </div>
