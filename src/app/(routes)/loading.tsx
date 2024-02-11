@@ -1,56 +1,13 @@
 /* src/app/(routes)/loading.tsx */
 
-'use client';
-
-import React, { useEffect } from 'react';
-import Provider from '@/_context/Provider';
-import { TransitionContextProvider } from '@/_context/TransitionContextProvider';
-import TransitionLayout from '@/_components/_shared/TransitionLayout';
-import FadeOut from '@/_components/_gsap/FadeOut'; // Importar el componente FadeOut
-
-interface RootLoadingProps {
-  onLoadingComplete: () => void;
-}
-
-const RootLoading: React.FC<RootLoadingProps> = ({ onLoadingComplete }) => {
-  useEffect(() => {
-    const navigationEntries = window.performance.getEntriesByType('navigation');
-    if (navigationEntries.length > 0) {
-      const navigationEntry = navigationEntries[0] as PerformanceNavigationTiming;
-
-      const loadStart = navigationEntry.responseEnd;
-      const loadEnd = navigationEntry.loadEventEnd;
-
-      const loadTime = loadEnd - loadStart;
-
-      const timeout = setTimeout(
-        () => {
-          onLoadingComplete();
-        },
-        Math.max(1000, loadTime)
-      );
-
-      return () => clearTimeout(timeout);
-    }
-  }, [onLoadingComplete]);
-
+export default function Loading() {
   return (
-    <Provider>
-      <TransitionContextProvider>
-        <TransitionLayout>
-          <div className="flex h-svh flex-col items-center justify-center">
-            <h1 className="flex items-center">
-              <FadeOut durationOut={1} delayOut={0.1} onComplete={onLoadingComplete}>
-                <span className="gs_reveal_fromBottom text-md font-mono text-xl text-orange">lisandrojm</span>
-                <span className="gs_reveal_fromBottom text-md px-2 font-mono text-xl text-white">|</span>
-                <span className="font-serif text-2xl">Portfolio</span>
-              </FadeOut>
-            </h1>
-          </div>
-        </TransitionLayout>
-      </TransitionContextProvider>
-    </Provider>
+    <div className="flex h-svh flex-col items-center justify-center">
+      <h1 className="flex items-center">
+        <span className="gs_reveal_fromBottom text-md font-mono text-xl text-orange">lisandrojm</span>
+        <span className="gs_reveal_fromBottom text-md px-2 font-mono text-xl text-white">|</span>
+        <span className="font-serif text-xl">Portfolio</span>
+      </h1>
+    </div>
   );
-};
-
-export default RootLoading;
+}
