@@ -1,3 +1,5 @@
+/* src/app/_components/_icons/LinkIcons.tsx */
+
 import React, { FC } from 'react';
 import Link from 'next/link';
 import Icon, { IconKind } from '@/_components/_icons/Icons';

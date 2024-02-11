@@ -1,4 +1,4 @@
-/* src/app/_components/_containers/YPContainer.tsx */
+/* src/app/_components/_containers/YMSingleSectionContainer.tsx */
 
 import { ReactNode } from 'react';
 

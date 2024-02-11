@@ -1,4 +1,5 @@
 /* src/app/_components/_pages/_layouts/_home/About.tsx */
+
 'use client';
 
 import Link from 'next/link';
