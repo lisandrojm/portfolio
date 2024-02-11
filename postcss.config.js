@@ -1,3 +1,5 @@
+/* tailwind.postcss.config.js */
+
 module.exports = {
   plugins: {
     tailwindcss: {},
