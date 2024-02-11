@@ -20,7 +20,6 @@ interface Props {
 }
 
 const LayoutWrapper = ({ children }: Props) => {
-  console.log('👋 Hello Developers!');
   const [loading, setLoading] = useState(true);
 
   const handleLoadingComplete = () => {
