@@ -5,18 +5,20 @@
 * Tailwind imports
 * Root elements
 * Global variables
-* Hover
 * Fonts
+* Hovers
 * Gsap Cursor
 * Media queries
 */
 
 /* Tailwind imports */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Root elements */
+
 @layer base {
   :root {
     --accent-1: #000000;
@@ -49,6 +51,7 @@
       --accent-10: #2d64da;
     }
   }
+
   [data-theme='dark'] {
     --accent-1: #ffffff;
     --accent-1a: #ffffffad;
@@ -87,9 +90,25 @@ body {
   background: var(--accent-2);
 }
 
-/* Hover */
+/* Fonts */
 
-/* Hover / Button & a */
+.font-regular {
+  font-family: var(--font-regular), sans-serif;
+}
+.font-mono {
+  font-family: var(--font-mono), sans-serif;
+}
+.font-flex {
+  font-family: var(--font-flex), sans-serif;
+}
+.font-serif {
+  font-family: var(--font-serif), serif;
+}
+
+/* Hovers */
+
+/* Hovers / Button & a */
+
 button:hover,
 a:hover,
 [role='button']:hover {
@@ -100,7 +119,7 @@ a:hover,
   --accent-8: var(--accent-5);
 }
 
-/* Hover / Scale */
+/* Hovers / Scale */
 
 .scale-hover {
   transform: scale(1);
@@ -123,7 +142,8 @@ a:hover,
   transform: scale(0.99);
   filter: grayscale(0%);
 }
-/* Hover / Underline */
+
+/* Hovers / Underline */
 
 .underline-hover {
   position: relative;
@@ -165,21 +185,6 @@ a:hover,
   transition: all 0s ease;
 }
 
-/* Fonts */
-
-.font-regular {
-  font-family: var(--font-regular), sans-serif;
-}
-.font-mono {
-  font-family: var(--font-mono), sans-serif;
-}
-.font-flex {
-  font-family: var(--font-flex), sans-serif;
-}
-.font-serif {
-  font-family: var(--font-serif), serif;
-}
-
 /* Gsap Cursor */
 
 .grow,
@@ -195,46 +200,6 @@ a:hover,
 }
 
 /* Media queries */
-
-@media (min-width: 992px) {
-  /* ... */
-}
-
-@media (min-width: 768px) {
-  /* ... */
-}
-
-@media (min-width: 1200px) {
-  /* ... */
-}
-
-@media (min-width: 1300px) {
-  /* ... */
-}
-
-@media (min-width: 1400px) {
-  /* ... */
-}
-
-@media (max-width: 1399px) {
-  /* ... */
-}
-
-@media (max-width: 1199px) {
-  /* ... */
-}
-
-@media (max-width: 991px) {
-  /* ... */
-}
-
-@media (max-width: 767px) {
-  /* ... */
-}
-
-@media (max-width: 540px) {
-  /* ... */
-}
 
 @media (max-width: 340px) {
   .xs--hide {

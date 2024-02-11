@@ -25,7 +25,6 @@ const Provider: React.FC<Props> = ({ children }: Props) => {
     <ThemeProvider enableSystem={false} attribute="data-theme" defaultTheme="dark">
       <ProgressBar height="4px" color="#ff9e63" options={{ showSpinner: false }} />
       {children}
-      {/*       <Cursor /> */}
     </ThemeProvider>
   );
 };

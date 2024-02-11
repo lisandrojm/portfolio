@@ -1,4 +1,5 @@
 /* src/app/_components/_pages/_shared-pages/+_home/_footer/Footer.tsx */
+
 'use client';
 
 import Link from 'next/link';
