@@ -22,6 +22,6 @@
       "@/*": ["./src/app/*"],
     },
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/_components/_pages/_shared-pages/_footer/Footer.js", "src/app/_components/_gsap/ShuffleTextInOut.jsx", "src/app/_components/_gsap/ImplodeExplodeInOut.jsx", "src/app/_components/_pages/_layouts/_home/Hero.jsx", "src/app/_components/_gsap/ImplodeExplodeInOut.jsx", "src/app/_context/NavigationContextProvider.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/_components/_pages/_shared-pages/_footer/Footer.js", "src/app/_components/_gsap/ShuffleTextInOut.jsx", "src/app/_components/_gsap/ImplodeExplodeInOut.jsx", "src/app/_components/_pages/_layouts/_home/Hero.jsx", "src/app/_components/_gsap/ImplodeExplodeInOut.jsx", "src/app/_context/NavigationContextProvider.tsx", "src/app/_hooks/useIsomorphicLayoutEffect.js", "src/app/_hooks/useIsomorphicLayoutEffect.js"],
   "exclude": ["node_modules"],
 }

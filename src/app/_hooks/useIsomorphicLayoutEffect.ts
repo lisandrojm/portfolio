@@ -1,3 +1,5 @@
+/* src/app/_hooks/useIsomorphicLayoutEffect.ts */
+
 'use client';
 
 import { useEffect, useLayoutEffect } from 'react';
