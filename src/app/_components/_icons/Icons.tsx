@@ -16,7 +16,7 @@ import { HiAcademicCap } from 'react-icons/hi2';
 import { GiSevenPointedStar } from 'react-icons/gi';
 import { RiLightbulbFlashLine } from 'react-icons/ri';
 import { PiHeartStraightFill, PiCertificateFill } from 'react-icons/pi';
-import { IoMdCalendar } from 'react-icons/io';
+import { IoMdCalendar, IoMdDownload } from 'react-icons/io';
 import { BsEmojiSunglasses } from 'react-icons/bs';
 const components = {
   /* Academic */
@@ -71,6 +71,8 @@ const components = {
   aftereffects: SiAdobeaftereffects,
   /* Dna */
   dna: LiaDnaSolid,
+  /* Download */
+  download: IoMdDownload,
   /* Emoji */
   sunglassesEmoji: BsEmojiSunglasses,
   /* Heart */

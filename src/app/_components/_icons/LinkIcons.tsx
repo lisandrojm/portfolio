@@ -79,6 +79,7 @@ const iconLinks: IconLinks = {
   sunglassesEmoji: '',
   materialui: '',
   handlebars: '',
+  download: '',
 };
 
 // Assign URLs to individual icon links
