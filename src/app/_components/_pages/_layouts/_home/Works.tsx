@@ -78,7 +78,7 @@ export default function Works() {
                         <Image className="cursor-scale scale-hover grayscale-hover w-full" src="/_static/_img/proyect1-img.webp" width={600} height={283} alt="Picture of the author" priority />
                       </div>
                     </button>
-                    <div className="mt-2 md:mb-0">
+                    <div className="mt-2 md:mb-0 md:pe-5">
                       <button onClick={() => setModal1(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 1 Modal">
                         <div className="cursor-scale small cursor-scale small flex items-center text-white">
                           <div className="font-flex underline-hover text-2xl font-bold uppercase md:text-3xl">
@@ -105,7 +105,7 @@ export default function Works() {
                         <Image className="cursor-scale scale-hover grayscale-hover w-full" src="/_static/_img/proyect2-img.webp" width={600} height={283} alt="Picture of the author" priority />
                       </div>
                     </button>
-                    <div className="mt-2 md:mb-0">
+                    <div className="mt-2 md:mb-0 md:pe-5">
                       <button onClick={() => setModal2(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 2 Modal">
                         <div className="flex justify-start gap-3">
                           <div className="cursor-scale small flex items-center text-white">
@@ -134,7 +134,7 @@ export default function Works() {
                         <Image className="cursor-scale scale-hover grayscale-hover w-full" src="/_static/_img/proyect3-img.webp" width={600} height={283} alt="Picture of the author" priority />
                       </div>
                     </button>
-                    <div className="mt-2 md:mb-0">
+                    <div className="mt-2 md:mb-0 md:pe-5">
                       <button onClick={() => setModal3(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 3 Modal">
                         <div className="cursor-scale small flex items-center text-white">
                           <div className="font-flex underline-hover text-2xl font-bold uppercase md:text-3xl">
@@ -161,7 +161,7 @@ export default function Works() {
                         <Image className="cursor-scale scale-hover grayscale-hover w-full" src="/_static/_img/proyect4-img.webp" width={600} height={283} alt="Picture of the author" priority />
                       </div>
                     </button>
-                    <div className="mt-2 md:mb-0">
+                    <div className="mt-2 md:mb-0 md:pe-5">
                       <button onClick={() => setModal4(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 4 Modal">
                         <div className="flex justify-start gap-3">
                           <div className="cursor-scale small flex items-center text-white">
