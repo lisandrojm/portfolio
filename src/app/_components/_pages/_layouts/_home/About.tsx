@@ -91,7 +91,7 @@ export default function About() {
                   </div>
                   <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
                     <Link href="/_static/_img/cv.pdf" target="_blank" download>
-                      <div className="cursor-scale  small mt-4 ps-1 text-2xl text-orange xl:text-3xl">
+                      <div className="cursor-scale small mt-4 text-2xl text-orange xl:text-3xl">
                         <Icon kind="download" />
                       </div>
                     </Link>
