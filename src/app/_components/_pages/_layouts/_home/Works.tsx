@@ -82,7 +82,7 @@ export default function Works() {
                       <button onClick={() => setModal1(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 1 Modal">
                         <div className="cursor-scale small cursor-scale small flex items-center text-white">
                           <div className="font-flex underline-hover text-2xl font-bold uppercase md:text-3xl">
-                            <h2>Freelo Front</h2>
+                            <h2>Freelo</h2>
                           </div>
                           <span className="ms-1 text-sm">
                             <Icon kind="internalLink" />
@@ -110,7 +110,7 @@ export default function Works() {
                         <div className="flex justify-start gap-3">
                           <div className="cursor-scale small flex items-center text-white">
                             <div className="font-flex underline-hover text-2xl font-bold uppercase leading-8 md:text-3xl">
-                              <h2>Freelo Back</h2>
+                              <h2>Freelo</h2>
                             </div>
                             <span className="ms-1 text-sm">
                               <Icon kind="externalLink" />
@@ -138,7 +138,7 @@ export default function Works() {
                       <button onClick={() => setModal3(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 3 Modal">
                         <div className="cursor-scale small flex items-center text-white">
                           <div className="font-flex underline-hover text-2xl font-bold uppercase md:text-3xl">
-                            <h2>Freelander js</h2>
+                            <h2>Freelander</h2>
                           </div>
                           <span className="ms-1 text-sm">
                             <Icon kind="internalLink" />
@@ -166,7 +166,7 @@ export default function Works() {
                         <div className="flex justify-start gap-3">
                           <div className="cursor-scale small flex items-center text-white">
                             <div className="font-flex underline-hover text-2xl font-bold uppercase leading-8 md:text-3xl">
-                              <h2>Freelander Front</h2>
+                              <h2>Freelander</h2>
                             </div>
                             <span className="ms-1 text-sm">
                               <Icon kind="externalLink" />
