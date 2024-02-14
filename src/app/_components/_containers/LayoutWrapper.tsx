@@ -20,7 +20,7 @@ interface Props {
 const LayoutWrapper = ({ children }: Props) => {
   useEffect(() => {
     console.log('👋 Hello Developers!');
-  });
+  }, []);
 
   return (
     <Provider>
