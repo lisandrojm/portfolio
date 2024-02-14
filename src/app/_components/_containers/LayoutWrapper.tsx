@@ -2,7 +2,7 @@
 
 'use client';
 
-import { ReactNode } from 'react';
+import { ReactNode, useEffect } from 'react';
 import TransitionLayout from '@/_components/_shared/TransitionLayout';
 import Provider from '@/_context/Provider';
 import Background from '@/_components/_shared/Background';
@@ -18,6 +18,10 @@ interface Props {
 }
 
 const LayoutWrapper = ({ children }: Props) => {
+  useEffect(() => {
+    console.log('👋 Hello Developers!');
+  });
+
   return (
     <Provider>
       <TransitionContextProvider>
