@@ -82,7 +82,7 @@ export default function Works() {
                       <button onClick={() => setModal1(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 1 Modal">
                         <div className="cursor-scale small cursor-scale small flex items-center text-white">
                           <div className="font-flex underline-hover text-2xl font-bold uppercase md:text-3xl">
-                            <h2>Freelo Front</h2>
+                            <h2>Muecas</h2>
                           </div>
                           <span className="ms-1 text-sm">
                             <Icon kind="internalLink" />
@@ -90,7 +90,7 @@ export default function Works() {
                         </div>
                       </button>
                       <div className="font-flextext-base cursor-scale small font-bold text-orange">
-                        <p>Front-End Ecommerce</p>
+                        <p>Front-End</p>
                       </div>
                     </div>
                   </div>
@@ -240,38 +240,39 @@ export default function Works() {
             {/* Modal */}
             {/* Project-1 Modal */}
             <DemoModal1
-              title="Freelo Front"
+              title="Muecas"
               content={
                 <>
-                  Project created during the ReactJS course of the Full Stack career at{' '}
-                  <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="underline-hover text-orange" target="_blank" rel="noopener noreferrer">
-                    Coderhouse
+                  Project created for{' '}
+                  <Link href="https://www.somoslumba.com" className="underline-hover text-orange" target="_blank" rel="noopener noreferrer">
+                    Lumba
                   </Link>
                 </>
               }
               stack={
                 <ul className="flex gap-3 text-2xl">
                   <li>
-                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
+                    <LinkIcon kind="html" ariaLabel="Html Icon" />
                   </li>
                   <li>
-                    <LinkIcon kind="bootstrap" ariaLabel="Tailwindcss Icon" />
+                    <LinkIcon kind="css" ariaLabel="Css Icon" />
                   </li>
                   <li>
-                    <LinkIcon kind="js" ariaLabel="Tailwindcss Icon" />
+                    <LinkIcon kind="bootstrap" ariaLabel="Bootstrap Icon" />
                   </li>
                   <li>
-                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
+                    <LinkIcon kind="js" ariaLabel="Javascript Icon" />
                   </li>
                 </ul>
               }
-              hrefDemo="https://pf-martinez.vercel.app/"
-              hrefCode="https://github.com/lisandrojm/proyecto-final-coderhouse-react"
+              hrefDemo="https://www.muecas.com.ar/"
+              hrefCode="#"
               src="/_static/_img/proyect1-img.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
               }}
+              isPrivate={true}
             />
             {/* Project-2 Modal */}
             <DemoModal2
