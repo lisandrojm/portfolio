@@ -63,7 +63,7 @@ export default function About() {
                 <div className="lg:me-10 lg:w-1/2">
                   <div className="inline-flex flex-col items-end">
                     <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
-                      <p className="leading-0 m-0 p-0 text-lg text-white md:text-2xl">Hello. I am Lisandro. </p>
+                      <p className="leading-0 m-0 p-0 text-lg text-white md:text-2xl">Hello. I&apos;m Lisandro. </p>
                     </TranslateInOut>
                     <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
                       <Link href={siteMetadata.linkedin} className="cursor-scale small flex items-center text-center text-2xl md:text-3xl ">
