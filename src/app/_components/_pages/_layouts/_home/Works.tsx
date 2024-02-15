@@ -244,7 +244,7 @@ export default function Works() {
               content={
                 <>
                   Project created for{' '}
-                  <Link href="https://www.somoslumba.com" className="underline-hover text-orange" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.somoslumba.com" className="underline-hover cursor-scale small text-orange" target="_blank" rel="noopener noreferrer">
                     Lumba
                   </Link>
                 </>
