@@ -313,7 +313,7 @@ export default function Works() {
               title="Freelander js"
               content={
                 <>
-                  Project created during the Jabascript course of the Full Stack career at{' '}
+                  Project created during the Javascript course of the Full Stack career at{' '}
                   <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="underline-hover text-orange" target="_blank" rel="noopener noreferrer">
                     Coderhouse
                   </Link>
@@ -342,6 +342,7 @@ export default function Works() {
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
               }}
+              isPrivate={true}
             />
             {/* Project4- Modal */}
             <DemoModal4

@@ -21,6 +21,7 @@ interface DemoModalProps {
   showDemoModal: boolean;
   setModal: Dispatch<SetStateAction<boolean>>;
   src: string;
+  isPrivate?: boolean;
 }
 
 interface DemoModalContext {
@@ -44,8 +45,8 @@ export default function useDemoModal(): DemoModalContext {
   );
 
   const DemoModalCallback: FC<DemoModalProps> = useCallback(
-    ({ title, content, stack, hrefDemo, hrefCode, src }) => {
-      return <DemoModal title={title} content={content} stack={stack} hrefDemo={hrefDemo} hrefCode={hrefCode} src={src} showDemoModal={showDemoModal} setModal={setModal} />;
+    ({ title, content, stack, hrefDemo, hrefCode, src, isPrivate }) => {
+      return <DemoModal title={title} content={content} stack={stack} hrefDemo={hrefDemo} hrefCode={hrefCode} src={src} showDemoModal={showDemoModal} setModal={setModal} isPrivate={isPrivate} />;
     },
     [showDemoModal, setModal]
   );
@@ -59,7 +60,7 @@ export default function useDemoModal(): DemoModalContext {
   );
 }
 
-const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, setModal, hrefDemo, hrefCode, src }) => {
+const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, setModal, hrefDemo, hrefCode, src, isPrivate }) => {
   const modalRef = useRef<HTMLDivElement>(null);
   const timeline = useRef<gsap.core.Timeline | null>(null);
 
@@ -108,6 +109,7 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
   const handleClick = () => {
     setIsVisible(true);
   };
+
   return (
     <Modal showModal={showDemoModal} setModal={setModal} ref={modalRef}>
       <Cursor />
@@ -128,7 +130,7 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
                 </Link>
                 <div className="flex flex-col md:w-3/4">
                   <TranslateInOut overflowHidden delay={0.4} y={100}>
-                    <Link href={hrefCode} aria-label="Proyect" target="_blank">
+                    <Link href={hrefDemo} aria-label="Proyect" target="_blank">
                       <div className="font-flex cursor-scale small inline text-2xl font-bold uppercase text-white md:text-3xl">
                         <h2 className="underline-hover inline">{title}</h2>
                       </div>
@@ -169,23 +171,36 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
                         </div>
                       </Link>
                     </div>
-                    <div className="flex items-center">
-                      <Link href={hrefCode} aria-label="Proyect" target="_blank">
-                        <div className="cursor-scale small flex items-center text-white">
-                          <div className="text-xl">
-                            <Icon kind="github" />
-                          </div>
-                          <div className=" flex items-center">
-                            <div className="text-md me-1 ms-1 font-serif italic text-white">
-                              <p className="underline-hover">code</p>
-                            </div>
-                            <span className="text-sm">
-                              <Icon kind="externalLink" />
-                            </span>
+                    {isPrivate ? (
+                      <div className="small flex items-center text-white_a">
+                        <div className="text-xl">
+                          <Icon kind="lockCode" />
+                        </div>
+                        <div className=" flex items-center">
+                          <div className="text-md me-1 ms-1 font-serif italic text-white_a">
+                            <p>private code</p>
                           </div>
                         </div>
-                      </Link>
-                    </div>
+                      </div>
+                    ) : (
+                      <div className="flex items-center">
+                        <Link href={hrefCode} aria-label="Proyect" target="_blank">
+                          <div className="cursor-scale small flex items-center text-white">
+                            <div className="text-xl">
+                              <Icon kind="github" />
+                            </div>
+                            <div className=" flex items-center">
+                              <div className="text-md me-1 ms-1 font-serif italic text-white">
+                                <p className="underline-hover">code</p>
+                              </div>
+                              <span className="text-sm">
+                                <Icon kind="externalLink" />
+                              </span>
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

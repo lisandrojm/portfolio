@@ -1,7 +1,7 @@
 /* src/app/_components/_icons/Icons.tsx */
 
 import { FaApple, FaLinux, FaWindows, FaGithub, FaLinkedin, FaEnvelope, FaReact, FaHtml5, FaCss3Alt, FaGit, FaNodeJs, FaBootstrap, FaSun, FaMoon, FaDocker, FaUserNinja, FaArrowAltCircleRight } from 'react-icons/fa';
-import { TbBrandNextjs, TbBrandVercel } from 'react-icons/tb';
+import { TbBrandNextjs, TbBrandVercel, TbLockCode } from 'react-icons/tb';
 import { IoCloseCircleOutline, IoChevronDownSharp } from 'react-icons/io5';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { SiTailwindcss, SiExpress, SiNestjs, SiMongodb, SiNeovim, SiVisualstudiocode, SiRailway, SiAdobepremierepro, SiAdobephotoshop, SiAdobeillustrator, SiAdobeaftereffects, SiGithubpages, SiMui, SiHandlebarsdotjs } from 'react-icons/si';
@@ -82,6 +82,8 @@ const components = {
   /* Link */
   externalLink: LiaExternalLinkAltSolid,
   internalLink: CgInternal,
+  /*   Lock Code */
+  lockCode: TbLockCode,
   /* Menu */
   menuClose: IoCloseCircleOutline,
   menuOpen: HiOutlineMenuAlt3,

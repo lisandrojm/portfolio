@@ -80,6 +80,7 @@ const iconLinks: IconLinks = {
   materialui: '',
   handlebars: '',
   download: '',
+  lockCode: '',
 };
 
 // Assign URLs to individual icon links
