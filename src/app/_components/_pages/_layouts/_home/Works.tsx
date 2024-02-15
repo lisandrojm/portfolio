@@ -342,7 +342,6 @@ export default function Works() {
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
               }}
-              isPrivate={true}
             />
             {/* Project4- Modal */}
             <DemoModal4
@@ -406,11 +405,12 @@ export default function Works() {
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
               }}
+              isPrivate={true}
             />
             {/* Project6- Modal */}
             <DemoModal6
               title="Proyect6"
-              content="Description5"
+              content="Description6"
               stack={
                 <ul className="flex gap-3 text-2xl">
                   <li>
@@ -434,60 +434,7 @@ export default function Works() {
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
               }}
-            />
-            <DemoModal5
-              title="Proyect5"
-              content="Description5"
-              stack={
-                <ul className="flex gap-3 text-2xl">
-                  <li>
-                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
-                  </li>
-                </ul>
-              }
-              hrefDemo="https://github.com/lisandrojm"
-              hrefCode="https://github.com/lisandrojm/portfolio"
-              src="/_static/_img/proyect-img.webp"
-              showDemoModal={false}
-              setModal={function (value: SetStateAction<boolean>): void {
-                throw new Error('Function not implemented.');
-              }}
-            />
-            <DemoModal5
-              title="Proyect5"
-              content="Description5"
-              stack={
-                <ul className="flex gap-3 text-2xl">
-                  <li>
-                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
-                  </li>
-                </ul>
-              }
-              hrefDemo="https://github.com/lisandrojm"
-              hrefCode="https://github.com/lisandrojm/portfolio"
-              src="/_static/_img/proyect-img.webp"
-              showDemoModal={false}
-              setModal={function (value: SetStateAction<boolean>): void {
-                throw new Error('Function not implemented.');
-              }}
+              isPrivate={true}
             />
           </YPContainer>
         </XContainer>
