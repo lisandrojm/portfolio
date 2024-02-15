@@ -72,7 +72,7 @@ export default function Skills() {
                       <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
                     </TranslateInOut>
                     <TranslateInOut overflowHidden delay={1.1} y={100} start="-100% bottom" end="top top" watch>
-                      <LinkIcon kind="materialui" ariaLabel="Material Ui" />
+                      <LinkIcon kind="materialui" ariaLabel="Material Ui Icon" />
                     </TranslateInOut>
                   </div>
                 </div>

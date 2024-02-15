@@ -263,6 +263,9 @@ export default function Works() {
                   <li>
                     <LinkIcon kind="js" ariaLabel="Javascript Icon" />
                   </li>
+                  <li>
+                    <LinkIcon kind="gsap" ariaLabel="Gsap Icon" />
+                  </li>
                 </ul>
               }
               hrefDemo="https://www.muecas.com.ar/"

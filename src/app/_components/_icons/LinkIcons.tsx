@@ -81,6 +81,7 @@ const iconLinks: IconLinks = {
   handlebars: '',
   download: '',
   lockCode: '',
+  gsap: '',
 };
 
 // Assign URLs to individual icon links
@@ -115,6 +116,7 @@ iconLinks.handlebars = 'https://handlebarsjs.com/';
 iconLinks.materialui = 'https://mui.com/';
 iconLinks.github = `${siteMetadata.github}`;
 iconLinks.linkedin = `${siteMetadata.linkedin}`;
+iconLinks.gsap = 'https://gsap.com/';
 
 const LinkIcons: FC<LinkIconProps> = ({ kind, ariaLabel }) => {
   const href = iconLinks[kind] || '#';

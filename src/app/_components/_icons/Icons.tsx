@@ -4,7 +4,7 @@ import { FaApple, FaLinux, FaWindows, FaGithub, FaLinkedin, FaEnvelope, FaReact,
 import { TbBrandNextjs, TbBrandVercel, TbLockCode } from 'react-icons/tb';
 import { IoCloseCircleOutline, IoChevronDownSharp } from 'react-icons/io5';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
-import { SiTailwindcss, SiExpress, SiNestjs, SiMongodb, SiNeovim, SiVisualstudiocode, SiRailway, SiAdobepremierepro, SiAdobephotoshop, SiAdobeillustrator, SiAdobeaftereffects, SiGithubpages, SiMui, SiHandlebarsdotjs } from 'react-icons/si';
+import { SiTailwindcss, SiExpress, SiNestjs, SiMongodb, SiNeovim, SiVisualstudiocode, SiRailway, SiAdobepremierepro, SiAdobephotoshop, SiAdobeillustrator, SiAdobeaftereffects, SiGithubpages, SiMui, SiHandlebarsdotjs, SiGreensock } from 'react-icons/si';
 import { CgInternal, CgArrowUp, CgFigma } from 'react-icons/cg';
 import { LiaLongArrowAltUpSolid, LiaLongArrowAltDownSolid, LiaLongArrowAltRightSolid, LiaLongArrowAltLeftSolid, LiaExternalLinkAltSolid, LiaDnaSolid, LiaPlusCircleSolid } from 'react-icons/lia';
 import { GoProjectSymlink } from 'react-icons/go';
@@ -44,6 +44,7 @@ const components = {
   git: FaGit,
   github: FaGithub,
   githubPages: SiGithubpages,
+  gsap: SiGreensock,
   handlebars: SiHandlebarsdotjs,
   linux: FaLinux,
   html: FaHtml5,
