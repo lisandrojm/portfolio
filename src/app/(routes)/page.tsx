@@ -11,9 +11,9 @@ export default function RootHome() {
   return (
     <LayoutWrapper>
       <Hero />
+      <About />
       <Works />
       <Skills />
-      <About />
       <Contact />
     </LayoutWrapper>
   );
