@@ -151,7 +151,7 @@ export default function Works() {
                           </div>
                         </button>
                         <div className="font-flex cursor-scale small">
-                          <p className="text-lg font-bold text-orange"> Mar.2022 / Course</p>
+                          <p className="text-lg font-bold text-orange"> Mar.2023 / Course</p>
                           <p className="text-sm text-orange"> Front-End Develop</p>
                         </div>
                       </div>
@@ -181,7 +181,7 @@ export default function Works() {
                           </div>
                         </button>
                         <div className="font-flex cursor-scale small">
-                          <p className="text-lg font-bold text-orange"> Mar.2023 / Course</p>
+                          <p className="text-lg font-bold text-orange"> Nov.2023 / Course</p>
                           <p className="text-sm text-orange"> Back-End Develop</p>
                         </div>
                       </div>
@@ -360,10 +360,10 @@ export default function Works() {
             />
             {/* Project4- Modal */}
             <DemoModal4
-              title="Freelander Front"
+              title="Freelo Ecom"
               content={
                 <>
-                  Project created during the Developer course of the Full Stack career at{' '}
+                  Created during the Backend course of the Full Stack career at{' '}
                   <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="cursor-scale small scale-hover text-orange underline" target="_blank" rel="noopener noreferrer">
                     Coderhouse
                   </Link>
@@ -372,16 +372,19 @@ export default function Works() {
               stack={
                 <ul className="flex gap-3 text-2xl">
                   <li>
-                    <LinkIcon kind="html" ariaLabel="Html Icon" />
+                    <LinkIcon kind="express" ariaLabel="Express Icon" />
                   </li>
                   <li>
-                    <LinkIcon kind="css" ariaLabel="Css Icon" />
+                    <LinkIcon kind="nodejs" ariaLabel="Nodejs Icon" />
                   </li>
                   <li>
                     <LinkIcon kind="js" ariaLabel="Javascript Icon" />
                   </li>
                   <li>
                     <LinkIcon kind="bootstrap" ariaLabel="Bootstrap Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="handlebars" ariaLabel="Handlebars Icon" />
                   </li>
                 </ul>
               }
