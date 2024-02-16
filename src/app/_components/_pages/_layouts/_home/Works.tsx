@@ -68,12 +68,12 @@ export default function Works() {
               </Link>
             </div>
             {/*Projects */}
-            <div className="flex flex-col gap-14">
+            <div className="flex flex-col gap-20">
               {/*Project 1 */}
               <RotateInOut3D durationIn={0.5 + Math.random()} y="100px" start="-100px bottom" watch>
                 <div>
                   <div className="flex flex-col justify-start text-base lg:flex-row-reverse lg:items-center lg:justify-end lg:text-lg">
-                    <div className="flex w-full justify-start lg:w-3/5">
+                    <div className="flex w-full justify-start lg:w-2/5">
                       <button onClick={() => setModal1(true)} aria-label="Open Project Modal">
                         <Image className="cursor-scale scale-hover grayscale-hover lg:w-full" src="/_static/_img/proyect1-img.webp" width={1200} height={566} alt="Picture of the author" priority />
                       </button>
@@ -103,7 +103,7 @@ export default function Works() {
               <RotateInOut3D durationIn={0.5 + Math.random()} y="100px" start="-100px bottom" watch>
                 <div>
                   <div className="flex flex-col justify-center text-base lg:flex-row-reverse lg:items-center lg:justify-start lg:text-lg">
-                    <div className="flex w-full justify-start lg:w-3/5">
+                    <div className="flex w-full justify-start lg:w-2/5">
                       <button onClick={() => setModal2(true)} aria-label="Open Project Modal">
                         <Image className="cursor-scale scale-hover grayscale-hover lg:w-full" src="/_static/_img/proyect2-img.webp" width={1200} height={566} alt="Picture of the author" priority />
                       </button>
@@ -131,26 +131,29 @@ export default function Works() {
               </RotateInOut3D>
               {/*Project 3 */}
               <RotateInOut3D durationIn={0.5 + Math.random()} y="100px" start="-100px bottom" watch>
-                <div className="w-full">
-                  <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:justify-end md:text-lg">
-                    <button onClick={() => setModal3(true)} aria-label="Open Project Modal">
-                      <div className="flex justify-start">
-                        <Image className="cursor-scale scale-hover grayscale-hover w-full" src="/_static/_img/proyect3-img.webp" width={600} height={283} alt="Picture of the author" priority />
-                      </div>
-                    </button>
-                    <div className="mt-2 md:mb-0 md:pe-5">
-                      <button onClick={() => setModal3(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 3 Modal">
-                        <div className="cursor-scale small flex items-center text-white">
-                          <div className="font-flex underline-hover text-2xl font-bold uppercase md:text-3xl">
-                            <h2>Freelander js</h2>
-                          </div>
-                          <span className="ms-1 text-sm">
-                            <Icon kind="internalLink" />
-                          </span>
-                        </div>
+                <div>
+                  <div className="flex flex-col justify-start text-base lg:flex-row-reverse lg:items-center lg:justify-end lg:text-lg">
+                    <div className="flex w-full justify-start lg:w-2/5">
+                      <button onClick={() => setModal3(true)} aria-label="Open Project Modal">
+                        <Image className="cursor-scale scale-hover grayscale-hover lg:w-full" src="/_static/_img/proyect3-img.webp" width={1200} height={566} alt="Picture of the author" priority />
                       </button>
-                      <div className="font-flextext-base cursor-scale small font-bold text-orange">
-                        <p>Front-End JavaScript</p>
+                    </div>
+                    <div className="flex justify-start lg:w-1/4">
+                      <div className="flex flex-col items-start">
+                        <button onClick={() => setModal3(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 1 Modal">
+                          <div className="cursor-scale small flex items-center text-white">
+                            <div className="font-flex underline-hover mt-2 text-2xl font-bold md:text-3xl">
+                              <h2>Freelander js</h2>
+                            </div>
+                            <span className="ms-1 text-sm">
+                              <Icon kind="internalLink" />
+                            </span>
+                          </div>
+                        </button>
+                        <div className="font-flex cursor-scale small">
+                          <p className="text-lg font-bold text-orange"> Oct.2023 / Course</p>
+                          <p className="text-sm text-orange"> Front-End Develop</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -158,28 +161,29 @@ export default function Works() {
               </RotateInOut3D>
               {/*Project 4 */}
               <RotateInOut3D durationIn={0.5 + Math.random()} y="100px" start="-100px bottom" watch>
-                <div className="w-full">
-                  <div className="flex flex-col justify-start text-base md:flex-row-reverse md:items-center md:text-lg">
-                    <button onClick={() => setModal4(true)} aria-label="Open Project Modal">
-                      <div className="flex justify-start md:justify-end lg:me-5">
-                        <Image className="cursor-scale scale-hover grayscale-hover w-full" src="/_static/_img/proyect4-img.webp" width={600} height={283} alt="Picture of the author" priority />
-                      </div>
-                    </button>
-                    <div className="mt-2 md:mb-0 md:pe-5">
-                      <button onClick={() => setModal4(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 4 Modal">
-                        <div className="flex justify-start gap-3">
+                <div>
+                  <div className="flex flex-col justify-center text-base lg:flex-row-reverse lg:items-center lg:justify-start lg:text-lg">
+                    <div className="flex w-full justify-start lg:w-2/5">
+                      <button onClick={() => setModal4(true)} aria-label="Open Project Modal">
+                        <Image className="cursor-scale scale-hover grayscale-hover lg:w-full" src="/_static/_img/proyect4-img.webp" width={1200} height={566} alt="Picture of the author" priority />
+                      </button>
+                    </div>
+                    <div className="flex justify-start lg:w-1/4">
+                      <div className="flex flex-col items-start">
+                        <button onClick={() => setModal4(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 1 Modal">
                           <div className="cursor-scale small flex items-center text-white">
-                            <div className="font-flex underline-hover text-2xl font-bold uppercase leading-8 md:text-3xl">
-                              <h2>Freelander Front</h2>
+                            <div className="font-flex underline-hover mt-2 text-2xl font-bold md:text-3xl">
+                              <h2>Freelander</h2>
                             </div>
                             <span className="ms-1 text-sm">
-                              <Icon kind="externalLink" />
+                              <Icon kind="internalLink" />
                             </span>
                           </div>
+                        </button>
+                        <div className="font-flex cursor-scale small">
+                          <p className="text-lg font-bold text-orange"> May.2023 / Course</p>
+                          <p className="text-sm text-orange"> Front-End Develop</p>
                         </div>
-                      </button>
-                      <div className="cursor-scale small text-base font-bold text-orange">
-                        <p>Front-End</p>
                       </div>
                     </div>
                   </div>
