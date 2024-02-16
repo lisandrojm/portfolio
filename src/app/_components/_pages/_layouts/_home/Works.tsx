@@ -75,14 +75,14 @@ export default function Works() {
                   <div className="flex flex-col justify-start text-base lg:flex-row-reverse lg:items-center lg:justify-end lg:text-lg">
                     <div className="flex w-full justify-start lg:w-3/5">
                       <button onClick={() => setModal1(true)} aria-label="Open Project Modal">
-                        <Image className="cursor-scale scale-hover grayscale-hover w-full" src="/_static/_img/proyect1-img.webp" width={1200} height={566} alt="Picture of the author" priority />
+                        <Image className="cursor-scale scale-hover grayscale-hover lg:w-full" src="/_static/_img/proyect1-img.webp" width={1200} height={566} alt="Picture of the author" priority />
                       </button>
                     </div>
                     <div className="flex justify-start lg:w-1/4">
                       <div className="flex flex-col items-start">
                         <button onClick={() => setModal1(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 1 Modal">
                           <div className="cursor-scale small flex items-center text-white">
-                            <div className="font-flex underline-hover lg:mt mt-2 text-2xl font-bold md:text-3xl">
+                            <div className="font-flex underline-hover mt-2 text-2xl font-bold md:text-3xl">
                               <h2>Muecas</h2>
                             </div>
                             <span className="ms-1 text-sm">
@@ -102,17 +102,17 @@ export default function Works() {
               {/*Project 2 */}
               <RotateInOut3D durationIn={0.5 + Math.random()} y="100px" start="-100px bottom" watch>
                 <div>
-                  <div className="flex flex-col justify-start text-base lg:flex-row-reverse lg:items-center lg:justify-start lg:text-lg">
+                  <div className="flex flex-col justify-center text-base lg:flex-row-reverse lg:items-center lg:justify-start lg:text-lg">
                     <div className="flex w-full justify-start lg:w-3/5">
                       <button onClick={() => setModal2(true)} aria-label="Open Project Modal">
-                        <Image className="cursor-scale scale-hover grayscale-hover w-full" src="/_static/_img/proyect2-img.webp" width={1200} height={566} alt="Picture of the author" priority />
+                        <Image className="cursor-scale scale-hover grayscale-hover lg:w-full" src="/_static/_img/proyect2-img.webp" width={1200} height={566} alt="Picture of the author" priority />
                       </button>
                     </div>
                     <div className="flex justify-start lg:w-1/4">
                       <div className="flex flex-col items-start">
                         <button onClick={() => setModal2(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 1 Modal">
                           <div className="cursor-scale small flex items-center text-white">
-                            <div className="font-flex underline-hover lg:mt mt-2 text-2xl font-bold md:text-3xl">
+                            <div className="font-flex underline-hover mt-2 text-2xl font-bold md:text-3xl">
                               <h2>Freelo Ecom</h2>
                             </div>
                             <span className="ms-1 text-sm">
