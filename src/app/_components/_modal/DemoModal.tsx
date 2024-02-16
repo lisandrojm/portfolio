@@ -131,13 +131,13 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
                 <div className="flex flex-col md:w-3/4">
                   <TranslateInOut overflowHidden delay={0.4} y={100}>
                     <Link href={hrefDemo} aria-label="Proyect" target="_blank">
-                      <div className="font-flex cursor-scale small inline text-2xl font-bold uppercase text-white md:text-3xl">
+                      <div className="font-flex cursor-scale small inline text-2xl font-bold text-white md:text-3xl">
                         <h2 className="underline-hover inline">{title}</h2>
                       </div>
                     </Link>
                   </TranslateInOut>
                   <TranslateInOut overflowHidden delay={0.5} y={100}>
-                    <div className="text-base font-bold text-orange">
+                    <div className="text-lg text-orange">
                       <p>{content}</p>
                     </div>
                   </TranslateInOut>
