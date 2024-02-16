@@ -113,7 +113,7 @@ export default function Works() {
                         <button onClick={() => setModal2(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 1 Modal">
                           <div className="cursor-scale small flex items-center text-white">
                             <div className="font-flex underline-hover mt-2 text-2xl font-bold md:text-3xl">
-                              <h2>Freelo Ecom</h2>
+                              <h2>Malonic</h2>
                             </div>
                             <span className="ms-1 text-sm">
                               <Icon kind="internalLink" />
@@ -121,8 +121,8 @@ export default function Works() {
                           </div>
                         </button>
                         <div className="font-flex cursor-scale small">
-                          <p className="text-lg font-bold text-orange"> Mar.2023 / Course</p>
-                          <p className="text-sm text-orange"> Back-End Develop</p>
+                          <p className="text-lg font-bold text-orange"> May.2023 / Corporate</p>
+                          <p className="text-sm text-orange"> Front-End Develop</p>
                         </div>
                       </div>
                     </div>
@@ -173,7 +173,7 @@ export default function Works() {
                         <button onClick={() => setModal4(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 1 Modal">
                           <div className="cursor-scale small flex items-center text-white">
                             <div className="font-flex underline-hover mt-2 text-2xl font-bold md:text-3xl">
-                              <h2>Freelander</h2>
+                              <h2>Freelo Ecom</h2>
                             </div>
                             <span className="ms-1 text-sm">
                               <Icon kind="internalLink" />
@@ -181,8 +181,8 @@ export default function Works() {
                           </div>
                         </button>
                         <div className="font-flex cursor-scale small">
-                          <p className="text-lg font-bold text-orange"> May.2023 / Course</p>
-                          <p className="text-sm text-orange"> Front-End Develop</p>
+                          <p className="text-lg font-bold text-orange"> Mar.2023 / Course</p>
+                          <p className="text-sm text-orange"> Back-End Develop</p>
                         </div>
                       </div>
                     </div>
@@ -215,7 +215,7 @@ export default function Works() {
                             <button onClick={() => setModal5(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 5 Modal">
                               <div className="cursor-scale small flex items-center text-white">
                                 <div className="font-flex underline-hover text-xl font-bold uppercase md:text-2xl">
-                                  <h2>Project5</h2>
+                                  <h2>Freelander Front</h2>
                                 </div>
                                 <span className="ms-1 text-sm text-orange">
                                   <Icon kind="internalLink" />
@@ -288,13 +288,14 @@ export default function Works() {
             />
             {/* Project-2 Modal */}
             <DemoModal2
-              title="Freelo Ecom"
+              title="Malonic"
               content={
                 <>
-                  Project created during the Back-End course of the Full Stack career at{' '}
-                  <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="underline-hover text-orange" target="_blank" rel="noopener noreferrer">
-                    Coderhouse
-                  </Link>
+                  FrontEnd development created for{' '}
+                  <Link href="https://www.somoslumba.com" className="underline-hover cursor-scale small text-orange" target="_blank" rel="noopener noreferrer">
+                    Lumba
+                  </Link>{' '}
+                  company
                 </>
               }
               stack={
@@ -313,13 +314,14 @@ export default function Works() {
                   </li>
                 </ul>
               }
-              hrefDemo="https://proyecto-final-coderhouse-backend.vercel.app/"
-              hrefCode="https://github.com/lisandrojm/proyecto-final-coderhouse-backend"
+              hrefDemo="https://www.malonicrecords.com"
+              hrefCode="#"
               src="/_static/_img/proyect2-img.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
               }}
+              isPrivate={true}
             />
             {/* Project-3 Modal */}
             <DemoModal3
@@ -393,32 +395,38 @@ export default function Works() {
             />
             {/* Project5- Modal */}
             <DemoModal5
-              title="Proyect5"
-              content="Description5"
+              title="Freelander Front"
+              content={
+                <>
+                  Project created during the Developer course of the Full Stack career at{' '}
+                  <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="underline-hover text-orange" target="_blank" rel="noopener noreferrer">
+                    Coderhouse
+                  </Link>
+                </>
+              }
               stack={
                 <ul className="flex gap-3 text-2xl">
                   <li>
-                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
+                    <LinkIcon kind="html" ariaLabel="Html Icon" />
                   </li>
                   <li>
-                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
+                    <LinkIcon kind="css" ariaLabel="Css Icon" />
                   </li>
                   <li>
-                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
+                    <LinkIcon kind="js" ariaLabel="Javascript Icon" />
                   </li>
                   <li>
-                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
+                    <LinkIcon kind="bootstrap" ariaLabel="Bootstrap Icon" />
                   </li>
                 </ul>
               }
-              hrefDemo="https://github.com/lisandrojm"
-              hrefCode="https://github.com/lisandrojm/portfolio"
+              hrefDemo="https://proyecto-final-coderhouse-desarrollo-web.vercel.app/"
+              hrefCode="https://github.com/lisandrojm/proyecto-final-coderhouse-desarrollo-web"
               src="/_static/_img/proyect4-img.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
               }}
-              isPrivate={true}
             />
             {/* Project6- Modal */}
             <DemoModal6
