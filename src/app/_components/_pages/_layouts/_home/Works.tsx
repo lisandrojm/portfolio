@@ -143,7 +143,7 @@ export default function Works() {
                         <button onClick={() => setModal3(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 1 Modal">
                           <div className="cursor-scale small flex items-center text-white">
                             <div className="font-flex underline-hover mt-2 text-2xl font-bold md:text-3xl">
-                              <h2>Freelander js</h2>
+                              <h2>Freelo Calculator</h2>
                             </div>
                             <span className="ms-1 text-sm">
                               <Icon kind="internalLink" />
@@ -151,7 +151,7 @@ export default function Works() {
                           </div>
                         </button>
                         <div className="font-flex cursor-scale small">
-                          <p className="text-lg font-bold text-orange"> Oct.2023 / Course</p>
+                          <p className="text-lg font-bold text-orange"> Mar.2022 / Course</p>
                           <p className="text-sm text-orange"> Front-End Develop</p>
                         </div>
                       </div>
@@ -214,7 +214,7 @@ export default function Works() {
                           <li className="mb-1">
                             <button onClick={() => setModal5(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 5 Modal">
                               <div className="cursor-scale small flex items-center text-white">
-                                <div className="font-flex underline-hover text-xl font-bold uppercase md:text-2xl">
+                                <div className="font-flex underline-hover text-xl font-bold md:text-2xl">
                                   <h2>Freelander Front</h2>
                                 </div>
                                 <span className="ms-1 text-sm text-orange">
@@ -229,7 +229,7 @@ export default function Works() {
                           <li className="mb-1">
                             <button onClick={() => setModal6(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 6 Modal">
                               <div className="cursor-scale small flex items-center text-white">
-                                <div className="font-flex underline-hover text-xl font-bold uppercase md:text-2xl">
+                                <div className="font-flex underline-hover text-xl font-bold md:text-2xl">
                                   <h2>Project6</h2>
                                 </div>
                                 <span className="ms-1 text-sm text-orange">
@@ -252,7 +252,7 @@ export default function Works() {
               content={
                 <>
                   FrontEnd development created for{' '}
-                  <Link href="https://www.somoslumba.com" className="underline-hover cursor-scale small text-orange" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.somoslumba.com" className="cursor-scale small scale-hover text-orange underline" target="_blank" rel="noopener noreferrer">
                     Lumba
                   </Link>{' '}
                   company
@@ -292,7 +292,7 @@ export default function Works() {
               content={
                 <>
                   FrontEnd development created for{' '}
-                  <Link href="https://www.somoslumba.com" className="underline-hover cursor-scale small text-orange" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.somoslumba.com" className="cursor-scale small scale-hover text-orange underline" target="_blank" rel="noopener noreferrer">
                     Lumba
                   </Link>{' '}
                   company
@@ -325,11 +325,11 @@ export default function Works() {
             />
             {/* Project-3 Modal */}
             <DemoModal3
-              title="Freelander js"
+              title="Freelo Calculator"
               content={
                 <>
-                  Project created during the JavaScript course of the Full Stack career at{' '}
-                  <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="underline-hover text-orange underline" target="_blank" rel="noopener noreferrer">
+                  Freelancer cost calculator developed during the JavaScript course of the Full Stack career at{' '}
+                  <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="cursor-scale small scale-hover text-orange underline" target="_blank" rel="noopener noreferrer">
                     Coderhouse
                   </Link>
                 </>
@@ -364,7 +364,7 @@ export default function Works() {
               content={
                 <>
                   Project created during the Developer course of the Full Stack career at{' '}
-                  <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="underline-hover text-orange" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="cursor-scale small scale-hover text-orange underline" target="_blank" rel="noopener noreferrer">
                     Coderhouse
                   </Link>
                 </>
@@ -399,7 +399,7 @@ export default function Works() {
               content={
                 <>
                   Project created during the Developer course of the Full Stack career at{' '}
-                  <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="underline-hover text-orange" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="cursor-scale small scale-hover text-orange underline" target="_blank" rel="noopener noreferrer">
                     Coderhouse
                   </Link>
                 </>
@@ -422,7 +422,7 @@ export default function Works() {
               }
               hrefDemo="https://proyecto-final-coderhouse-desarrollo-web.vercel.app/"
               hrefCode="https://github.com/lisandrojm/proyecto-final-coderhouse-desarrollo-web"
-              src="/_static/_img/proyect4-img.webp"
+              src="/_static/_img/proyect5-img.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
