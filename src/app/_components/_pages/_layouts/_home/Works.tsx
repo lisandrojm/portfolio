@@ -484,6 +484,9 @@ export default function Works() {
                   <li>
                     <LinkIcon kind="handlebars" ariaLabel="Handlebars Icon" />
                   </li>
+                  <li>
+                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
+                  </li>
                 </ul>
               }
               hrefDemo="https://proyecto-final-coderhouse-backend.vercel.app/"
@@ -496,10 +499,228 @@ export default function Works() {
             />
             {/* Project5- Modal */}
             <DemoModal5
-              title="Freelander Front"
+              title="Ksl"
               content={
                 <>
-                  Project created during the Developer course of the Full Stack career at{' '}
+                  FrontEnd development created for{' '}
+                  <Link href="https://www.somoslumba.com" className="cursor-scale small scale-hover text-orange underline" target="_blank" rel="noopener noreferrer">
+                    Lumba
+                  </Link>{' '}
+                  company
+                </>
+              }
+              stack={
+                <ul className="flex gap-3 text-2xl">
+                  <li>
+                    <LinkIcon kind="html" ariaLabel="Html Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="css" ariaLabel="Css Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="js" ariaLabel="Javascript Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="bootstrap" ariaLabel="Bootstrap Icon" />
+                  </li>
+                </ul>
+              }
+              hrefDemo="https://www.ekarq.com/"
+              hrefCode="#"
+              src="/_static/_img/5-ksl.webp"
+              showDemoModal={false}
+              setModal={function (value: SetStateAction<boolean>): void {
+                throw new Error('Function not implemented.');
+              }}
+              isPrivate={true}
+            />
+            {/* Project6- Modal */}
+            <DemoModal6
+              title="Coder-Reactjs"
+              content={
+                <>
+                  Functional Front-End of an ecommerce created during the ReactJs course of the Full Stack career at{' '}
+                  <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="cursor-scale small scale-hover text-orange underline" target="_blank" rel="noopener noreferrer">
+                    Coderhouse
+                  </Link>
+                </>
+              }
+              stack={
+                <ul className="flex gap-3 text-2xl">
+                  <li>
+                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="js" ariaLabel="JavaScript Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="bootstrap" ariaLabel="Bootstrap Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
+                  </li>
+                </ul>
+              }
+              hrefDemo="https://pf-martinez.vercel.app/"
+              hrefCode="https://github.com/lisandrojm/proyecto-final-coderhouse-react"
+              src="/_static/_img/6-coder-reactjs.webp"
+              showDemoModal={false}
+              setModal={function (value: SetStateAction<boolean>): void {
+                throw new Error('Function not implemented.');
+              }}
+            />
+            {/* Project7- Modal */}
+            <DemoModal7
+              title="Coder-Js"
+              content={
+                <>
+                  Hourly price calculator for Freelancers created during the JavaScript course of the Full Stack career at{' '}
+                  <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="cursor-scale small scale-hover text-orange underline" target="_blank" rel="noopener noreferrer">
+                    Coderhouse
+                  </Link>
+                </>
+              }
+              stack={
+                <ul className="flex gap-3 text-2xl">
+                  <li>
+                    <LinkIcon kind="js" ariaLabel="JavaScript Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="html" ariaLabel="Html Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="css" ariaLabel="Css Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="bootstrap" ariaLabel="Boostrap Icon" />
+                  </li>
+                </ul>
+              }
+              hrefDemo="https://lisandrojm.github.io/proyecto-final-coderhouse-js"
+              hrefCode="https://github.com/lisandrojm/proyecto-final-coderhouse-js"
+              src="/_static/_img/7-coder-js.webp"
+              showDemoModal={false}
+              setModal={function (value: SetStateAction<boolean>): void {
+                throw new Error('Function not implemented.');
+              }}
+            />
+            {/* Project8- Modal */}
+            <DemoModal8
+              title="Cancat"
+              content={
+                <>
+                  FrontEnd development created for{' '}
+                  <Link href="https://www.somoslumba.com" className="cursor-scale small scale-hover text-orange underline" target="_blank" rel="noopener noreferrer">
+                    Lumba
+                  </Link>{' '}
+                  company
+                </>
+              }
+              stack={
+                <ul className="flex gap-3 text-2xl">
+                  <li>
+                    <LinkIcon kind="html" ariaLabel="Html Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="css" ariaLabel="Css Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="js" ariaLabel="Javascript Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="bootstrap" ariaLabel="Bootstrap Icon" />
+                  </li>
+                </ul>
+              }
+              hrefDemo="https://www.cancat.com.ar/"
+              hrefCode="#"
+              src="/_static/_img/8-cancat.webp"
+              showDemoModal={false}
+              setModal={function (value: SetStateAction<boolean>): void {
+                throw new Error('Function not implemented.');
+              }}
+              isPrivate={true}
+            />
+            {/* Project9- Modal */}
+            <DemoModal9
+              title="Plural"
+              content={
+                <>
+                  FrontEnd development created for{' '}
+                  <Link href="https://www.somoslumba.com" className="cursor-scale small scale-hover text-orange underline" target="_blank" rel="noopener noreferrer">
+                    Lumba
+                  </Link>{' '}
+                  company
+                </>
+              }
+              stack={
+                <ul className="flex gap-3 text-2xl">
+                  <li>
+                    <LinkIcon kind="html" ariaLabel="Html Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="css" ariaLabel="Css Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="js" ariaLabel="Javascript Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="bootstrap" ariaLabel="Bootstrap Icon" />
+                  </li>
+                </ul>
+              }
+              hrefDemo="https://www.pluraldei.com/"
+              hrefCode="#"
+              src="/_static/_img/9-plural.webp"
+              showDemoModal={false}
+              setModal={function (value: SetStateAction<boolean>): void {
+                throw new Error('Function not implemented.');
+              }}
+              isPrivate={true}
+            />
+            {/* Project10- Modal */}
+            <DemoModal10
+              title="Pinho"
+              content={
+                <>
+                  FrontEnd development created for{' '}
+                  <Link href="https://www.somoslumba.com" className="cursor-scale small scale-hover text-orange underline" target="_blank" rel="noopener noreferrer">
+                    Lumba
+                  </Link>{' '}
+                  company
+                </>
+              }
+              stack={
+                <ul className="flex gap-3 text-2xl">
+                  <li>
+                    <LinkIcon kind="html" ariaLabel="Html Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="css" ariaLabel="Css Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="js" ariaLabel="Javascript Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="bootstrap" ariaLabel="Bootstrap Icon" />
+                  </li>
+                </ul>
+              }
+              hrefDemo="https://www.basespinho.com/"
+              hrefCode="#"
+              src="/_static/_img/10-pinho.webp"
+              showDemoModal={false}
+              setModal={function (value: SetStateAction<boolean>): void {
+                throw new Error('Function not implemented.');
+              }}
+              isPrivate={true}
+            />
+            {/* Project11- Modal */}
+            <DemoModal11
+              title="Coder-Web Dev"
+              content={
+                <>
+                  Simple Front-End created during the developer course of the Full Stack career at{' '}
                   <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="cursor-scale small scale-hover text-orange underline" target="_blank" rel="noopener noreferrer">
                     Coderhouse
                   </Link>
@@ -523,186 +744,11 @@ export default function Works() {
               }
               hrefDemo="https://proyecto-final-coderhouse-desarrollo-web.vercel.app/"
               hrefCode="https://github.com/lisandrojm/proyecto-final-coderhouse-desarrollo-web"
-              src="/_static/_img/5-ksl.webp"
-              showDemoModal={false}
-              setModal={function (value: SetStateAction<boolean>): void {
-                throw new Error('Function not implemented.');
-              }}
-              isPrivate={true}
-            />
-            {/* Project6- Modal */}
-            <DemoModal6
-              title="Proyect6"
-              content="Description6"
-              stack={
-                <ul className="flex gap-3 text-2xl">
-                  <li>
-                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
-                  </li>
-                </ul>
-              }
-              hrefDemo="https://github.com/lisandrojm"
-              hrefCode="https://github.com/lisandrojm/portfolio"
-              src="/_static/_img/6-coder-reactjs.webp"
-              showDemoModal={false}
-              setModal={function (value: SetStateAction<boolean>): void {
-                throw new Error('Function not implemented.');
-              }}
-              isPrivate={true}
-            />
-            {/* Project7- Modal */}
-            <DemoModal7
-              title="Proyect7"
-              content="Description7"
-              stack={
-                <ul className="flex gap-3 text-2xl">
-                  <li>
-                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
-                  </li>
-                </ul>
-              }
-              hrefDemo="https://github.com/lisandrojm"
-              hrefCode="https://github.com/lisandrojm/portfolio"
-              src="/_static/_img/7-coder-js.webp"
-              showDemoModal={false}
-              setModal={function (value: SetStateAction<boolean>): void {
-                throw new Error('Function not implemented.');
-              }}
-              isPrivate={true}
-            />
-            {/* Project8- Modal */}
-            <DemoModal8
-              title="Proyect8"
-              content="Description8"
-              stack={
-                <ul className="flex gap-3 text-2xl">
-                  <li>
-                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
-                  </li>
-                </ul>
-              }
-              hrefDemo="https://github.com/lisandrojm"
-              hrefCode="https://github.com/lisandrojm/portfolio"
-              src="/_static/_img/8-cancat.webp"
-              showDemoModal={false}
-              setModal={function (value: SetStateAction<boolean>): void {
-                throw new Error('Function not implemented.');
-              }}
-              isPrivate={true}
-            />
-            {/* Project8- Modal */}
-            <DemoModal9
-              title="Proyect9"
-              content="Description9"
-              stack={
-                <ul className="flex gap-3 text-2xl">
-                  <li>
-                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
-                  </li>
-                </ul>
-              }
-              hrefDemo="https://github.com/lisandrojm"
-              hrefCode="https://github.com/lisandrojm/portfolio"
-              src="/_static/_img/9-plural.webp"
-              showDemoModal={false}
-              setModal={function (value: SetStateAction<boolean>): void {
-                throw new Error('Function not implemented.');
-              }}
-              isPrivate={true}
-            />
-            {/* Project10- Modal */}
-            <DemoModal10
-              title="Proyect10"
-              content="Description10"
-              stack={
-                <ul className="flex gap-3 text-2xl">
-                  <li>
-                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
-                  </li>
-                </ul>
-              }
-              hrefDemo="https://github.com/lisandrojm"
-              hrefCode="https://github.com/lisandrojm/portfolio"
-              src="/_static/_img/10-pinho.webp"
-              showDemoModal={false}
-              setModal={function (value: SetStateAction<boolean>): void {
-                throw new Error('Function not implemented.');
-              }}
-              isPrivate={true}
-            />
-            {/* Project11- Modal */}
-            <DemoModal11
-              title="Proyect11"
-              content="Description11"
-              stack={
-                <ul className="flex gap-3 text-2xl">
-                  <li>
-                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
-                  </li>
-                </ul>
-              }
-              hrefDemo="https://github.com/lisandrojm"
-              hrefCode="https://github.com/lisandrojm/portfolio"
               src="/_static/_img/11-coder-dev.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
               }}
-              isPrivate={true}
             />
           </YPContainer>
         </XContainer>
