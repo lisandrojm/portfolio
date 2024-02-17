@@ -17,7 +17,7 @@ import { GiSevenPointedStar } from 'react-icons/gi';
 import { RiLightbulbFlashLine } from 'react-icons/ri';
 import { PiHeartStraightFill, PiCertificateFill } from 'react-icons/pi';
 import { IoMdCalendar, IoMdDownload } from 'react-icons/io';
-import { BsEmojiSunglasses } from 'react-icons/bs';
+import { BsEmojiSunglasses, BsEmojiWink } from 'react-icons/bs';
 const components = {
   /* Academic */
   academic: HiAcademicCap,
@@ -75,6 +75,7 @@ const components = {
   /* Download */
   download: IoMdDownload,
   /* Emoji */
+  winkEmoji: BsEmojiWink,
   sunglassesEmoji: BsEmojiSunglasses,
   /* Heart */
   heart: PiHeartStraightFill,

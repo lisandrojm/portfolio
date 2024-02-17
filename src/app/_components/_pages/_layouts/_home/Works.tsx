@@ -174,7 +174,7 @@ export default function Works() {
                         <button onClick={() => setModal4(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 1 Modal">
                           <div className="cursor-scale small flex items-center text-white">
                             <div className="font-flex underline-hover mt-2 text-2xl font-bold md:text-3xl lg:mt-0">
-                              <h2>Coder Back-End</h2>
+                              <h2>Ecom Back-End</h2>
                             </div>
                             <span className="ms-1 text-sm">
                               <Icon kind="internalLink" />
@@ -330,13 +330,11 @@ export default function Works() {
               content={
                 <>
                   <span className="me-1">Front-End development created for</span>
-                  <Link href={siteMetadata.linkedin} className="cursor-scale small scale-hover text-orange underline" target="_blank" rel="noopener noreferrer">
-                    <div className="inline-flex items-center">
-                      <span className="underline">me</span>
-                      <span className="me-2 ms-2 inline-flex text-base">
-                        <Icon kind="sunglassesEmoji" />
-                      </span>
-                    </div>
+                  <Link href={siteMetadata.linkedin} className="cursor-scale small scale-hover inline-flex items-center text-orange underline" target="_blank" rel="noopener noreferrer">
+                    <span className="underline">me</span>
+                    <span className="me-2 ms-2 inline-flex text-base">
+                      <Icon kind="winkEmoji" />
+                    </span>
                   </Link>
                 </>
               }
@@ -366,7 +364,7 @@ export default function Works() {
             />
             {/* Project4- Modal */}
             <DemoModal4
-              title="Coder Back-End"
+              title="Ecom Back-End"
               content={
                 <>
                   Complete and functional Back-End of an ecommerce created during the Back-End course of the Full Stack career at{' '}

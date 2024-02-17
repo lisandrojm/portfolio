@@ -82,6 +82,7 @@ const iconLinks: IconLinks = {
   download: '',
   lockCode: '',
   gsap: '',
+  winkEmoji: '',
 };
 
 // Assign URLs to individual icon links
