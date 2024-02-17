@@ -39,7 +39,7 @@ export default function Footer() {
                 </div>
                 <div className=" flex items-center">
                   <div className="text-md me-1 ms-1 font-serif italic text-white">
-                    <p className="underline-hover">code</p>
+                    <p className="underline-hover">site code</p>
                   </div>
                   <span className="cursor-scale small text-sm">
                     <Icon kind="externalLink" />
