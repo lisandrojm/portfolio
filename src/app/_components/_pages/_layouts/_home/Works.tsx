@@ -329,15 +329,15 @@ export default function Works() {
               title="Portfolio"
               content={
                 <>
-                  <div className="flex items-center">
-                    Front-End development created for
-                    <Link href={siteMetadata.linkedin} className="cursor-scale small scale-hover ms-2 flex items-center text-orange underline" target="_blank" rel="noopener noreferrer">
-                      me
-                      <div className="me-2 ms-2 text-base">
+                  <span className="me-1">Front-End development created for</span>
+                  <Link href={siteMetadata.linkedin} className="cursor-scale small scale-hover text-orange underline" target="_blank" rel="noopener noreferrer">
+                    <div className="inline-flex items-center">
+                      <span className="underline">me</span>
+                      <span className="me-2 ms-2 inline-flex text-base">
                         <Icon kind="sunglassesEmoji" />
-                      </div>
-                    </Link>
-                  </div>
+                      </span>
+                    </div>
+                  </Link>
                 </>
               }
               stack={
