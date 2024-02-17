@@ -523,7 +523,7 @@ export default function Works() {
               }
               hrefDemo="https://proyecto-final-coderhouse-desarrollo-web.vercel.app/"
               hrefCode="https://github.com/lisandrojm/proyecto-final-coderhouse-desarrollo-web"
-              src="/_static/_img/proyect5-img.webp"
+              src="/_static/_img/5-ksl.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
@@ -552,7 +552,7 @@ export default function Works() {
               }
               hrefDemo="https://github.com/lisandrojm"
               hrefCode="https://github.com/lisandrojm/portfolio"
-              src="/_static/_img/proyect-img.webp"
+              src="/_static/_img/6-coder-reactjs.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
@@ -581,7 +581,7 @@ export default function Works() {
               }
               hrefDemo="https://github.com/lisandrojm"
               hrefCode="https://github.com/lisandrojm/portfolio"
-              src="/_static/_img/proyect-img.webp"
+              src="/_static/_img/7-coder-js.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
@@ -610,7 +610,7 @@ export default function Works() {
               }
               hrefDemo="https://github.com/lisandrojm"
               hrefCode="https://github.com/lisandrojm/portfolio"
-              src="/_static/_img/proyect-img.webp"
+              src="/_static/_img/8-cancat.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
@@ -639,7 +639,7 @@ export default function Works() {
               }
               hrefDemo="https://github.com/lisandrojm"
               hrefCode="https://github.com/lisandrojm/portfolio"
-              src="/_static/_img/proyect-img.webp"
+              src="/_static/_img/9-plural.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
@@ -668,7 +668,7 @@ export default function Works() {
               }
               hrefDemo="https://github.com/lisandrojm"
               hrefCode="https://github.com/lisandrojm/portfolio"
-              src="/_static/_img/proyect-img.webp"
+              src="/_static/_img/10-pinho.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
@@ -697,7 +697,7 @@ export default function Works() {
               }
               hrefDemo="https://github.com/lisandrojm"
               hrefCode="https://github.com/lisandrojm/portfolio"
-              src="/_static/_img/proyect-img.webp"
+              src="/_static/_img/11-coder-dev.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');

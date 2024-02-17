@@ -13,7 +13,7 @@ export default function DateDisplay() {
     <div className="cursor-scale small flex items-start pt-2 italic text-orange">
       <div className="underline-hover flex items-center">
         <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
-          <div className="me-3 mt-1 font-serif text-6xl font-light text-white">{currDay}</div>
+          <div className="me-3 font-serif text-6xl font-light text-white">{currDay}</div>
         </TranslateInOut>
         <div className="flex flex-col items-start">
           <TranslateInOut overflowHidden delay={0.3} y={100} start="-100% bottom" end="top top" watch>
