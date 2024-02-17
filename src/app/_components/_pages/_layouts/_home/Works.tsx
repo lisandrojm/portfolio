@@ -221,12 +221,12 @@ export default function Works() {
                             <button onClick={() => setModal5(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 5 Modal">
                               <div className="cursor-scale small flex items-center text-white">
                                 <div className="font-flex text-start text-lg font-bold">
-                                  <h2>
-                                    <span className="underline-hover">Jul.2023 / Corporate / Ksl</span>
+                                  <p>
+                                    <span className="underline-hover">Ksl</span> | <span className="text-sm text-orange">Jul.2023</span>{' '}
                                     <span className="ms-1 inline-flex text-sm text-white">
                                       <Icon kind="internalLink" />
                                     </span>
-                                  </h2>
+                                  </p>
                                 </div>
                               </div>
                             </button>
@@ -238,12 +238,12 @@ export default function Works() {
                             <button onClick={() => setModal6(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 6 Modal">
                               <div className="cursor-scale small flex items-center text-white">
                                 <div className="font-flex text-start text-lg font-bold">
-                                  <h2>
-                                    <span className="underline-hover">Apr.2023 / Course / Coder-React</span>
+                                  <p>
+                                    <span className="underline-hover">Coder-Reactjs</span> | <span className="text-sm text-orange">Apr.2023</span>{' '}
                                     <span className="ms-1 inline-flex text-sm text-white">
                                       <Icon kind="internalLink" />
                                     </span>
-                                  </h2>
+                                  </p>
                                 </div>
                               </div>
                             </button>
@@ -255,12 +255,12 @@ export default function Works() {
                             <button onClick={() => setModal7(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 6 Modal">
                               <div className="cursor-scale small flex items-center text-white">
                                 <div className="font-flex text-start text-lg font-bold">
-                                  <h2>
-                                    <span className="underline-hover">Apr.2023 / Course / Coder-React</span>
+                                  <p>
+                                    <span className="underline-hover">Coder-Js</span> | <span className="text-sm text-orange">Mar.2023</span>{' '}
                                     <span className="ms-1 inline-flex text-sm text-white">
                                       <Icon kind="internalLink" />
                                     </span>
-                                  </h2>
+                                  </p>
                                 </div>
                               </div>
                             </button>
@@ -272,12 +272,12 @@ export default function Works() {
                             <button onClick={() => setModal8(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 6 Modal">
                               <div className="cursor-scale small flex items-center text-white">
                                 <div className="font-flex text-start text-lg font-bold">
-                                  <h2>
-                                    <span className="underline-hover">Apr.2023 / Course / Coder-React</span>
+                                  <p>
+                                    <span className="underline-hover">Cancat</span> | <span className="text-sm text-orange">Dec.2023</span>{' '}
                                     <span className="ms-1 inline-flex text-sm text-white">
                                       <Icon kind="internalLink" />
                                     </span>
-                                  </h2>
+                                  </p>
                                 </div>
                               </div>
                             </button>
@@ -289,12 +289,12 @@ export default function Works() {
                             <button onClick={() => setModal9(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 6 Modal">
                               <div className="cursor-scale small flex items-center text-white">
                                 <div className="font-flex text-start text-lg font-bold">
-                                  <h2>
-                                    <span className="underline-hover">Apr.2023 / Course / Coder-React</span>
+                                  <p>
+                                    <span className="underline-hover">Plural</span> | <span className="text-sm text-orange">Oct.2023</span>{' '}
                                     <span className="ms-1 inline-flex text-sm text-white">
                                       <Icon kind="internalLink" />
                                     </span>
-                                  </h2>
+                                  </p>
                                 </div>
                               </div>
                             </button>
@@ -306,12 +306,12 @@ export default function Works() {
                             <button onClick={() => setModal10(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 6 Modal">
                               <div className="cursor-scale small flex items-center text-white">
                                 <div className="font-flex text-start text-lg font-bold">
-                                  <h2>
-                                    <span className="underline-hover">Apr.2023 / Course / Coder-React</span>
+                                  <p>
+                                    <span className="underline-hover">Pinho</span> | <span className="text-sm text-orange">Nov.2023</span>{' '}
                                     <span className="ms-1 inline-flex text-sm text-white">
                                       <Icon kind="internalLink" />
                                     </span>
-                                  </h2>
+                                  </p>
                                 </div>
                               </div>
                             </button>
@@ -323,12 +323,12 @@ export default function Works() {
                             <button onClick={() => setModal11(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 6 Modal">
                               <div className="cursor-scale small flex items-center text-white">
                                 <div className="font-flex text-start text-lg font-bold">
-                                  <h2>
-                                    <span className="underline-hover">Apr.2023 / Course / Coder-React</span>
+                                  <p>
+                                    <span className="underline-hover">Coder-Web Dev</span> | <span className="text-sm text-orange">Mar.2023</span>{' '}
                                     <span className="ms-1 inline-flex text-sm text-white">
                                       <Icon kind="internalLink" />
                                     </span>
-                                  </h2>
+                                  </p>
                                 </div>
                               </div>
                             </button>
@@ -528,11 +528,157 @@ export default function Works() {
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
               }}
+              isPrivate={true}
             />
             {/* Project6- Modal */}
             <DemoModal6
               title="Proyect6"
               content="Description6"
+              stack={
+                <ul className="flex gap-3 text-2xl">
+                  <li>
+                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
+                  </li>
+                </ul>
+              }
+              hrefDemo="https://github.com/lisandrojm"
+              hrefCode="https://github.com/lisandrojm/portfolio"
+              src="/_static/_img/proyect-img.webp"
+              showDemoModal={false}
+              setModal={function (value: SetStateAction<boolean>): void {
+                throw new Error('Function not implemented.');
+              }}
+              isPrivate={true}
+            />
+            {/* Project7- Modal */}
+            <DemoModal7
+              title="Proyect7"
+              content="Description7"
+              stack={
+                <ul className="flex gap-3 text-2xl">
+                  <li>
+                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
+                  </li>
+                </ul>
+              }
+              hrefDemo="https://github.com/lisandrojm"
+              hrefCode="https://github.com/lisandrojm/portfolio"
+              src="/_static/_img/proyect-img.webp"
+              showDemoModal={false}
+              setModal={function (value: SetStateAction<boolean>): void {
+                throw new Error('Function not implemented.');
+              }}
+              isPrivate={true}
+            />
+            {/* Project8- Modal */}
+            <DemoModal8
+              title="Proyect8"
+              content="Description8"
+              stack={
+                <ul className="flex gap-3 text-2xl">
+                  <li>
+                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
+                  </li>
+                </ul>
+              }
+              hrefDemo="https://github.com/lisandrojm"
+              hrefCode="https://github.com/lisandrojm/portfolio"
+              src="/_static/_img/proyect-img.webp"
+              showDemoModal={false}
+              setModal={function (value: SetStateAction<boolean>): void {
+                throw new Error('Function not implemented.');
+              }}
+              isPrivate={true}
+            />
+            {/* Project8- Modal */}
+            <DemoModal9
+              title="Proyect9"
+              content="Description9"
+              stack={
+                <ul className="flex gap-3 text-2xl">
+                  <li>
+                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
+                  </li>
+                </ul>
+              }
+              hrefDemo="https://github.com/lisandrojm"
+              hrefCode="https://github.com/lisandrojm/portfolio"
+              src="/_static/_img/proyect-img.webp"
+              showDemoModal={false}
+              setModal={function (value: SetStateAction<boolean>): void {
+                throw new Error('Function not implemented.');
+              }}
+              isPrivate={true}
+            />
+            {/* Project10- Modal */}
+            <DemoModal10
+              title="Proyect10"
+              content="Description10"
+              stack={
+                <ul className="flex gap-3 text-2xl">
+                  <li>
+                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="vercel" ariaLabel="Vercel Icon" />
+                  </li>
+                </ul>
+              }
+              hrefDemo="https://github.com/lisandrojm"
+              hrefCode="https://github.com/lisandrojm/portfolio"
+              src="/_static/_img/proyect-img.webp"
+              showDemoModal={false}
+              setModal={function (value: SetStateAction<boolean>): void {
+                throw new Error('Function not implemented.');
+              }}
+              isPrivate={true}
+            />
+            {/* Project11- Modal */}
+            <DemoModal11
+              title="Proyect11"
+              content="Description11"
               stack={
                 <ul className="flex gap-3 text-2xl">
                   <li>
