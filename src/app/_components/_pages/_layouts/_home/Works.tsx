@@ -17,6 +17,7 @@ import { SetStateAction } from 'react';
 import TranslateInOut from '@/_components/_gsap/TranslateInOut';
 import { Accordion, AccordionHeader, AccordionBody } from '@material-tailwind/react';
 import { useState } from 'react';
+import siteMetadata from '@/_data/siteMetadata';
 
 function AccordionIcon({ id, open }: { id: number; open: number }) {
   return (
@@ -75,14 +76,14 @@ export default function Works() {
                   <div className="flex flex-col justify-start text-base lg:flex-row-reverse lg:items-center lg:justify-end lg:text-lg">
                     <div className="flex w-full justify-start lg:w-2/5">
                       <button onClick={() => setModal1(true)} aria-label="Open Project Modal">
-                        <Image className="cursor-scale scale-hover grayscale-hover lg:w-full" src="/_static/_img/proyect1-img.webp" width={1200} height={566} alt="Picture of the author" priority />
+                        <Image className="cursor-scale scale-hover grayscale-hover lg:w-full" src="/_static/_img/1-muecas.webp" width={1200} height={566} alt="Picture of the author" priority />
                       </button>
                     </div>
                     <div className="flex justify-start lg:w-1/4">
                       <div className="flex flex-col items-start">
                         <button onClick={() => setModal1(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 1 Modal">
                           <div className="cursor-scale small flex items-center text-white">
-                            <div className="font-flex underline-hover mt-2 text-2xl font-bold md:text-3xl">
+                            <div className="font-flex underline-hover mt-2 text-2xl font-bold md:text-3xl lg:mt-0">
                               <h2>Muecas</h2>
                             </div>
                             <span className="ms-1 text-sm">
@@ -92,7 +93,7 @@ export default function Works() {
                         </button>
                         <div className="font-flex cursor-scale small">
                           <p className="text-lg font-bold text-orange"> Oct.2023 / Corporate</p>
-                          <p className="text-sm text-orange"> Front-End Develop</p>
+                          <p className="text-sm text-orange"> Front-End</p>
                         </div>
                       </div>
                     </div>
@@ -105,14 +106,14 @@ export default function Works() {
                   <div className="flex flex-col justify-center text-base lg:flex-row-reverse lg:items-center lg:justify-start lg:text-lg">
                     <div className="flex w-full justify-start lg:w-2/5">
                       <button onClick={() => setModal2(true)} aria-label="Open Project Modal">
-                        <Image className="cursor-scale scale-hover grayscale-hover lg:w-full" src="/_static/_img/proyect2-img.webp" width={1200} height={566} alt="Picture of the author" priority />
+                        <Image className="cursor-scale scale-hover grayscale-hover lg:w-full" src="/_static/_img/2-malonic.webp" width={1200} height={566} alt="Picture of the author" priority />
                       </button>
                     </div>
                     <div className="flex justify-start lg:w-1/4">
                       <div className="flex flex-col items-start">
                         <button onClick={() => setModal2(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 1 Modal">
                           <div className="cursor-scale small flex items-center text-white">
-                            <div className="font-flex underline-hover mt-2 text-2xl font-bold md:text-3xl">
+                            <div className="font-flex underline-hover mt-2 text-2xl font-bold md:text-3xl lg:mt-0">
                               <h2>Malonic</h2>
                             </div>
                             <span className="ms-1 text-sm">
@@ -122,7 +123,7 @@ export default function Works() {
                         </button>
                         <div className="font-flex cursor-scale small">
                           <p className="text-lg font-bold text-orange"> May.2023 / Corporate</p>
-                          <p className="text-sm text-orange"> Front-End Develop</p>
+                          <p className="text-sm text-orange"> Front-End</p>
                         </div>
                       </div>
                     </div>
@@ -135,15 +136,15 @@ export default function Works() {
                   <div className="flex flex-col justify-start text-base lg:flex-row-reverse lg:items-center lg:justify-end lg:text-lg">
                     <div className="flex w-full justify-start lg:w-2/5">
                       <button onClick={() => setModal3(true)} aria-label="Open Project Modal">
-                        <Image className="cursor-scale scale-hover grayscale-hover lg:w-full" src="/_static/_img/proyect3-img.webp" width={1200} height={566} alt="Picture of the author" priority />
+                        <Image className="cursor-scale scale-hover grayscale-hover lg:w-full" src="/_static/_img/3-portfolio.webp" width={1200} height={566} alt="Picture of the author" priority />
                       </button>
                     </div>
                     <div className="flex justify-start lg:w-1/4">
                       <div className="flex flex-col items-start">
                         <button onClick={() => setModal3(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 1 Modal">
                           <div className="cursor-scale small flex items-center text-white">
-                            <div className="font-flex underline-hover mt-2 text-2xl font-bold md:text-3xl">
-                              <h2>Freelo Calculator</h2>
+                            <div className="font-flex underline-hover mt-2 text-2xl font-bold md:text-3xl lg:mt-0">
+                              <h2>Portfolio</h2>
                             </div>
                             <span className="ms-1 text-sm">
                               <Icon kind="internalLink" />
@@ -151,8 +152,8 @@ export default function Works() {
                           </div>
                         </button>
                         <div className="font-flex cursor-scale small">
-                          <p className="text-lg font-bold text-orange"> Mar.2023 / Course</p>
-                          <p className="text-sm text-orange"> Front-End Develop</p>
+                          <p className="text-lg font-bold text-orange"> Feb.2024 / Side project</p>
+                          <p className="text-sm text-orange"> Front-End</p>
                         </div>
                       </div>
                     </div>
@@ -165,15 +166,15 @@ export default function Works() {
                   <div className="flex flex-col justify-center text-base lg:flex-row-reverse lg:items-center lg:justify-start lg:text-lg">
                     <div className="flex w-full justify-start lg:w-2/5">
                       <button onClick={() => setModal4(true)} aria-label="Open Project Modal">
-                        <Image className="cursor-scale scale-hover grayscale-hover lg:w-full" src="/_static/_img/proyect4-img.webp" width={1200} height={566} alt="Picture of the author" priority />
+                        <Image className="cursor-scale scale-hover grayscale-hover lg:w-full" src="/_static/_img/4-coder-backend.webp" width={1200} height={566} alt="Picture of the author" priority />
                       </button>
                     </div>
                     <div className="flex justify-start lg:w-1/4">
                       <div className="flex flex-col items-start">
                         <button onClick={() => setModal4(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 1 Modal">
                           <div className="cursor-scale small flex items-center text-white">
-                            <div className="font-flex underline-hover mt-2 text-2xl font-bold md:text-3xl">
-                              <h2>Freelo Ecom</h2>
+                            <div className="font-flex underline-hover mt-2 text-2xl font-bold md:text-3xl lg:mt-0">
+                              <h2>Coder Back-End</h2>
                             </div>
                             <span className="ms-1 text-sm">
                               <Icon kind="internalLink" />
@@ -182,7 +183,7 @@ export default function Works() {
                         </button>
                         <div className="font-flex cursor-scale small">
                           <p className="text-lg font-bold text-orange"> Nov.2023 / Course</p>
-                          <p className="text-sm text-orange"> Back-End Develop</p>
+                          <p className="text-sm text-orange"> Back-End</p>
                         </div>
                       </div>
                     </div>
@@ -217,7 +218,7 @@ export default function Works() {
                                 <div className="font-flex underline-hover text-xl font-bold md:text-2xl">
                                   <h2>Freelander Front</h2>
                                 </div>
-                                <span className="ms-1 text-sm text-orange">
+                                <span className="ms-1 text-sm text-white">
                                   <Icon kind="internalLink" />
                                 </span>
                               </div>
@@ -232,7 +233,7 @@ export default function Works() {
                                 <div className="font-flex underline-hover text-xl font-bold md:text-2xl">
                                   <h2>Project6</h2>
                                 </div>
-                                <span className="ms-1 text-sm text-orange">
+                                <span className="ms-1 text-sm text-white">
                                   <Icon kind="internalLink" />
                                 </span>
                               </div>
@@ -279,7 +280,7 @@ export default function Works() {
               }
               hrefDemo="https://www.muecas.com.ar/"
               hrefCode="#"
-              src="/_static/_img/proyect1-img.webp"
+              src="/_static/_img/1-muecas.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
@@ -301,45 +302,6 @@ export default function Works() {
               stack={
                 <ul className="flex gap-3 text-2xl">
                   <li>
-                    <LinkIcon kind="express" ariaLabel="Expressjs Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="mongodb" ariaLabel="MongoDb Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="handlebars" ariaLabel="Handlebars Icon" />
-                  </li>
-                  <li>
-                    <LinkIcon kind="bootstrap" ariaLabel="Bootstrap Icon" />
-                  </li>
-                </ul>
-              }
-              hrefDemo="https://www.malonicrecords.com"
-              hrefCode="#"
-              src="/_static/_img/proyect2-img.webp"
-              showDemoModal={false}
-              setModal={function (value: SetStateAction<boolean>): void {
-                throw new Error('Function not implemented.');
-              }}
-              isPrivate={true}
-            />
-            {/* Project-3 Modal */}
-            <DemoModal3
-              title="Freelo Calculator"
-              content={
-                <>
-                  Freelancer cost calculator developed during the JavaScript course of the Full Stack career at{' '}
-                  <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="cursor-scale small scale-hover text-orange underline" target="_blank" rel="noopener noreferrer">
-                    Coderhouse
-                  </Link>
-                </>
-              }
-              stack={
-                <ul className="flex gap-3 text-2xl">
-                  <li>
-                    <LinkIcon kind="js" ariaLabel="Javascript Icon" />
-                  </li>
-                  <li>
                     <LinkIcon kind="html" ariaLabel="Html Icon" />
                   </li>
                   <li>
@@ -348,11 +310,55 @@ export default function Works() {
                   <li>
                     <LinkIcon kind="bootstrap" ariaLabel="Bootstrap Icon" />
                   </li>
+                  <li>
+                    <LinkIcon kind="js" ariaLabel="Javascript Icon" />
+                  </li>
                 </ul>
               }
-              hrefDemo="https://lisandrojm.github.io/proyecto-final-coderhouse-js/"
-              hrefCode="https://github.com/lisandrojm/proyecto-final-coderhouse-js"
-              src="/_static/_img/proyect3-img.webp"
+              hrefDemo="https://www.malonicrecords.com"
+              hrefCode="#"
+              src="/_static/_img/2-malonic.webp"
+              showDemoModal={false}
+              setModal={function (value: SetStateAction<boolean>): void {
+                throw new Error('Function not implemented.');
+              }}
+              isPrivate={true}
+            />
+            {/* Project-3 Modal */}
+            <DemoModal3
+              title="Portfolio"
+              content={
+                <>
+                  <div className="flex items-center">
+                    Front-End development created for
+                    <Link href={siteMetadata.linkedin} className="cursor-scale small scale-hover ms-2 flex items-center text-orange underline" target="_blank" rel="noopener noreferrer">
+                      me
+                      <div className="me-2 ms-2 text-base">
+                        <Icon kind="sunglassesEmoji" />
+                      </div>
+                    </Link>
+                  </div>
+                </>
+              }
+              stack={
+                <ul className="flex gap-3 text-2xl">
+                  <li>
+                    <LinkIcon kind="nextjs" ariaLabel="Nextjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="react" ariaLabel="Reactjs Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="tailwind" ariaLabel="Tailwindcss Icon" />
+                  </li>
+                  <li>
+                    <LinkIcon kind="ts" ariaLabel="Typescript Icon" />
+                  </li>
+                </ul>
+              }
+              hrefDemo="https://lisandrojm.vercel.app/"
+              hrefCode="https://github.com/lisandrojm/portfolio"
+              src="/_static/_img/3-portfolio.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');
@@ -360,10 +366,10 @@ export default function Works() {
             />
             {/* Project4- Modal */}
             <DemoModal4
-              title="Freelo Ecom"
+              title="Coder Back-End"
               content={
                 <>
-                  Created during the Backend course of the Full Stack career at{' '}
+                  Complete and functional Back-End of an ecommerce created during the Back-End course of the Full Stack career at{' '}
                   <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="cursor-scale small scale-hover text-orange underline" target="_blank" rel="noopener noreferrer">
                     Coderhouse
                   </Link>
@@ -388,9 +394,9 @@ export default function Works() {
                   </li>
                 </ul>
               }
-              hrefDemo="https://proyecto-final-coderhouse-desarrollo-web.vercel.app/"
-              hrefCode="https://github.com/lisandrojm/proyecto-final-coderhouse-desarrollo-web"
-              src="/_static/_img/proyect4-img.webp"
+              hrefDemo="https://proyecto-final-coderhouse-backend.vercel.app/"
+              hrefCode="https://github.com/lisandrojm/proyecto-final-coderhouse-backend"
+              src="/_static/_img/4-coder-backend.webp"
               showDemoModal={false}
               setModal={function (value: SetStateAction<boolean>): void {
                 throw new Error('Function not implemented.');

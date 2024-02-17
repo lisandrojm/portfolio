@@ -137,7 +137,7 @@ const DemoModal: FC<DemoModalProps> = ({ title, content, stack, showDemoModal, s
                     </Link>
                   </TranslateInOut>
                   <TranslateInOut overflowHidden delay={0.5} y={100}>
-                    <div className="font-flex text-lg text-orange">
+                    <div className="text-base text-orange">
                       <p>{content}</p>
                     </div>
                   </TranslateInOut>
