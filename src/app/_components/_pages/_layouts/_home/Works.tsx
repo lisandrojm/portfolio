@@ -35,6 +35,11 @@ export default function Works() {
   const { DemoModal: DemoModal4, setModal: setModal4 } = useDemoModal();
   const { DemoModal: DemoModal5, setModal: setModal5 } = useDemoModal();
   const { DemoModal: DemoModal6, setModal: setModal6 } = useDemoModal();
+  const { DemoModal: DemoModal7, setModal: setModal7 } = useDemoModal();
+  const { DemoModal: DemoModal8, setModal: setModal8 } = useDemoModal();
+  const { DemoModal: DemoModal9, setModal: setModal9 } = useDemoModal();
+  const { DemoModal: DemoModal10, setModal: setModal10 } = useDemoModal();
+  const { DemoModal: DemoModal11, setModal: setModal11 } = useDemoModal();
 
   const [open, setOpen] = useState<number>(0);
 
@@ -91,7 +96,7 @@ export default function Works() {
                             </span>
                           </div>
                         </button>
-                        <div className="font-flex cursor-scale small">
+                        <div className="font-flex">
                           <p className="text-lg font-bold text-orange"> Oct.2023 / Corporate</p>
                           <p className="text-sm text-orange"> Front-End</p>
                         </div>
@@ -121,7 +126,7 @@ export default function Works() {
                             </span>
                           </div>
                         </button>
-                        <div className="font-flex cursor-scale small">
+                        <div className="font-flex">
                           <p className="text-lg font-bold text-orange"> May.2023 / Corporate</p>
                           <p className="text-sm text-orange"> Front-End</p>
                         </div>
@@ -151,7 +156,7 @@ export default function Works() {
                             </span>
                           </div>
                         </button>
-                        <div className="font-flex cursor-scale small">
+                        <div className="font-flex">
                           <p className="text-lg font-bold text-orange"> Feb.2024 / Side project</p>
                           <p className="text-sm text-orange"> Front-End</p>
                         </div>
@@ -181,9 +186,9 @@ export default function Works() {
                             </span>
                           </div>
                         </button>
-                        <div className="font-flex cursor-scale small">
+                        <div className="font-flex">
                           <p className="text-lg font-bold text-orange"> Nov.2023 / Course</p>
-                          <p className="text-sm text-orange"> Back-End</p>
+                          <p className="text-sm text-orange">Back-End</p>
                         </div>
                       </div>
                     </div>
@@ -215,12 +220,14 @@ export default function Works() {
                           <li className="mb-1">
                             <button onClick={() => setModal5(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 5 Modal">
                               <div className="cursor-scale small flex items-center text-white">
-                                <div className="font-flex underline-hover text-xl font-bold md:text-2xl">
-                                  <h2>Freelander Front</h2>
+                                <div className="font-flex text-start text-lg font-bold">
+                                  <h2>
+                                    <span className="underline-hover">Jul.2023 / Corporate / Ksl</span>
+                                    <span className="ms-1 inline-flex text-sm text-white">
+                                      <Icon kind="internalLink" />
+                                    </span>
+                                  </h2>
                                 </div>
-                                <span className="ms-1 text-sm text-white">
-                                  <Icon kind="internalLink" />
-                                </span>
                               </div>
                             </button>
                           </li>
@@ -230,12 +237,99 @@ export default function Works() {
                           <li className="mb-1">
                             <button onClick={() => setModal6(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 6 Modal">
                               <div className="cursor-scale small flex items-center text-white">
-                                <div className="font-flex underline-hover text-xl font-bold md:text-2xl">
-                                  <h2>Project6</h2>
+                                <div className="font-flex text-start text-lg font-bold">
+                                  <h2>
+                                    <span className="underline-hover">Apr.2023 / Course / Coder-React</span>
+                                    <span className="ms-1 inline-flex text-sm text-white">
+                                      <Icon kind="internalLink" />
+                                    </span>
+                                  </h2>
                                 </div>
-                                <span className="ms-1 text-sm text-white">
-                                  <Icon kind="internalLink" />
-                                </span>
+                              </div>
+                            </button>
+                          </li>
+                        </TranslateInOut>
+                        {/*Project 7 */}
+                        <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
+                          <li className="mb-1">
+                            <button onClick={() => setModal7(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 6 Modal">
+                              <div className="cursor-scale small flex items-center text-white">
+                                <div className="font-flex text-start text-lg font-bold">
+                                  <h2>
+                                    <span className="underline-hover">Apr.2023 / Course / Coder-React</span>
+                                    <span className="ms-1 inline-flex text-sm text-white">
+                                      <Icon kind="internalLink" />
+                                    </span>
+                                  </h2>
+                                </div>
+                              </div>
+                            </button>
+                          </li>
+                        </TranslateInOut>
+                        {/*Project 8 */}
+                        <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
+                          <li className="mb-1">
+                            <button onClick={() => setModal8(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 6 Modal">
+                              <div className="cursor-scale small flex items-center text-white">
+                                <div className="font-flex text-start text-lg font-bold">
+                                  <h2>
+                                    <span className="underline-hover">Apr.2023 / Course / Coder-React</span>
+                                    <span className="ms-1 inline-flex text-sm text-white">
+                                      <Icon kind="internalLink" />
+                                    </span>
+                                  </h2>
+                                </div>
+                              </div>
+                            </button>
+                          </li>
+                        </TranslateInOut>
+                        {/*Project 9 */}
+                        <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
+                          <li className="mb-1">
+                            <button onClick={() => setModal9(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 6 Modal">
+                              <div className="cursor-scale small flex items-center text-white">
+                                <div className="font-flex text-start text-lg font-bold">
+                                  <h2>
+                                    <span className="underline-hover">Apr.2023 / Course / Coder-React</span>
+                                    <span className="ms-1 inline-flex text-sm text-white">
+                                      <Icon kind="internalLink" />
+                                    </span>
+                                  </h2>
+                                </div>
+                              </div>
+                            </button>
+                          </li>
+                        </TranslateInOut>
+                        {/*Project 10 */}
+                        <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
+                          <li className="mb-1">
+                            <button onClick={() => setModal10(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 6 Modal">
+                              <div className="cursor-scale small flex items-center text-white">
+                                <div className="font-flex text-start text-lg font-bold">
+                                  <h2>
+                                    <span className="underline-hover">Apr.2023 / Course / Coder-React</span>
+                                    <span className="ms-1 inline-flex text-sm text-white">
+                                      <Icon kind="internalLink" />
+                                    </span>
+                                  </h2>
+                                </div>
+                              </div>
+                            </button>
+                          </li>
+                        </TranslateInOut>
+                        {/*Project 11 */}
+                        <TranslateInOut overflowHidden delay={0.2} y={100} start="-100% bottom" end="top top" watch>
+                          <li className="mb-1">
+                            <button onClick={() => setModal11(true)} className="flex flex-col items-start justify-items-center md:me-5" aria-label="Open Project 6 Modal">
+                              <div className="cursor-scale small flex items-center text-white">
+                                <div className="font-flex text-start text-lg font-bold">
+                                  <h2>
+                                    <span className="underline-hover">Apr.2023 / Course / Coder-React</span>
+                                    <span className="ms-1 inline-flex text-sm text-white">
+                                      <Icon kind="internalLink" />
+                                    </span>
+                                  </h2>
+                                </div>
                               </div>
                             </button>
                           </li>
