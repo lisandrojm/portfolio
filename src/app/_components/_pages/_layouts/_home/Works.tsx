@@ -198,7 +198,7 @@ export default function Works() {
             </div>
             {/* Accordion "Other projects*/}
             <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
-              <div className="mt-20 border-t border-solid border-orange pt-2 lg:me-10 lg:w-1/3">
+              <div className="mt-20 w-full border-t border-solid border-orange pt-2 lg:me-10 lg:w-1/3">
                 <Accordion open={open === 1} icon={<AccordionIcon id={1} open={open} />} placeholder={''} className="pt-1 font-serif">
                   <AccordionHeader className="border-0 py-0" onClick={() => handleOpen(1)} placeholder={''}>
                     <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
@@ -207,7 +207,7 @@ export default function Works() {
                           <Icon kind="plus" />
                         </div>
                         <div>
-                          <h3 className="underline-hover me-10 text-nowrap text-2xl italic text-orange md:text-3xl">Other projects</h3>
+                          <h3 className="underline-hover text-nowrap text-2xl italic text-orange md:text-3xl">Other projects</h3>
                         </div>
                       </div>
                     </TranslateInOut>
