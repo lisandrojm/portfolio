@@ -203,7 +203,7 @@ export default function Works() {
                   <AccordionHeader className="border-0 py-0" onClick={() => handleOpen(1)} placeholder={''}>
                     <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
                       <div className="cursor-scale small flex items-center">
-                        <div className="me-2 text-3xl text-white">
+                        <div className="me-2 text-2xl text-white">
                           <Icon kind="plus" />
                         </div>
                         <div>
@@ -212,7 +212,7 @@ export default function Works() {
                       </div>
                     </TranslateInOut>
                   </AccordionHeader>
-                  <AccordionBody>
+                  <AccordionBody className="py-2">
                     <div className="font-flex mt-1 text-2xl text-white">
                       <ul>
                         {/*Project 5 */}

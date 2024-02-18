@@ -83,6 +83,8 @@ const iconLinks: IconLinks = {
   lockCode: '',
   gsap: '',
   winkEmoji: '',
+  heartEyesEmoji: '',
+  gym: '',
 };
 
 // Assign URLs to individual icon links

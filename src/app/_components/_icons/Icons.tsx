@@ -1,6 +1,7 @@
 /* src/app/_components/_icons/Icons.tsx */
 
 import { FaApple, FaLinux, FaWindows, FaGithub, FaLinkedin, FaEnvelope, FaReact, FaHtml5, FaCss3Alt, FaGit, FaNodeJs, FaBootstrap, FaSun, FaMoon, FaDocker, FaUserNinja, FaArrowAltCircleRight } from 'react-icons/fa';
+import { FaDumbbell } from 'react-icons/fa6';
 import { TbBrandNextjs, TbBrandVercel, TbLockCode } from 'react-icons/tb';
 import { IoCloseCircleOutline, IoChevronDownSharp } from 'react-icons/io5';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
@@ -17,7 +18,7 @@ import { GiSevenPointedStar } from 'react-icons/gi';
 import { RiLightbulbFlashLine } from 'react-icons/ri';
 import { PiHeartStraightFill, PiCertificateFill } from 'react-icons/pi';
 import { IoMdCalendar, IoMdDownload } from 'react-icons/io';
-import { BsEmojiSunglasses, BsEmojiWink } from 'react-icons/bs';
+import { BsEmojiSunglasses, BsEmojiWink, BsEmojiHeartEyes } from 'react-icons/bs';
 const components = {
   /* Academic */
   academic: HiAcademicCap,
@@ -77,6 +78,9 @@ const components = {
   /* Emoji */
   winkEmoji: BsEmojiWink,
   sunglassesEmoji: BsEmojiSunglasses,
+  heartEyesEmoji: BsEmojiHeartEyes,
+  /* Gym */
+  gym: FaDumbbell,
   /* Heart */
   heart: PiHeartStraightFill,
   /* Light */
