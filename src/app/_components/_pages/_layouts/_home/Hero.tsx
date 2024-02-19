@@ -25,7 +25,7 @@ export default function Hero() {
                 <DateDisplay />
               </button>
               {isContentVisible && (
-                <div className="ms-5 pt-5 opacity-100 transition-opacity duration-500 ease-out md:ms-0 md:pt-1">
+                <div className="ms-5 mt-4 opacity-100 transition-opacity duration-500 ease-out md:ms-0 md:pt-1">
                   <div className="text-xs text-white">
                     <div className="font-flex flex">
                       <div className="me-2 text-base">
