@@ -107,29 +107,6 @@ body {
 
 /* Hovers */
 
-/* Hovers / Button & a */
-
-button:hover,
-a:hover,
-[role='button']:hover {
-  --accent-1: var(--accent-5);
-  --accent-2: var(--accent-8);
-  --accent-3: var(--accent-2a);
-  --accent-6: var(--accent-4);
-  --accent-8: var(--accent-5);
-}
-
-/* Hovers / Scale */
-
-.scale-hover {
-  transform: scale(1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.scale-hover:hover {
-  transform: scale(0.99);
-}
-
 .grayscale-hover {
   filter: grayscale(100%);
   transform: scale(1);
@@ -138,51 +115,76 @@ a:hover,
     transform 0.3s ease-in-out;
 }
 
-.grayscale-hover:hover {
-  transform: scale(0.99);
-  filter: grayscale(0%);
-}
+@media (min-width: 768px) {
+  /* Hovers / Button & a */
 
-/* Hovers / Underline */
+  button:hover,
+  a:hover,
+  [role='button']:hover {
+    --accent-1: var(--accent-5);
+    --accent-2: var(--accent-8);
+    --accent-3: var(--accent-2a);
+    --accent-6: var(--accent-4);
+    --accent-8: var(--accent-5);
+  }
 
-.underline-hover {
-  position: relative;
-}
+  /* Hovers / Scale */
 
-.underline-hover:before,
-.underline-hover:after {
-  content: '';
-  display: block;
-  height: 1px;
-  width: 0;
-  margin-top: 10px;
-  position: absolute;
-  bottom: 0;
-}
+  .scale-hover {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+  }
 
-.underline-hover:before {
-  transition:
-    width 0.4s ease,
-    background 0.4s ease;
-  left: 0;
-  right: 0;
-}
+  .scale-hover:hover {
+    transform: scale(0.99);
+  }
 
-.underline-hover:after {
-  right: 0;
-  background: var(--accent-1);
-  transition: width 0.4s ease;
-}
+  .grayscale-hover:hover {
+    transform: scale(0.99);
+    filter: grayscale(0%);
+  }
 
-.underline-hover:hover:before {
-  width: 100%;
-  background: var(--accent-1);
-}
+  /* Hovers / Underline */
 
-.underline-hover:hover:after {
-  width: 100%;
-  background: 0 0;
-  transition: all 0s ease;
+  .underline-hover {
+    position: relative;
+  }
+
+  .underline-hover:before,
+  .underline-hover:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .underline-hover:before {
+    transition:
+      width 0.4s ease,
+      background 0.4s ease;
+    left: 0;
+    right: 0;
+  }
+
+  .underline-hover:after {
+    right: 0;
+    background: var(--accent-1);
+    transition: width 0.4s ease;
+  }
+
+  .underline-hover:hover:before {
+    width: 100%;
+    background: var(--accent-1);
+  }
+
+  .underline-hover:hover:after {
+    width: 100%;
+    background: 0 0;
+    transition: all 0s ease;
+  }
 }
 
 /* Gsap Cursor */
