@@ -85,6 +85,8 @@ const iconLinks: IconLinks = {
   winkEmoji: '',
   heartEyesEmoji: '',
   gym: '',
+  php: '',
+  mysql: '',
 };
 
 // Assign URLs to individual icon links
@@ -120,6 +122,8 @@ iconLinks.materialui = 'https://mui.com/';
 iconLinks.github = `${siteMetadata.github}`;
 iconLinks.linkedin = `${siteMetadata.linkedin}`;
 iconLinks.gsap = 'https://gsap.com/';
+iconLinks.php = 'https://www.php.net/';
+iconLinks.mysql = 'https://gsap.com/';
 
 const LinkIcons: FC<LinkIconProps> = ({ kind, ariaLabel }) => {
   const href = iconLinks[kind] || '#';
