@@ -2,7 +2,7 @@
 
 - Deploy
 
-<a href="https://lisandrojm.vercel.app/" target="_blank" rel="noreferrer">lisandrojm.vercel.app</a>
+⚡ <a href="https://lisandrojm.vercel.app/" target="_blank" rel="noreferrer">lisandrojm.vercel.app</a>
 
 - Technologies
 
@@ -14,7 +14,7 @@
 
 - Contact
 
-[lisandrojm@gmail.com](mailto:lisandrojm@gmail.com)
+🤙 [lisandrojm@gmail.com](mailto:lisandrojm@gmail.com)
 
 - Socials
 
