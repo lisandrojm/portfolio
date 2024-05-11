@@ -2,11 +2,11 @@
 
 - Deploy
 
-  - ⚡ <a href="https://lisandrojm.vercel.app/" target="_blank" rel="noreferrer">lisandrojm.vercel.app</a>
+  - <a href="https://lisandrojm.vercel.app/" target="_blank" rel="noreferrer">lisandrojm.vercel.app</a>
 
 - Technologies
 
-  <a href="https://nextjs.org/docs" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg" width="25" height="25" alt="NextJs" /></a>
+  - <a href="https://nextjs.org/docs" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg" width="25" height="25" alt="NextJs" /></a>
   <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="25" height="25" alt="React" /></a>
   <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="25" height="25" alt="Typescript" /></a>
   <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="25" height="25" alt="TailwindCSS" /></a>
@@ -14,7 +14,7 @@
 
 - Contact
 
-  - 🤙 [lisandrojm@gmail.com](mailto:lisandrojm@gmail.com)
+  - [lisandrojm@gmail.com](mailto:lisandrojm@gmail.com)
 
 - Socials
 
