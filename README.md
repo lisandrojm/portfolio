@@ -2,7 +2,7 @@
 
 - Deploy
 
-  ⚡ <a href="https://lisandrojm.vercel.app/" target="_blank" rel="noreferrer">lisandrojm.vercel.app</a>
+⚡ <a href="https://lisandrojm.vercel.app/" target="_blank" rel="noreferrer">lisandrojm.vercel.app</a>
 
 - Technologies
 
