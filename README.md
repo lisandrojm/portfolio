@@ -14,7 +14,7 @@
 
 - Contact
 
-[lisandrojm@gmail.com](mailto:lisandrojm@gmail.com)
+🤙 [lisandrojm@gmail.com](mailto:lisandrojm@gmail.com)
 
 - Socials
 
