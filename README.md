@@ -2,7 +2,7 @@
 
 - Deploy
 
-⚡ <a href="https://lisandrojm.vercel.app/" target="_blank" rel="noreferrer">lisandrojm.vercel.app</a>
+  - ⚡ <a href="https://lisandrojm.vercel.app/" target="_blank" rel="noreferrer">lisandrojm.vercel.app</a>
 
 - Technologies
 
@@ -14,11 +14,11 @@
 
 - Contact
 
-🤙 [lisandrojm@gmail.com](mailto:lisandrojm@gmail.com)
+  - 🤙 [lisandrojm@gmail.com](mailto:lisandrojm@gmail.com)
 
 - Socials
 
-  <a href="https://www.linkedin.com/in/lisandrojm" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="25" height="25" /></a>
+  - <a href="https://www.linkedin.com/in/lisandrojm" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="25" height="25" /></a>
 
 ## License
 
