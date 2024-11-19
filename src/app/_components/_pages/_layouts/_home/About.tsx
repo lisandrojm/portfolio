@@ -115,13 +115,20 @@ export default function About() {
                 <div className="w-full lg:w-1/3">
                   <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
                     <div className="mt-10 border-t border-solid border-orange pt-2 lg:mt-0">
-                      <Accordion open={open === 1} icon={<AccordionIcon id={1} open={open} />} placeholder={''} onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+                      <Accordion
+                        open={open === 1}
+                        icon={<AccordionIcon id={1} open={open} />}
+                        placeholder={''}
+                        onPointerEnterCapture={() => {}} // Ensure a handler is provided
+                        onPointerLeaveCapture={() => {}} // Ensure a handler is provided
+                        className="pt-1 font-serif"
+                      >
                         <AccordionHeader
                           className="border-0 py-0"
                           onClick={() => handleOpen(1)}
-                          onPointerEnterCapture={() => {}} // or any other handler you need
-                          onPointerLeaveCapture={() => {}}
                           placeholder={''}
+                          onPointerEnterCapture={() => {}} // Ensure a handler is provided
+                          onPointerLeaveCapture={() => {}} // Ensure a handler is provided
                         >
                           <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
                             <div className="cursor-scale small flex items-center ">
@@ -204,16 +211,17 @@ export default function About() {
                       <Accordion
                         open={open === 2}
                         icon={<AccordionIcon id={2} open={open} />}
-                        onPointerEnterCapture={() => {}} // Placeholder handler or actual logic
-                        onPointerLeaveCapture={() => {}}
                         placeholder={''}
+                        onPointerEnterCapture={() => {}} // Ensure a handler is provided
+                        onPointerLeaveCapture={() => {}} // Ensure a handler is provided
+                        className="pt-1 font-serif"
                       >
                         <AccordionHeader
                           className="border-0 py-0"
                           onClick={() => handleOpen(2)}
-                          onPointerEnterCapture={() => {}} // Placeholder handler or actual logic
-                          onPointerLeaveCapture={() => {}}
                           placeholder={''}
+                          onPointerEnterCapture={() => {}} // Ensure a handler is provided
+                          onPointerLeaveCapture={() => {}} // Ensure a handler is provided
                         >
                           <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
                             <div className="cursor-scale small flex items-center ">
