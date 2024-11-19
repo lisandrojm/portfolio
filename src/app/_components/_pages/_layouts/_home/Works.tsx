@@ -199,8 +199,21 @@ export default function Works() {
             {/* Accordion "Other projects*/}
             <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
               <div className="mt-20 w-full border-t border-solid border-orange pt-2 lg:me-10 lg:w-1/3">
-                <Accordion open={open === 1} icon={<AccordionIcon id={1} open={open} />} placeholder={''} className="pt-1 font-serif">
-                  <AccordionHeader className="border-0 py-0" onClick={() => handleOpen(1)} placeholder={''}>
+                <Accordion
+                  open={open === 1}
+                  icon={<AccordionIcon id={1} open={open} />}
+                  placeholder={''}
+                  onPointerEnterCapture={() => {}} // Ensure a handler is provided
+                  onPointerLeaveCapture={() => {}} // Ensure a handler is provided
+                  className="pt-1 font-serif"
+                >
+                  <AccordionHeader
+                    className="border-0 py-0"
+                    onClick={() => handleOpen(1)}
+                    placeholder={''}
+                    onPointerEnterCapture={() => {}} // Ensure a handler is provided
+                    onPointerLeaveCapture={() => {}} // Ensure a handler is provided
+                  >
                     <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
                       <div className="cursor-scale small flex items-center">
                         <div className="me-2 text-2xl text-white">
