@@ -118,17 +118,25 @@ export default function About() {
                       <Accordion
                         open={open === 1}
                         icon={<AccordionIcon id={1} open={open} />}
-                        placeholder={''}
-                        onPointerEnterCapture={() => {}} // Ensure a handler is provided
-                        onPointerLeaveCapture={() => {}} // Ensure a handler is provided
+                        placeholder={'testing'}
+                        onPointerEnterCapture={() => {
+                          console.log('Pointer entered Accordion');
+                        }} // Ensure a handler is provided
+                        onPointerLeaveCapture={() => {
+                          console.log('Pointer entered Accordion');
+                        }} // Ensure a handler is provided
                         className="pt-1 font-serif"
                       >
                         <AccordionHeader
                           className="border-0 py-0"
                           onClick={() => handleOpen(1)}
-                          placeholder={''}
-                          onPointerEnterCapture={() => {}} // Ensure a handler is provided
-                          onPointerLeaveCapture={() => {}} // Ensure a handler is provided
+                          placeholder={'testing'}
+                          onPointerEnterCapture={() => {
+                            console.log('Pointer entered Accordion');
+                          }} // Ensure a handler is provided
+                          onPointerLeaveCapture={() => {
+                            console.log('Pointer entered Accordion');
+                          }} // Ensure a handler is provided
                         >
                           <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
                             <div className="cursor-scale small flex items-center ">
@@ -212,17 +220,25 @@ export default function About() {
                       <Accordion
                         open={open === 2}
                         icon={<AccordionIcon id={2} open={open} />}
-                        placeholder={''}
-                        onPointerEnterCapture={() => {}} // Ensure a handler is provided
-                        onPointerLeaveCapture={() => {}} // Ensure a handler is provided
+                        placeholder={'testing'}
+                        onPointerEnterCapture={() => {
+                          console.log('Pointer entered Accordion');
+                        }} // Ensure a handler is provided
+                        onPointerLeaveCapture={() => {
+                          console.log('Pointer entered Accordion');
+                        }} // Ensure a handler is provided
                         className="pt-1 font-serif"
                       >
                         <AccordionHeader
                           className="border-0 py-0"
                           onClick={() => handleOpen(2)}
-                          placeholder={''}
-                          onPointerEnterCapture={() => {}} // Ensure a handler is provided
-                          onPointerLeaveCapture={() => {}} // Ensure a handler is provided
+                          placeholder={'testing'}
+                          onPointerEnterCapture={() => {
+                            console.log('Pointer entered Accordion');
+                          }} // Ensure a handler is provided
+                          onPointerLeaveCapture={() => {
+                            console.log('Pointer entered Accordion');
+                          }} // Ensure a handler is provided
                         >
                           <TranslateInOut overflowHidden delay={0.1} y={100} start="-100% bottom" end="top top" watch>
                             <div className="cursor-scale small flex items-center ">
