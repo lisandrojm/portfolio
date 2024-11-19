@@ -208,6 +208,7 @@ export default function About() {
                           </div>
                         </AccordionBody>
                       </Accordion>
+
                       <Accordion
                         open={open === 2}
                         icon={<AccordionIcon id={2} open={open} />}
