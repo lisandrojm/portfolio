@@ -145,7 +145,7 @@ export default function About() {
                           <div className="text-base text-white">
                             <ul>
                               <li>
-                                <Link href="https://www.coderhouse.com/certificados/63a7335bc5708d000e6df156?lang=en" className="cursor-scale small flex text-white" aria-label="Development certificate" target="_blank">
+                                <Link href="https://pub.coderhouse.com/legacy-certificates/63a7335bc5708d000e6df156?lang=es" className="cursor-scale small flex text-white" aria-label="Development certificate" target="_blank">
                                   <div className="flex items-center text-orange">
                                     <div>
                                       <p className="underline-hover">Development</p>
@@ -157,7 +157,7 @@ export default function About() {
                                 </Link>
                               </li>
                               <li>
-                                <Link href="https://www.coderhouse.com/certificados/641b0618e72c2b00027dca87?lang=en" className="cursor-scale small flex text-white" aria-label="Javascript certificate" target="_blank">
+                                <Link href="https://pub.coderhouse.com/legacy-certificates/641b0618e72c2b00027dca87?lang=es" className="cursor-scale small flex text-white" aria-label="Javascript certificate" target="_blank">
                                   <div className="flex items-center text-orange">
                                     <div>
                                       <p className="underline-hover">Javascript</p>
@@ -169,7 +169,7 @@ export default function About() {
                                 </Link>
                               </li>
                               <li>
-                                <Link href="https://www.coderhouse.com/certificados/645e44ad1f40130002fcd5d5?lang=en" className="cursor-scale small flex text-white" aria-label="Reactjs certificate" target="_blank">
+                                <Link href="https://pub.coderhouse.com/legacy-certificates/645e44ad1f40130002fcd5d5?lang=es" className="cursor-scale small flex text-white" aria-label="Reactjs certificate" target="_blank">
                                   <div className="flex items-center text-orange">
                                     <div>
                                       <p className="underline-hover">React</p>
@@ -181,7 +181,7 @@ export default function About() {
                                 </Link>
                               </li>
                               <li>
-                                <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d0ce8be7116?lang=en" className="cursor-scale small flex text-white" aria-label="Backend certificate" target="_blank">
+                                <Link href="https://pub.coderhouse.com/legacy-certificates/6579c50fc5811d0ce8be7116?lang=es" className="cursor-scale small flex text-white" aria-label="Backend certificate" target="_blank">
                                   <div className="flex items-center text-orange">
                                     <div>
                                       <p className="underline-hover">Backend</p>
@@ -193,7 +193,7 @@ export default function About() {
                                 </Link>
                               </li>
                               <li>
-                                <Link href="https://www.coderhouse.com/certificados/6579c50fc5811d1a56be7177?lang=en" className="cursor-scale small flex text-white" aria-label="Fullstack certificate" target="_blank">
+                                <Link href="https://pub.coderhouse.com/legacy-certificates/6579c50fc5811d1a56be7177?lang=es" className="cursor-scale small flex text-white" aria-label="Fullstack certificate" target="_blank">
                                   <div className="flex items-center text-orange">
                                     <div>
                                       <p className="underline-hover">FullStack</p>
