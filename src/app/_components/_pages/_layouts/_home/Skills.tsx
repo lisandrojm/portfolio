@@ -105,9 +105,9 @@ export default function Skills() {
                     <TranslateInOut overflowHidden delay={0.4} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="mongodb" ariaLabel="Mongodb Icon" />
                     </TranslateInOut>
-                    <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
+{/*                     <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="handlebars" ariaLabel="Handlebars Icon" />
-                    </TranslateInOut>
+                    </TranslateInOut> */}
                     <TranslateInOut overflowHidden delay={0.5} y={100} start="-100% bottom" end="top top" watch>
                       <LinkIcon kind="php" ariaLabel="Php Icon" />
                     </TranslateInOut>
